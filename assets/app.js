@@ -272,7 +272,19 @@ async function loadArticle(articleId) {
       state.articlesCache[articleId] = content;
     }
 
-    const artMeta = ARTICLES_REGISTRY.find(a => a.id === articleId);
+    // İçerik tip kontrolü (her durumda string olmasını garanti et)
+    if (typeof content === 'object' && content !== null) {
+      if (typeof content.value === 'string') {
+        content = content.value;
+      } else {
+        content = JSON.stringify(content);
+      }
+    }
+    if (typeof content !== 'string') {
+      content = String(content || '');
+    }
+
+    const artMeta = ARTICLES_REGISTRY.find(a => a.id === articleId) || { title: "Makale" };
     titleEl.textContent = artMeta.title;
     document.title = `${artMeta.title} - Kooperatifler Ansiklopedisi`;
 
@@ -305,6 +317,10 @@ async function loadArticle(articleId) {
 
 // Markdown İşleyici (marked.js varsa kullanır, yoksa yerleşik basit dönüştürücü)
 function renderMarkdown(md) {
+  if (typeof md !== 'string') {
+    md = String(md || '');
+  }
+
   // Wiki içi çift köşeli parantez bağlantılarını normal bağlantıya çevir: [[Madde Adı -> id]] veya [[Madde Adı]]
   let processed = md.replace(/\[\[([^\]]+)\]\]/g, (match, inner) => {
     let text = inner;
