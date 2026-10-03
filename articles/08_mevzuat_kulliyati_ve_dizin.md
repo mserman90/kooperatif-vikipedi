@@ -2,109 +2,132 @@
 
 Bu dizin, Türk kooperatifçilik hukukunun normlar hiyerarşisine göre sınıflandırılmış; kanun, Cumhurbaşkanlığı kararnamesi, Cumhurbaşkanı kararı, tüzük, yönetmelik ve tebliğ düzeyindeki tüm yürürlükteki ve doğrudan/dolaylı ilgili düzenlemelerini içeren tam kapsamlı fihristtir.
 
+Tüm mevzuat metinleri **[Mevzuat Bilgi Sistemi (mevzuat.gov.tr)](https://www.mevzuat.gov.tr)** ve **[Resmî Gazete](https://www.resmigazete.gov.tr)** üzerindeki orijinal, yürürlükteki güncel metinlerine doğrudan bağlantılıdır.
+
 ---
 
 ## 1. KANUNLAR (Normlar Hiyerarşisi 1. Kademe)
 
-| Kanun No | Kanun Başlığı | Kooperatif Hukukundaki Temel Rolü ve İlgili Madde |
-| :--- | :--- | :--- |
-| **1163** | Kooperatifler Kanunu | Tüm kooperatiflerin kuruluş, organ, ortaklık, denetim ve tasfiyesini düzenleyen temel genel kanun. |
-| **1581** | Tarım Kredi Kooperatifleri ve Birlikleri Kanunu | TKK teşkilatı, faaliyet sahaları, girdi temini, kefalet ve rehin usulleri. |
-| **4572** | Tarım Satış Kooperatif ve Birlikleri Hakkında Kanun | Tarım satış kooperatif ve birliklerinin özerkleşmesi, anasözleşme intibakı ve denetimi. |
-| **6102** | Türk Ticaret Kanunu | Kooperatiflerin ticaret şirketi niteliği (Madde 124) ve tacir sıfatı hükümleri. |
-| **7579** | Tapu Kanunu ile Bazı Kanunlarda Değişiklik Kanunu | Yapı kooperatiflerinde iskansız bireysel tapu devri yasağı (1163 SK Ek Madde 6). |
-| **7442** | Orman Kanunu ve Bazı Kanunlarda Değişiklik Kanunu | Afet ve olağanüstü hallerde kooperatif genel kurul erteleme süreleri. |
-| **7256** | Bazı Alacakların Yeniden Yapılandırılması Kanunu | Kooperatif genel kurul erteleme ve kamu borçları yapılandırması. |
-| **7244** | Yeni Koronavirüs Salgınının Etkilerinin Azaltılması Kanunu | Pandemi dönemi kooperatif genel kurul toplantılarının ertelenmesi. |
-| **7020** | Bazı Alacakların Yeniden Yapılandırılması Kanunu | Tarımsal kooperatiflerin Bakanlığa borçlarının 10 yıl vadeli yapılandırılması (m. 4/2). |
-| **6824** | Bazı Alacakların Yeniden Yapılandırılması Kanunu | Tarım Kredi Kooperatifleri alacaklarının yeniden yapılandırılması. |
-| **6750** | Ticari İşlemlerde Taşınır Rehni Kanunu | Kooperatiflerin ticari işletme rehni sözleşmesi tarafı olabilmesi. |
-| **6736** | Bazı Alacakların Yeniden Yapılandırılması Kanunu | Tarımsal amaçlı kooperatiflerin Bakanlığa borçlarının 5 yıl faizsiz taksitlendirilmesi (m. 11/11). |
-| **6552** | İş Kanunu ile Bazı Kanunlarda Değişiklik Kanunu | Münfesih duruma düşen kooperatiflerin hızlı tasfiyesi ve sicilden terkini. |
-| **6362** | Sermaye Piyasası Kanunu | Pay sahibi sayısı 500'ü aşan kooperatiflerin halka açık ortaklık statüsü (m. 16). |
-| **6360** | Büyükşehir Belediyesi Kanunu Değişiklikleri | Köy tüzel kişiliğinden belediyeye geçen parsellerin kooperatif kullanımı. |
-| **6327** | Bireysel Emeklilik ve Vergi Kanunlarında Değişiklik | Kooperatiflerde kurumlar vergisi muafiyeti şartları ve iktisadi işletme ayrımı. |
-| **6172** | Sulama Birlikleri Kanunu | Sulama kooperatiflerinin su kullanıcısı teşkilatı statüsü. |
-| **6111** | Bazı Alacakların Yeniden Yapılandırılması Kanunu | Konut yapı kooperatiflerinin belediye yol harcamalarına katılım payı borç yapılandırması. |
-| **5661** | Toplu Köy İkrazatı Alacaklarının Tahsili Kanunu | TKK toplu köy ikrazatı kefalet borçlarının tasfiye edilmesi. |
-| **5570** | Faiz Destekli Kredi Kullandırılması Kanunu | TKK ve kamu bankaları aracılığıyla kullandırılan Hazine faiz destekli krediler. |
-| **5543** | İskân Kanunu | İskânlı ailelerin kurduğu kooperatiflere tarım araç-gereçlerinin tahsisi (m. 24). |
-| **5488** | Tarım Kanunu | Tarımsal üretici örgütleri ve kooperatiflerin öncelikli devlet desteği (m. 12, 15). |
-| **5362** | Esnaf ve Sanatkârlar Meslek Kuruluşları Kanunu | ESKKK'ların esnaf teşkilatı içerisindeki yeri ve koordinasyonu. |
-| **5335** | Bazı Kanun ve KHK'larda Değişiklik Kanunu | 4572 SK kapsamındaki görev zararı alacaklarına ilişkin muafiyetler (m. 19/1-a). |
-| **5228** | Bazı Kanunlarda Değişiklik Kanunu | Bulgaristan göçmenleri kooperatiflerine Hazine arazisi tahsisi ve yapı muafiyeti. |
-| **5216** | Büyükşehir Belediyesi Kanunu | Büyükşehir belediyelerinin tarımsal kooperatiflerle ortak yatırım projeleri (m. 7). |
-| **4962** | Vergi Muafiyeti ve Bazı Kanunlarda Değişiklik | Kooperatif birleşme ve yeniden yapılandırmalarında vergi-harç istisnaları (m. 18). |
-| **4916** | Çeşitli Kanunlarda Değişiklik Kanunu | 1163 SK m. 9 değişikliği ile 300 ve üzeri ortaklı kooperatiflerde yönetim kolaylığı. |
-| **4876** | Sorunlu Tarımsal Kredilerin Yapılandırılması Kanunu | TKK kaynaklı takibe düşen çiftçi kredilerinin yapılandırılması. |
-| **4629** | Bazı Fonların Tasfiyesi Kanunu | Kooperatifçilik Tanıtma ve Eğitim Fonu'nun tasfiyesi ve Bakanlık bütçesine devri. |
-| **4603** | Kamu Bankaları Kanunu | Halkbank aracılığıyla ESKKK kefaletli faiz destekli esnaf kredileri. |
-| **4562** | Organize Sanayi Bölgeleri Kanunu | Kooperatiflerin ve birliklerin OSB kurucu heyetine iştirak edebilmesi (m. 4). |
-| **3083** | Tarım Reformu Kanunu | Toprak ve Tarım Reformu Kooperatiflerinin görev ve çalışma sahası (m. 70-71). |
-| **2886** | Devlet İhale Kanunu | Su ürünleri kooperatiflerine avlak sahalarının pazarlık usulüyle doğrudan kiralanması. |
-| **2090** | Tabii Afetlerden Zarar Gören Çiftçilere Yardım Kanunu | Afetzede kooperatif ortaklarına faiz ertelemesi ve düşük faizli kredi imkânı. |
-| **1380** | Su Ürünleri Kanunu | Su ürünleri istihsal ve yetiştiricilik sahalarında kooperatif hakları. |
-| **5393** | Belediye Kanunu | Belediyelerin kadın ve tarım kooperatiflerine tesis ve stant tahsis yetkisi (m. 75). |
-| **5957** | Hal Kanunu (Sebze ve Meyve Ticareti) | Kooperatiflerin "Üretici Örgütü" statüsüyle toptancı hallerinde %20 yer ayrılması. |
-| **6585** | Perakende Ticaretin Düzenlenmesi Kanunu | Esnaf ve sanatkârlarca tedarik ve dağıtım kooperatifi kurulması (m. 12). |
-| **4706** | Hazine Taşınmazlarının Değerlendirilmesi Kanunu | Konut kooperatiflerine arsa satışı ve tarımsal kooperatiflere kiralama (m. 7/B). |
-| **5403** | Toprak Koruma ve Arazi Kullanımı Kanunu | Kooperatif hisseleri yoluyla tarım arazilerinin bölünmesi ve hobi bahçesi yasağı (m. 23). |
-| **5520** | Kurumlar Vergisi Kanunu | Kooperatiflerin kurumlar vergisi mükellefiyeti ve m. 4/1-k muafiyet şartları. |
-| **4734** | Kamu İhale Kanunu | Orman köyleri kooperatifleri ve tarımsal kooperatiflerden doğrudan alım istisnası (m. 3). |
-| **6098** | Türk Borçlar Kanunu | Genel kurul kararlarının sözleşme niteliği; faiz (m. 88) ve kefalet (m. 120) kuralları. |
-| **4721** | Türk Medeni Kanunu | Kooperatif organ kararlarında dürüstlük (m. 2) ve iyiniyet (m. 3) ilkeleri. |
-| **488** | Damga Vergisi Kanunu | Kooperatif kuruluş sözleşmeleri, sermaye artırımı ve pay senetleri muafiyeti. |
-| **3065** | Katma Değer Vergisi Kanunu | 29.07.1998 öncesi ruhsatlı konut kooperatiflerinde inşaat taahhüdü istisnası (Geçici m. 15). |
-| **1319** | Emlak Vergisi Kanunu | Konut kooperatiflerinin arsa ve inşaat halindeki binalarına emlak vergisi muafiyeti. |
-| **6831** | Orman Kanunu | Orman köylerini kalkındırma kooperatiflerinin (ORKÖY) orman işletme önceliği. |
-| **6200** | Devlet Su İşleri Genel Müdürlüğü Kanunu | Kamusal sulama şebekesi tesislerinin sulama kooperatiflerine devri. |
-| **2644** | Tapu Kanunu | ESKKK ve TKK kredilerinde resmi senetsiz doğrudan ipotek tescili kolaylığı (m. 26). |
+Aşağıdaki tabloda kooperatifler hukukunu doğrudan ve dolaylı olarak ilgilendiren 51 temel kanunun Resmî Mevzuat Bilgi Sistemi bağlantıları ve kooperatif tüzel kişiliğiyle ilişkili kritik maddeleri listelenmiştir.
+
+| Kanun No | Kanun Başlığı | Resmî Metin (mevzuat.gov.tr) | Kooperatif Hukukundaki Temel Rolü ve İlgili Madde |
+| :--- | :--- | :---: | :--- |
+| **1163** | [Kooperatifler Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1163&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1163&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.1163.pdf) | Tüm kooperatiflerin kuruluş, organ, ortaklık, denetim ve tasfiyesini düzenleyen temel genel kanun. |
+| **1581** | [Tarım Kredi Kooperatifleri ve Birlikleri Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1581&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1581&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.1581.pdf) | TKK teşkilatı, faaliyet sahaları, girdi temini, kefalet ve rehin usulleri. |
+| **4572** | [Tarım Satış Kooperatif ve Birlikleri Hakkında Kanun](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4572&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4572&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4572.pdf) | Tarım satış kooperatif ve birliklerinin özerkleşmesi, anasözleşme intibakı ve denetimi. |
+| **6102** | [Türk Ticaret Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6102&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6102&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6102.pdf) | Kooperatiflerin ticaret şirketi niteliği (Madde 124) ve tacir sıfatı hükümleri. |
+| **7579** | [Tapu Kanunu ile Bazı Kanunlarda Değişiklik Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7579&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7579&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.7579.pdf) | Yapı kooperatiflerinde iskansız bireysel tapu devri yasağı (1163 SK Ek Madde 6). |
+| **7442** | [Orman Kanunu ve Bazı Kanunlarda Değişiklik Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7442&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7442&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.7442.pdf) | Afet ve olağanüstü hallerde kooperatif genel kurul erteleme süreleri. |
+| **7256** | [Bazı Alacakların Yeniden Yapılandırılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7256&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7256&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.7256.pdf) | Kooperatif genel kurul erteleme ve kamu borçları yapılandırması. |
+| **7244** | [Yeni Koronavirüs Salgınının Etkilerinin Azaltılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7244&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7244&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.7244.pdf) | Pandemi dönemi kooperatif genel kurul toplantılarının ertelenmesi. |
+| **7020** | [Bazı Alacakların Yeniden Yapılandırılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7020&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7020&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.7020.pdf) | Tarımsal kooperatiflerin Bakanlığa borçlarının 10 yıl vadeli yapılandırılması (m. 4/2). |
+| **6824** | [Bazı Alacakların Yeniden Yapılandırılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6824&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6824&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6824.pdf) | Tarım Kredi Kooperatifleri alacaklarının yeniden yapılandırılması. |
+| **6750** | [Ticari İşlemlerde Taşınır Rehni Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6750&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6750&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6750.pdf) | Kooperatiflerin ticari işletme rehni sözleşmesi tarafı olabilmesi. |
+| **6736** | [Bazı Alacakların Yeniden Yapılandırılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6736&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6736&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6736.pdf) | Tarımsal amaçlı kooperatiflerin Bakanlığa borçlarının 5 yıl faizsiz taksitlendirilmesi (m. 11/11). |
+| **6552** | [İş Kanunu ile Bazı Kanunlarda Değişiklik Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6552&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6552&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6552.pdf) | Münfesih duruma düşen kooperatiflerin hızlı tasfiyesi ve sicilden terkini. |
+| **6362** | [Sermaye Piyasası Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6362&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6362&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6362.pdf) | Pay sahibi sayısı 500'ü aşan kooperatiflerin halka açık ortaklık statüsü (m. 16). |
+| **6360** | [Büyükşehir Belediyesi Kanunu Değişiklikleri](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6360&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6360&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6360.pdf) | Köy tüzel kişiliğinden belediyeye geçen parsellerin kooperatif kullanımı. |
+| **6327** | [Bireysel Emeklilik ve Vergi Kanunlarında Değişiklik](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6327&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6327&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6327.pdf) | Kooperatiflerde kurumlar vergisi muafiyeti şartları ve iktisadi işletme ayrımı. |
+| **6172** | [Sulama Birlikleri Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6172&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6172&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6172.pdf) | Sulama kooperatiflerinin su kullanıcısı teşkilatı statüsü. |
+| **6111** | [Bazı Alacakların Yeniden Yapılandırılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6111&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6111&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6111.pdf) | Konut yapı kooperatiflerinin belediye yol harcamalarına katılım payı borç yapılandırması. |
+| **5661** | [Toplu Köy İkrazatı Alacaklarının Tahsili Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5661&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5661&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5661.pdf) | TKK toplu köy ikrazatı kefalet borçlarının tasfiye edilmesi. |
+| **5570** | [Faiz Destekli Kredi Kullandırılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5570&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5570&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5570.pdf) | TKK ve kamu bankaları aracılığıyla kullandırılan Hazine faiz destekli krediler. |
+| **5543** | [İskân Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5543&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5543&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5543.pdf) | İskânlı ailelerin kurduğu kooperatiflere tarım araç-gereçlerinin tahsisi (m. 24). |
+| **5488** | [Tarım Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5488&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5488&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5488.pdf) | Tarımsal üretici örgütleri ve kooperatiflerin öncelikli devlet desteği (m. 12, 15). |
+| **5362** | [Esnaf ve Sanatkârlar Meslek Kuruluşları Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5362&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5362&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5362.pdf) | ESKKK'ların esnaf teşkilatı içerisindeki yeri ve koordinasyonu. |
+| **5335** | [Bazı Kanun ve KHK'larda Değişiklik Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5335&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5335&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5335.pdf) | 4572 SK kapsamındaki görev zararı alacaklarına ilişkin muafiyetler (m. 19/1-a). |
+| **5228** | [Bazı Kanunlarda Değişiklik Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5228&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5228&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5228.pdf) | Bulgaristan göçmenleri kooperatiflerine Hazine arazisi tahsisi ve yapı muafiyeti. |
+| **5216** | [Büyükşehir Belediyesi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5216&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5216&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5216.pdf) | Büyükşehir belediyelerinin tarımsal kooperatiflerle ortak yatırım projeleri (m. 7). |
+| **4962** | [Vergi Muafiyeti ve Bazı Kanunlarda Değişiklik](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4962&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4962&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4962.pdf) | Kooperatif birleşme ve yeniden yapılandırmalarında vergi-harç istisnaları (m. 18). |
+| **4916** | [Çeşitli Kanunlarda Değişiklik Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4916&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4916&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4916.pdf) | 1163 SK m. 9 değişikliği ile 300 ve üzeri ortaklı kooperatiflerde yönetim kolaylığı. |
+| **4876** | [Sorunlu Tarımsal Kredilerin Yapılandırılması Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4876&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4876&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4876.pdf) | TKK kaynaklı takibe düşen çiftçi kredilerinin yapılandırılması. |
+| **4629** | [Bazı Fonların Tasfiyesi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4629&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4629&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4629.pdf) | Kooperatifçilik Tanıtma ve Eğitim Fonu'nun tasfiyesi ve Bakanlık bütçesine devri. |
+| **4603** | [Kamu Bankaları Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4603&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4603&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4603.pdf) | Halkbank aracılığıyla ESKKK kefaletli faiz destekli esnaf kredileri. |
+| **4562** | [Organize Sanayi Bölgeleri Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4562&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4562&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4562.pdf) | Kooperatiflerin ve birliklerin OSB kurucu heyetine iştirak edebilmesi (m. 4). |
+| **3083** | [Tarım Reformu Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=3083&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=3083&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3083.pdf) | Toprak ve Tarım Reformu Kooperatiflerinin görev ve çalışma sahası (m. 70-71). |
+| **2886** | [Devlet İhale Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2886&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2886&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.2886.pdf) | Su ürünleri kooperatiflerine avlak sahalarının pazarlık usulüyle doğrudan kiralanması. |
+| **2090** | [Tabii Afetlerden Zarar Gören Çiftçilere Yardım Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2090&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2090&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.2090.pdf) | Afetzede kooperatif ortaklarına faiz ertelemesi ve düşük faizli kredi imkânı. |
+| **1380** | [Su Ürünleri Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1380&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1380&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.1380.pdf) | Su ürünleri istihsal ve yetiştiricilik sahalarında kooperatif hakları. |
+| **5393** | [Belediye Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5393&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5393&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5393.pdf) | Belediyelerin kadın ve tarım kooperatiflerine tesis ve stant tahsis yetkisi (m. 75). |
+| **5957** | [Hal Kanunu (Sebze ve Meyve Ticareti)](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5957&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5957&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5957.pdf) | Kooperatiflerin "Üretici Örgütü" statüsüyle toptancı hallerinde %20 yer ayrılması. |
+| **6585** | [Perakende Ticaretin Düzenlenmesi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6585&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6585&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6585.pdf) | Esnaf ve sanatkârlarca tedarik ve dağıtım kooperatifi kurulması (m. 12). |
+| **4706** | [Hazine Taşınmazlarının Değerlendirilmesi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4706&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4706&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4706.pdf) | Konut kooperatiflerine arsa satışı ve tarımsal kooperatiflere kiralama (m. 7/B). |
+| **5403** | [Toprak Koruma ve Arazi Kullanımı Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5403&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5403&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5403.pdf) | Kooperatif hisseleri yoluyla tarım arazilerinin bölünmesi ve hobi bahçesi yasağı (m. 23). |
+| **5520** | [Kurumlar Vergisi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5520&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5520&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf) | Kooperatiflerin kurumlar vergisi mükellefiyeti ve m. 4/1-k muafiyet şartları. |
+| **4734** | [Kamu İhale Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4734&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4734&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4734.pdf) | Orman köyleri kooperatifleri ve tarımsal kooperatiflerden doğrudan alım istisnası (m. 3). |
+| **6098** | [Türk Borçlar Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6098.pdf) | Genel kurul kararlarının sözleşme niteliği; faiz (m. 88) ve kefalet (m. 120) kuralları. |
+| **4721** | [Türk Medeni Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4721&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4721&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4721.pdf) | Kooperatif organ kararlarında dürüstlük (m. 2) ve iyiniyet (m. 3) ilkeleri. |
+| **488** | [Damga Vergisi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=488&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=488&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.488.pdf) | Kooperatif kuruluş sözleşmeleri, sermaye artırımı ve pay senetleri muafiyeti. |
+| **3065** | [Katma Değer Vergisi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=3065&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=3065&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf) | 29.07.1998 öncesi ruhsatlı konut kooperatiflerinde inşaat taahhüdü istisnası (Geçici m. 15). |
+| **1319** | [Emlak Vergisi Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1319&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1319&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.1319.pdf) | Konut kooperatiflerinin arsa ve inşaat halindeki binalarına emlak vergisi muafiyeti. |
+| **6831** | [Orman Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6831&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6831&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6831.pdf) | Orman köylerini kalkındırma kooperatiflerinin (ORKÖY) orman işletme önceliği. |
+| **6200** | [Devlet Su İşleri Genel Müdürlüğü Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6200&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6200&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6200.pdf) | Kamusal sulama şebekesi tesislerinin sulama kooperatiflerine devri. |
+| **2644** | [Tapu Kanunu](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2644&MevzuatTur=1&MevzuatTertip=5) | [📄 Metin](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2644&MevzuatTur=1&MevzuatTertip=5) · [📥 PDF](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.2644.pdf) | ESKKK ve TKK kredilerinde resmi senetsiz doğrudan ipotek tescili kolaylığı (m. 26). |
 
 ---
 
 ## 2. CUMHURBAŞKANI KARARLARI (Seçilmiş Kararlar)
 
-* **8760 Sayılı Karar:** 2024-2026 Hayvancılık Desteklemeleri (Tarımsal kooperatiflere öncelik).
-* **8038 & 8039 Sayılı Kararlar:** T.C. Ziraat Bankası, Ziraat Katılım ve TKK Hazine Faiz Destekli Kredi Kararları.
-* **6816 & 6920 Sayılı Kararlar:** Deprem Afeti Nedeniyle TKK Kredi Borçlarının Ertelenmesi ve Faiz Silinmesi.
-* **6655 Sayılı Karar:** Çiğ Süt Desteği ve Süt Piyasasının Düzenlenmesi (Kooperatif örgütlülük primi).
-* **6434 Sayılı Karar:** Bağımsız Denetime Tabi Şirketlerin Belirlenmesi (Büyük ölçekli kooperatif eşikleri).
-* **5973 & 5986 Sayılı Kararlar:** İhracat ve E-İhracat Destekleri (Kooperatif şirketlerine pazar açılış desteği).
-* **5139, 3289, 2491 Sayılı Kararlar:** Tasfiye halindeki Tarım Satış Birliklerinin kamu borçlarının terkini.
-* **2800 Sayılı Karar:** Kırsal Kalkınma Yatırımları Hibe Programı (KKYDP Çerçeve Kararı).
+* **[8760 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8760&MevzuatTur=20&MevzuatTertip=5):** 2024-2026 Hayvancılık Desteklemeleri (Tarımsal kooperatiflere öncelik ve ilave primler).
+* **[8038 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8038&MevzuatTur=20&MevzuatTertip=5) & [8039 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8039&MevzuatTur=20&MevzuatTertip=5):** T.C. Ziraat Bankası, Ziraat Katılım ve TKK Hazine Faiz Destekli Tarımsal Kredi Kararları.
+* **[6816 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6816&MevzuatTur=20&MevzuatTertip=5) & [6920 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6920&MevzuatTur=20&MevzuatTertip=5):** Deprem Afeti Nedeniyle TKK Kredi Borçlarının Ertelenmesi ve Faiz Silinmesi.
+* **[6655 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6655&MevzuatTur=20&MevzuatTertip=5):** Çiğ Süt Desteği ve Süt Piyasasının Düzenlenmesi (Kooperatif örgütlülük primi).
+* **[6434 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6434&MevzuatTur=20&MevzuatTertip=5):** Bağımsız Denetime Tabi Şirketlerin Belirlenmesi (Büyük ölçekli kooperatif eşikleri).
+* **[5973 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5973&MevzuatTur=20&MevzuatTertip=5) & [5986 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5986&MevzuatTur=20&MevzuatTertip=5):** İhracat ve E-İhracat Destekleri (Kooperatif şirketlerine pazar açılış desteği).
+* **[5139 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5139&MevzuatTur=20&MevzuatTertip=5), [3289 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=3289&MevzuatTur=20&MevzuatTertip=5), [2491 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2491&MevzuatTur=20&MevzuatTertip=5):** Tasfiye halindeki Tarım Satış Birliklerinin kamu borçlarının terkini ve tasfiye kolaylıkları.
+* **[2800 Sayılı Karar](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2800&MevzuatTur=20&MevzuatTertip=5):** Kırsal Kalkınma Yatırımları Hibe Programı (KKYDP Çerçeve Kararı).
 
 ---
 
 ## 3. YÖNETMELİKLER
 
-* **39276:** Kooperatif Bilgi Sistemi (KOOPBİS) Yönetmeliği (Veri girişi ve yönetim sorumluluğu).
-* **39278:** Kooperatifçilik Eğitimi Yönetmeliği (40 ders saati zorunlu müfredat).
-* **39331:** Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (Dış denetim esasları).
-* **39279:** Kooperatiflerde Elektronik Ortamda Yapılacak Genel Kurullara İlişkin Yönetmelik (e-GK).
-* **39277:** Genel Kurul Toplantı Usulleri ve Bakanlık Temsilcisi Yönetmeliği.
-* **40451:** Tarımsal Amaçlı Örgütlerin Derecelendirilmesine İlişkin Yönetmelik (A-B-C sınıflandırması).
-* **18659:** Kooperatifçilik Proje Destek Yönetmeliği (KOOP-DES Hibe Programı).
-* **16302:** Esnaf ve Sanatkârlar Şûrası Yönetmeliği (ESKKK temsili).
-* **17274:** Tarım Ürünleri Lisanslı Depoculuk Yönetmeliği.
-* **4997:** Balıkçı Barınakları Yönetmeliği (Su ürünleri kooperatif kiralama esasları).
-* **4375 & 20023888:** Toplu Konut Kredileri ve TOKİ Kaynaklarının Kullanımı Yönetmelikleri.
-* **31245:** Organize Sanayi Bölgeleri Uygulama Yönetmeliği (Kooperatif iştirakleri).
-* **200610857:** Tabii Afetlerden Zarar Gören Çiftçilere Yapılacak Yardımlar Yönetmeliği.
+Aşağıda kooperatiflerin idari, finansal ve denetim süreçlerini belirleyen yürürlükteki temel yönetmelikler doğrudan mevzuat metinleriyle sunulmuştur:
+
+| Mevzuat No | Yönetmelik Başlığı | Resmî Metin Bağlantısı | Kapsam ve Temel Yükümlülük |
+| :--- | :--- | :---: | :--- |
+| **39276** | [Kooperatif Bilgi Sistemi (KOOPBİS) Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39276&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39276&MevzuatTur=7&MevzuatTertip=5) | Ortaklık pay defteri, yönetim/denetim raporları, genel kurul evrakı ve mali tabloların sisteme aktarımı. |
+| **39278** | [Kooperatifçilik Eğitimi Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39278&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39278&MevzuatTur=7&MevzuatTertip=5) | Yönetim ve denetim kurulu asıl/yedek üyelerine 40 ders saati zorunlu sertifika eğitimi. |
+| **39331** | [Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39331&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39331&MevzuatTur=7&MevzuatTertip=5) | Dış denetime tabi olma şartları, dış denetçi nitelikleri, denetim raporu standartları ve yaptırımlar. |
+| **39279** | [Kooperatiflerde Elektronik Ortamda Genel Kurul Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39279&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39279&MevzuatTur=7&MevzuatTertip=5) | e-GK sisteminin kurulumu, güvenli elektronik imza ile oy kullanma ve toplantı tutanağı oluşturma. |
+| **39277** | [Genel Kurul Toplantı Usulleri ve Bakanlık Temsilcisi Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39277&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39277&MevzuatTur=7&MevzuatTertip=5) | Çağrı usulleri, hazirun cetveli tanzimi, vekâlet sınırları ve Bakanlık Temsilcisi katılım kuralları. |
+| **40451** | [Tarımsal Amaçlı Örgütlerin Derecelendirilmesine İlişkin Yönetmelik](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40451&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40451&MevzuatTur=7&MevzuatTertip=5) | Tarım kooperatiflerinin A, B, C sınıfı olarak derecelendirilmesi ve desteklerden oransal faydalanması. |
+| **18659** | [Kooperatifçilik Proje Destek Yönetmeliği (KOOP-DES)](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18659&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18659&MevzuatTur=7&MevzuatTertip=5) | Kadın kooperatifleri, istihdam ve makine-ekipman alımlarında %70-90 oranında karşılıksız hibe desteği. |
+| **16302** | [Esnaf ve Sanatkârlar Şûrası Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=16302&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=16302&MevzuatTur=7&MevzuatTertip=5) | ESKKK ve TESKOMB temsilcilerinin şûra çalışmaları ve politika belirleme süreçleri. |
+| **17274** | [Tarım Ürünleri Lisanslı Depoculuk Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=17274&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=17274&MevzuatTur=7&MevzuatTertip=5) | Tarım satış kooperatif ve birliklerinin lisanslı depo şirketi kurması ve ELÜS işlemleri. |
+| **4997** | [Balıkçı Barınakları Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4997&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4997&MevzuatTur=7&MevzuatTertip=5) | Balıkçı barınaklarının Su Ürünleri Kooperatiflerine pazarlıkla kiralanması ve işletilmesi. |
+| **4375** | [Toplu Konut Kredileri Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4375&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4375&MevzuatTur=7&MevzuatTertip=5) | Konut yapı kooperatiflerine TOKİ tarafından sağlanan konut tamamlama ve altyapı kredileri. |
+| **20023888** | [Toplu Konut İdaresi Kaynaklarının Kullanım Şekline Dair Yönetmelik](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=20023888&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=20023888&MevzuatTur=7&MevzuatTertip=5) | TOKİ fonlarının kooperatif projelerine tahsisi ve ipotek şartları. |
+| **31245** | [Organize Sanayi Bölgeleri Uygulama Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=31245&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=31245&MevzuatTur=7&MevzuatTertip=5) | Sanayi sitesi kooperatiflerinin OSB müteşebbis heyetine katılımı ve parsel tahsis kuralları. |
+| **200610857** | [Tabii Afetlerden Zarar Gören Çiftçilere Yapılacak Yardımlar Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=200610857&MevzuatTur=7&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=200610857&MevzuatTur=7&MevzuatTertip=5) | Afet hasar tespit komisyonları ve TKK ortaklarının kredi erteleme prosedürleri. |
 
 ---
 
 ## 4. TEBLİĞLER
 
-* **Tebliğ No: TGM-2011/01 (15071):** Yönetim ve Denetim Kurulu Üyelerinin Bağdaşmayan Görevleri Tebliği.
-* **Tebliğ No: 2010/1 (13715), 2007/1 (11801), 2005/1 (6071):** 3628 Sayılı Mal Bildirimi Kanununun Kooperatiflerde Uygulanması Tebliğleri.
-* **24721:** Kooperatiflerin Kuruluş ve Anasözleşme Değişiklik İşlemleri ile Kurucu Ortak Sayıları Tebliği.
-* **24043:** Kooperatif ve Üst Kuruluşlarının Olağan Genel Kurullarının Birleştirilmesi Tebliği.
-* **23231:** Tarım Satış Kooperatif ve Birlikleri Örnek Anasözleşme İntibak Tebliği.
-* **18480:** Bağımsız Denetime Tabi Olacak Tarım Satış Birliklerinin Belirlenmesi Tebliği.
-* **12817:** Genel Kurul Toplantılarına Bakanlık Temsilcisi Görevlendirilmesi Tebliği.
-* **SPK Tebliği II-16.2 (24820):** Kooperatiflerin Kontrolündeki Anonim Ortaklıklara İlişkin Esaslar Tebliği.
-* **Tebliğ 2026/9 (45088):** Kırsal Kalkınma Yatırımlarının Desteklenmesi Tebliği (Tesis hibeleri).
-* **Tebliğ 2026/10 (45089):** Tasarruflu Tarımsal Sulama Sistemlerine Yönelik Yatırımların Desteklenmesi Tebliği.
-* **Tebliğ 2024/53 (41309):** Çiğ Süt Desteği ve Süt Piyasasının Düzenlenmesi Uygulama Tebliği.
-* **Tebliğ 2024/23 (40923):** Hayvancılık Desteklemeleri (Tiftikbirlik) Uygulama Tebliği.
-* **Tebliğ 2024/15 (40773) & 2020/4 (34388):** Faiz Destekli Tarımsal Kredi Uygulama Esasları Tebliğleri.
+Aşağıda kooperatiflerin operasyonel uygulamalarını detaylandıran tebliğlerin Resmî Mevzuat Bilgi Sistemi bağlantıları yer almaktadır:
+
+| Tebliğ / Mevzuat No | Tebliğ Başlığı | Resmî Metin Bağlantısı | Temel Konu ve Yaptırım |
+| :--- | :--- | :---: | :--- |
+| **15071** (TGM-2011/01) | [Yönetim ve Denetim Kurulu Üyelerinin Bağdaşmayan Görevleri Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=15071&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=15071&MevzuatTur=9&MevzuatTertip=5) | Kooperatif yöneticilerinin ticari ilişki kurma yasakları ve akrabalık kısıtlamaları. |
+| **13715** (2010/1) | [3628 Sayılı Kanun Kapsamında Mal Bildirimi Tebliği (2010/1)](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=13715&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=13715&MevzuatTur=9&MevzuatTertip=5) | Yönetim ve denetim kurulu üyelerinin sonu (0) ve (5) ile biten yıllarda zorunlu mal bildirimi. |
+| **11801** (2007/1) | [Mal Bildiriminde Bulunulması Hakkında Tebliğ (2007/1)](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=11801&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=11801&MevzuatTur=9&MevzuatTertip=5) | Kooperatif organlarına yeni seçilenlerin 1 ay içinde mal beyanı verme zorunluluğu. |
+| **6071** (2005/1) | [Mal Bildiriminde Bulunulması Hakkında Tebliğ (2005/1)](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6071&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6071&MevzuatTur=9&MevzuatTertip=5) | Kooperatif yöneticilerinin mal bildirimi usul ve esasları. |
+| **24721** | [Kuruluş ve Anasözleşme Değişikliği ile Kurucu Ortak Sayıları Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24721&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24721&MevzuatTur=9&MevzuatTertip=5) | Kooperatif türlerine göre asgari kurucu ortak sayıları ve MERSİS kuruluş prosedürleri. |
+| **24043** | [Olağan Genel Kurulların Birleştirilmesine İlişkin Tebliğ](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24043&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24043&MevzuatTur=9&MevzuatTertip=5) | İki hesap dönemine ait olağan genel kurulların tek oturumda birleştirilerek yapılması şartları. |
+| **23231** | [Tarım Satış Kooperatif ve Birlikleri Örnek Anasözleşme İntibak Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=23231&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=23231&MevzuatTur=9&MevzuatTertip=5) | 4572 sayılı Kanuna intibak usulleri ve tescil yükümlülükleri. |
+| **18480** | [Bağımsız Denetime Tabi Olacak Tarım Satış Birliklerinin Belirlenmesi Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18480&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18480&MevzuatTur=9&MevzuatTertip=5) | Birliklerin bağımsız denetim kriterleri ve finansal raporlama esasları. |
+| **12817** | [Genel Kurullara Bakanlık Temsilcisi Görevlendirilmesi Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=12817&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=12817&MevzuatTur=9&MevzuatTertip=5) | Temsilci ücret tarifesi ve genel kurul başvuru süreleri (15 gün önceden müracaat). |
+| **24820** (SPK II-16.2) | [Kooperatiflerin Kontrolündeki Anonim Ortaklıklara İlişkin Esaslar Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24820&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24820&MevzuatTur=9&MevzuatTertip=5) | Kooperatif iştiraki halka açık şirketlerin SPK mevzuatına uyum yükümlülükleri. |
+| **45088** (2026/9) | [Kırsal Kalkınma Yatırımlarının Desteklenmesi Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=45088&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=45088&MevzuatTur=9&MevzuatTertip=5) | Tarımsal ürün işleme, kurutma, dondurma ve paketleme tesisi yatırımlarında %50 hibe. |
+| **45089** (2026/10) | [Tasarruflu Tarımsal Sulama Sistemlerinin Desteklenmesi Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=45089&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=45089&MevzuatTur=9&MevzuatTertip=5) | Basınçlı ve güneş enerjili sulama tesisi projelerinde kooperatif hibe limitleri. |
+| **41309** (2024/53) | [Çiğ Süt Desteği ve Süt Piyasasının Düzenlenmesi Uygulama Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=41309&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=41309&MevzuatTur=9&MevzuatTertip=5) | Süt üreticileri kooperatifi üyelerine ilave örgütlülük primi ödenmesi kuralları. |
+| **40923** (2024/23) | [Hayvancılık Desteklemeleri Uygulama Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40923&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40923&MevzuatTur=9&MevzuatTertip=5) | Tiftikbirlik ve damızlık birlikleri üyelerine verilecek anaç ve tiftik primleri. |
+| **40773** (2024/15) & **34388** | [Faiz Destekli Tarımsal Kredi Uygulama Esasları Tebliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40773&MevzuatTur=9&MevzuatTertip=5) | [🔗 mevzuat.gov.tr](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40773&MevzuatTur=9&MevzuatTertip=5) | TKK ve Ziraat Bankası sübvansiyonlu işletme ve yatırım kredisi teknik kriterleri. |
+
+---
+
+## 5. DİJİTAL MEVZUAT ARAŞTIRMA VE SORGULAMA REHBERİ
+
+1. **Yürürlük Durumu Kontrolü:** `mevzuat.gov.tr` üzerinde görüntülenen kanun metinlerinde sağ üstte yer alan "Değişiklik Yapan Kanunlar Cetveli" üzerinden maddenin en güncel haline ulaşılabilir.
+2. **Cumhurbaşkanlığı Teşkilatı Düzenlemeleri:** 1 sayılı Cumhurbaşkanlığı Teşkilatı Hakkında Cumhurbaşkanlığı Kararnamesi ile Ticaret Bakanlığı (Esnaf, Sanatkârlar ve Kooperatifçilik Genel Müdürlüğü), Tarım ve Orman Bakanlığı (Tarımsal Reform Genel Müdürlüğü ve Balıkçılık Genel Müdürlüğü) ile Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın (Mesleki Hizmetler Genel Müdürlüğü) kooperatifler üzerindeki görev ve yetki sınırları belirlenmiştir.
+3. **Mevzuat İçi Arama:** Portalımızda aradığınız belirli bir kavramı (örneğin *"denetçi sorumluluğu"*, *"temsilci ücreti"*, *"hobi bahçesi yasağı"*) üst arama çubuğunu kullanarak veya **[Etkileşimli Arama Modülü](#26_interaktif_mevzuat_atolyesi_ve_studio)** üzerinden doğrudan tarayabilirsiniz.
