@@ -72,6 +72,6 @@ Yapılan değişikliklerle:
 ---
 
 ## 🔍 Tematik Dizin ve Hızlı Arama
-* Tüm kanun maddeleri ve resmi gerekçeleri için: [[Mevzuat Külliyatı ve Dizin]]
-* Yönetim kurulu uyum kontrol listeleri için: [[Yönetimsel Uyum Tablosu]]
-* Uluslararası karşılaştırmalı modeller için: [[ICA Prensipleri ve Karşılaştırmalı Hukuk]]
+* Tüm kanun maddeleri ve resmi gerekçeleri için: [[Mevzuat Külliyatı ve Resmî Gazete Fihristi -> 08_mevzuat_kulliyati_ve_dizin]]
+* Yönetim kurulu uyum kontrol listeleri için: [[Yönetim, Denetim ve Dijitalleşme: KOOPBİS Rejimi -> 06_yonetim_denetim_ve_dijitallesme_koopbis]]
+* Uluslararası karşılaştırmalı modeller için: [[Uluslararası Kooperatifçilik İlkeleri (ICA) -> 07_uluslararasi_kooperatifcilik_ilkeleri_ica]]
