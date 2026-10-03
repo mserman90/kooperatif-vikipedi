@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kooperatifler Ansiklopedisi - Türkiye ve Uluslararası Kooperatifçilik Bilgi Bankası</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Markdown Renderer: Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Diyagram Çizici: Mermaid.js -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({ startOnLoad: false, theme: 'default' });
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Üst Bar / Header -->
+  <header class="wiki-header">
+    <div class="wiki-header-left">
+      <a href="#00_ana_sayfa" class="wiki-logo-container">
+        <div class="wiki-globe-icon">K</div>
+        <div>
+          <span class="wiki-site-title">Kooperatifler Ansiklopedisi</span>
+          <span class="wiki-site-subtitle">Özgür Mevzuat ve Bilgi Bankası</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Canlı Arama -->
+    <div class="wiki-header-search">
+      <span class="wiki-search-icon">🔍</span>
+      <input type="text" id="wiki-search-input" class="wiki-search-box" placeholder="Kooperatif maddesi, kanun veya konu ara (örn. 1163, KOOPBİS, Risturn)..." autocomplete="off">
+      <div id="wiki-search-dropdown" class="wiki-search-results"></div>
+    </div>
+
+    <!-- Hızlı Araçlar -->
+    <div class="wiki-header-actions">
+      <button id="random-article-btn" class="wiki-btn-icon" title="Rastgele Madde">🎲 Rastgele</button>
+      <button id="font-decrease" class="wiki-btn-icon" title="Yazı Boyutunu Küçült">A-</button>
+      <button id="font-increase" class="wiki-btn-icon" title="Yazı Boyutunu Büyüt">A+</button>
+      <button id="theme-toggle-btn" class="wiki-btn-icon" title="Gece/Gündüz Modu">🌙 Gece</button>
+    </div>
+  </header>
+
+  <!-- Ana İki Sütunlu Sayfa Düzeni -->
+  <div class="wiki-layout">
+    
+    <!-- Sol Gezinme Menüsü (Sidebar) -->
+    <aside class="wiki-sidebar">
+      <div class="wiki-sidebar-section">
+        <div class="wiki-sidebar-title">Gezinme</div>
+        <ul class="wiki-nav-list" id="sidebar-articles-list">
+          <!-- Dinamik olarak app.js tarafından doldurulur -->
+        </ul>
+      </div>
+
+      <div class="wiki-sidebar-section">
+        <div class="wiki-sidebar-title">Tematik Portallar</div>
+        <ul class="wiki-nav-list">
+          <li><a href="#03_tarim_kooperatifleri_ve_birlikleri" class="wiki-nav-link">🌾 Tarımsal Kooperatifler</a></li>
+          <li><a href="#04_tarim_disi_kooperatifler" class="wiki-nav-link">🏢 Konut ve ESKKK</a></li>
+          <li><a href="#05_kooperatif_mali_ve_vergi_hukuku" class="wiki-nav-link">💰 Vergi Muafiyetleri</a></li>
+          <li><a href="#06_yonetim_denetim_ve_dijitallesme_koopbis" class="wiki-nav-link">💻 KOOPBİS Portalı</a></li>
+          <li><a href="#07_uluslararasi_kooperatifcilik_ilkeleri_ica" class="wiki-nav-link">🌍 ICA Prensipleri</a></li>
+        </ul>
+      </div>
+
+      <div class="wiki-sidebar-section">
+        <div class="wiki-sidebar-title">Yasal Başvuru</div>
+        <ul class="wiki-nav-list">
+          <li><a href="#08_mevzuat_kulliyati_ve_dizin" class="wiki-nav-link">📑 Resmî Gazete Fihristi</a></li>
+          <li><a href="#02_1163_sayili_kooperatifler_kanunu" class="wiki-nav-link">⚖️ 1163 SK Tam Metin</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Ana Makale Alanı -->
+    <main class="wiki-main-container">
+      <div class="wiki-article-header">
+        <h1 id="page-title" class="wiki-article-title">Yükleniyor...</h1>
+        <div class="wiki-article-tagline">Vikipedi, özgür kooperatif ansiklopedisi</div>
+        <div class="wiki-article-tools">
+          <a href="javascript:void(0)" style="font-weight: 600; color: var(--wiki-text);">Madde</a>
+          <a href="javascript:void(0)" onclick="window.print()">🖨️ Yazdır / PDF</a>
+          <a href="https://www.mevzuat.gov.tr" target="_blank" rel="noopener">🏛️ Resmî Mevzuat Portalı</a>
+        </div>
+      </div>
+
+      <!-- Yükleniyor Uyarısı -->
+      <div id="article-loading" style="display:none; padding: 20px; text-align: center; color: var(--wiki-text-muted);">
+        Makale getiriliyor, lütfen bekleyiniz...
+      </div>
+
+      <!-- Render Edilen Makale İçeriği -->
+      <article id="article-render-area" class="wiki-content">
+        <!-- Markdown çıktısı buraya basılır -->
+      </article>
+
+      <!-- Sayfa Altı / Footer -->
+      <footer class="wiki-footer">
+        <p>Bu ansiklopedik sayfa en son <strong>3 Ekim 2026</strong> tarihinde güncellenmiştir.</p>
+        <p>İçerikler; 1163, 1581, 4572 sayılı kanunlar, Cumhurbaşkanlığı kararları, ilgili yönetmelikler ve ICA standartları doğrultusunda hazırlanmıştır.</p>
+        <p style="margin-top: 8px; font-size: 11px;">Metin <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr" target="_blank">Creative Commons Atıf-BenzerPaylaşım Lisansı</a> altındadır; ek koşullar uygulanabilir.</p>
+      </footer>
+    </main>
+
+  </div>
+
+  <!-- Dinamik Scriptler -->
+  <script src="assets/articles_bundle.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
