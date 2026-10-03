@@ -36,6 +36,12 @@
 * [[Dış Denetim ve Bağımsız Denetim Standartları -> 17_dis_denetim_ve_bagimsiz_denetim]]: 39331 sayılı Yönetmelik ve KGK denetimi
 * [[Yönetim, Denetim ve KOOPBİS Genel Rehberi -> 06_yonetim_denetim_ve_dijitallesme_koopbis]]: e-Genel Kurul ve mal bildirimi
 
+### 🧠 Studio & Etkileşimli Atölye
+* [[Etkileşimli Mevzuat Sınavı (Quiz) -> 26_interaktif_mevzuat_atolyesi_ve_studio]]: 12 soruluk yasal yeterlilik testi ve puanlama
+* [[Etkileşimli Bilgi Kartları (Flashcards) -> 26_interaktif_mevzuat_atolyesi_ve_studio]]: 12 temel kavram ve cezai yaptırım kartı
+* [[Örnek Anasözleşmeler Kütüphanesi (28+ Tip) -> 25_ornek_anasozlesmeler_kutuphanesi]]: Bakanlık onaylı resmi tip sözleşmeler
+* [[Sesli Genel Bakış (Podcast Transkripti) -> 26_interaktif_mevzuat_atolyesi_ve_studio]]: KOOPBİS ve modern mevzuat sesli oturum özeti
+
 </div>
 
 ---
