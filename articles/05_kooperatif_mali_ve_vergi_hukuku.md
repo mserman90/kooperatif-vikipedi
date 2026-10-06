@@ -19,7 +19,7 @@
 1. [Kurumlar Vergisi Mükellefiyeti ve Temel Kural](#1-kurumlar-vergisi-mükellefiyeti-ve-temel-kural)
 2. [Kurumlar Vergisi Muafiyetinin Dört Altın Şartı](#2-kurumlar-vergisi-muafiyetinin-dört-altın-şartı)
 3. [Risturn Müessesesi ve Kâr Payı Ayrımı](#3-risturn-müessesesi-ve-kâr-payı-ayrımı)
-4. [Ortak Dışı İşlemler ve İktisadi İşletme Modeli (6327 SK)](#4-ortak-dışı-işlemler-ve-iktisadi-işletme-modeli-6327-sk)
+4. [Ortak Dışı İşlemler ve İktisadi İşletme Modeli (7061 SK)](#4-ortak-dışı-işlemler-ve-iktisadi-işletme-modeli-7061-sk)
 5. [Katma Değer Vergisi (KDV) ve Damga Vergisi İstisnaları](#5-katma-değer-vergisi-kdv-ve-damga-vergisi-istisnaları)
 6. [Emlak Vergisi ve Harç Muafiyetleri](#6-emlak-vergisi-ve-harç-muafiyetleri)
 7. [Sermaye Piyasası Rejimi (500 Ortak Kuralı - 6362 SK)](#7-sermaye-piyasası-rejimi-500-ortak-kuralı---6362-sk)
@@ -66,10 +66,10 @@ Kooperatifler hukukunda en çok tartışılan ve vergi idaresince incelenen kavr
 
 ---
 
-## 4. Ortak Dışı İşlemler ve İktisadi İşletme Modeli (6327 SK)
+## 4. Ortak Dışı İşlemler ve İktisadi İşletme Modeli (7061 SK)
 
-6327 sayılı Kanun ile 5520 sayılı KVK'da yapılan tarihi düzenleme öncesinde, tek bir ortak dışı işlem kooperatifin tüm muafiyetini sona erdirmekteydi. 
-* **Güncel Uygulama:** Ortak dışı işlemler yapan kooperatiflerin muafiyeti sadece bu işlemlerle sınırlı olarak değerlendirilir.
+7061 sayılı Kanun'un 88. maddesi ile 5520 sayılı KVK m. 4/1-k bendinde yapılan tarihi düzenleme (yürürlük: 01.01.2018) öncesinde, tek bir ortak dışı işlem dahi kooperatifin tüm muafiyetini sona erdirmekteydi. 
+* **Güncel Uygulama:** Ortak dışı işlemler yapan kooperatiflerin muafiyeti toptan sona ermez; yalnızca ortak dışı işlemler nedeniyle kooperatif tüzel kişiliğine bağlı ayrı bir **iktisadi işletme** oluşmuş kabul edilir.
 * Kooperatif bünyesinde kurulan **iktisadi işletme**, ortak dışı satış veya hizmetleri faturalandırır ve yalnızca bu işletme üzerinden kurumlar vergisi mükellefi olur; kooperatifin ortak içi ana faaliyetlerinin muafiyeti korunur.
 
 ---

@@ -88,7 +88,7 @@ Yine 7579 sayılı Kanun ile getirilen düzenlemeye göre;
 ---
 
 ## 7. Kaynakça ve Notlar
-1. 7579 Sayılı Tapu Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Metni, 2024.
+1. 7579 Sayılı Tapu Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Metni (22 Mayıs 2026 tarihli ve 33261 sayılı Resmî Gazete).
 2. 4706 Sayılı Hazineye Ait Taşınmaz Malların Değerlendirilmesi Hakkında Kanun.
 3. 20023888 Sayılı Toplu Konut İdaresi Kaynaklarının Kullanım Şekline İlişkin Yönetmelik.
 4. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı Yapı Kooperatifleri Rehberi.

@@ -4,7 +4,7 @@
   <div class="wiki-infobox-title">KOOPBİS Portalı</div>
   <table>
     <tr><th>Yasal Dayanak</th><td>1163 Sayılı Kanun Ek Madde 5</td></tr>
-    <tr><th>Uygulama Yönetmeliği</th><td>39276 Sayılı Yönetmelik</td></tr>
+    <tr><th>Uygulama Yönetmeliği</th><td>14.01.2022 / 31719 RG (Mevzuat No: 39276)</td></tr>
     <tr><th>Yürürlük Tarihi</th><td>21 Ekim 2021 (7339 SK)</td></tr>
     <tr><th>Sorumlu Organ</th><td>Yönetim Kurulu Asıl Üyeleri</td></tr>
     <tr><th>Sistem Yöneticisi</th><td>Ticaret Bakanlığı Bilgi Teknolojileri GM</td></tr>
@@ -28,7 +28,7 @@
 
 ## 1. Yasal Dayanak ve Kurulma Amacı
 
-1163 sayılı Kooperatifler Kanunu'na 7339 sayılı Kanun ile eklenen **Ek Madde 5** ve **39276 sayılı Kooperatif Bilgi Sistemi Yönetmeliği** uyarınca:
+1163 sayılı Kooperatifler Kanunu'na 7339 sayılı Kanun ile eklenen **Ek Madde 5** ve 14 Ocak 2022 tarihli ve 31719 sayılı Resmî Gazete'de yayımlanan **Kooperatif Bilgi Sistemi Yönetmeliği (Mevzuat No: 39276)** uyarınca:
 * Kooperatifçilik sektöründe şeffaflık, hesap verebilirlik ve kamu güvenini tesis etmek,
 * Ortakların kendi kooperatiflerinin finansal durumunu ve yönetim kararlarını e-Devlet kapısı üzerinden şeffafça görebilmesini sağlamak,
 * Bakanlık müfettişlerinin ve denetçilerin uzaktan risk analizleri yapabilmesine imkân tanımak amaçlanmıştır.
@@ -79,7 +79,7 @@ Yönetmelik 39276’nın 5. maddesi uyarınca;
 
 ## 6. Kaynakça ve Notlar
 1. 1163 Sayılı Kooperatifler Kanunu Ek Madde 5 Metni.
-2. 39276 Sayılı Kooperatif Bilgi Sistemi Yönetmeliği, Resmî Gazete.
+2. Kooperatif Bilgi Sistemi Yönetmeliği (14 Ocak 2022 tarihli ve 31719 sayılı Resmî Gazete, Mevzuat No: 39276).
 3. Ticaret Bakanlığı KOOPBİS Kullanım Kılavuzu ve Teknik Parametreler Dokümanı.
 
 ---

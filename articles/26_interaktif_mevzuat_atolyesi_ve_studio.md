@@ -7,12 +7,10 @@
 <div class="wiki-toc">
   <div class="wiki-toc-title">İçindekiler</div>
   <ol>
-    <li><a href="#1-etkilesimli-mevzuat-sinavi-ve-testi">Etkileşimli Mevzuat Sınavı ve Testi (12 Soru)</a></li>
-    <li><a href="#2-etkilesimli-bilgi-kartlari-flashcards">Etkileşimli Bilgi Kartları (Flashcards)</a></li>
+    <li><a href="#1-etkilesimli-mevzuat-sinavi-ve-testi">Etkileşimli Mevzuat Sınavı ve Testi (16 Soru)</a></li>
+    <li><a href="#2-etkilesimli-bilgi-kartlari-flashcards">Etkileşimli Bilgi Kartları (Flashcards - 16 Kart)</a></li>
     <li><a href="#3-zihin-haritalari-ve-surec-diyagramlari">Zihin Haritaları ve Süreç Diyagramları</a></li>
     <li><a href="#4-kooperatif-turleri-ve-mevzuati-ozet-slaytlari">Kooperatif Türleri ve Mevzuatı Özet Slaytları</a></li>
-    <li><a href="#5-sesli-genel-bakis-podcast-yonetici-ozeti">Sesli Genel Bakış (Podcast) Yönetici Özeti</a></li>
-    <li><a href="#6-kaynakca-ve-notlar">Kaynakça ve Notlar</a></li>
   </ol>
 </div>
 
@@ -191,32 +189,6 @@ sequenceDiagram
     <button onclick="changeSlide(1)" class="wiki-btn-icon" style="padding: 6px 14px;">Sonraki Slayt ➡️</button>
   </div>
 </div>
-
----
-
-## 5. Sesli Genel Bakış (Podcast) Yönetici Özeti
-
-*Kaynak Not Defteri Stüdyo Kaydı:* **"KOOPBİS ve Modern Kooperatifçiliğin Hukuki Kuralları"** (Süre: 17:05 dk.)
-
-### Sesli İncelemenin Ana Tartışma Başlıkları:
-1. **Geleneksel Kooperatifçilikten Dijital Şeffaflığa Geçiş:**
-   - 7339 sayılı Kanun reformu ile getirilen merkezi veri tabanı (KOOPBİS) sayesinde geçmişte yaşanan çift defter, mükerrer hisse ve sahte genel kurul suiistimallerinin tamamen engellenmesi.
-2. **Yönetim Kurulunun Şahsi ve Cezai Sorumluluğu:**
-   - KOOPBİS'e süresinde veri girmeyen yöneticilerin idari para cezası ve görevi kötüye kullanma (TCK m. 257) suçlamasıyla karşılaşacağı.
-3. **Mali Muafiyet Tuzakları ve Risturn Ayrımı:**
-   - Vergi müfettişlerinin incelemelerinde en çok karşılaşılan "ortak dışı işlemlerin kooperatif bünyesinde faturalandırılması" hatasının tüm muafiyeti iptal ettirmesi ve kurumlar vergisi mükellefiyeti doğurması.
-4. **Tarım Arazilerinde Hobi Bahçesi Hissesi Devri Tuzağı:**
-   - 5403 sayılı Kanun m. 23 uyarınca noterden kooperatif payı devredilse dahi mülkiyet doğmayacağı, yapıların valilik/belediyece yıkılacağı ve yöneticilerin TCK m. 184 (İmar kirliliğine neden olma) kapsamında hapis cezası alabileceği.
-
----
-
-## 6. Kaynakça ve Notlar
-
-* 1163 Sayılı Kooperatifler Kanunu (Resmî Gazete Sayısı: 13195)
-* 7339 Sayılı Kooperatifler Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun
-* Kooperatif Bilgi Sistemi Yönetmeliği (Resmî Gazete Sayısı: 39276)
-* Kooperatif ve Üst Kuruluşları Yönetim ve Denetim Kurulu Üyelerinin Eğitimi Yönetmeliği (Resmî Gazete: 39277)
-* Kooperatif ve Üst Kuruluşlarının Dış Denetimi Yönetmeliği (Resmî Gazete: 39331)
 
 ---
 *Ayrıca bakınız: [[00_ana_sayfa]] • [[02_1163_sayili_kooperatifler_kanunu]] • [[15_koopbis_uygulama_rehberi]] • [[16_zorunlu_kooperatifcilik_egitimi_rehberi]] • [[17_dis_denetim_ve_bagimsiz_denetim]] • [[18_kurumlar_vergisi_muafiyeti_ve_risturn]] • [[25_ornek_anasozlesmeler_kutuphanesi]]*

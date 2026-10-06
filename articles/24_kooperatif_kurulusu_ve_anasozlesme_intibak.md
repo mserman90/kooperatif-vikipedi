@@ -6,22 +6,23 @@
     <tr><th>Temel Kanun</th><td>1163 Sayılı Kooperatifler Kanunu</td></tr>
     <tr><th>Kuruluş Tebliği</th><td>24721 Sayılı Tebliğ (Kurucu Sayıları & Alan)</td></tr>
     <tr><th>Asgari Kurucu Ortak</th><td>En Az 7 Ortak</td></tr>
-    <tr><th>İntibak Yasal Dayanağı</th><td>7339 Sayılı Kanun Geçici Madde 9</td></tr>
-    <tr><th>İntibak Yaptırımı</th><td>Münfesih Sayılma ve Tasfiye</td></tr>
+    <tr><th>İntibak Yasal Dayanağı</th><td>7339 SK Geçici m. 9 & 7511 SK</td></tr>
+    <tr><th>Kesin İntibak Son Tarihi</th><td>🚨 26 Ekim 2026</td></tr>
+    <tr><th>İntibak Yaptırımı</th><td>Münfesih Sayılma ve Kendiliğinden Dağılma (İnfisah)</td></tr>
     <tr><th>Yetkili Bakanlıklar</th><td>Ticaret / Tarım ve Orman / Çevre Bakanlığı</td></tr>
   </table>
 </div>
 
-**Kooperatif kuruluşu ve anasözleşme intibak işlemleri**; Türkiye'de yeni bir kooperatif tüzel kişiliğinin tescil edilmesi aşamalarını ve 7339 sayılı Kanun gereğince mevcut tüm kooperatiflerin yürürlükteki yeni tip anasözleşmelere uyum sağlamalarını (intibak) düzenleyen usul ve esaslar bütünüdür.
+**Kooperatif kuruluşu ve anasözleşme intibak işlemleri**; Türkiye'de yeni bir kooperatif tüzel kişiliğinin tescil edilmesi aşamalarını ve 7339 ile 7511 sayılı kanunlar gereğince mevcut tüm kooperatiflerin yürürlükteki yeni tip anasözleşmelere uyum sağlamalarını (intibak) düzenleyen usul ve esaslar bütünüdür.
 
 ---
 
 ## İçindekiler
 1. [Yeni Bir Kooperatifin Kuruluş Aşamaları](#1-yeni-bir-kooperatifin-kuruluş-aşamaları)
 2. [Kurucu Ortak Sayıları ve Çalışma Bölgeleri (Tebliğ 24721)](#2-kurucu-ortak-sayıları-ve-çalışma-bölgeleri-tebliğ-24721)
-3. [Örnek Anasözleşme İntibak Süreci ve Hukuki Zorunluluk](#3-örnek-anasözleşme-intibak-süreci-ve-hukuki-zorunluluk)
+3. [Örnek Anasözleşme İntibak Süreci ve 7511 Sayılı Kanun Uzatımı](#3-örnek-anasözleşme-intibak-süreci-ve-7511-sayılı-kanun-uzatımı)
 4. [İntibak Genel Kurulu Toplantı ve Karar Nisapları](#4-intibak-genel-kurulu-toplantı-ve-karar-nisapları)
-5. [Yasal Sürede İntibak Ettirmemenin Ağır Yaptırımı (İnfisah)](#5-yasal-sürede-intibak-ettirmemenin-ağır-yaptırımı-infisah)
+5. [26 Ekim 2026 Son Tarihi ve İnfisah (Dağılma) Yaptırımı](#5-26-ekim-2026-son-tarihi-ve-infisah-dağılma-yaptırımı)
 6. [3628 Sayılı Kanun Uyarınca İlk Mal Bildirimi](#6-3628-sayılı-kanun-uyarınca-ilk-mal-bildirimi)
 7. [Kaynakça ve Notlar](#7-kaynakça-ve-notlar)
 
@@ -59,11 +60,12 @@ sequenceDiagram
 
 ---
 
-## 3. Örnek Anasözleşme İntibak Süreci ve Hukuki Zorunluluk
+## 3. Örnek Anasözleşme İntibak Süreci ve 7511 Sayılı Kanun Uzatımı
 
 7339 sayılı Kanun ile 1163 sayılı Kanun’a eklenen **Geçici Madde 9** uyarınca:
 * Kanun’un yürürlüğe girdiği tarihten önce kurulan tüm kooperatifler ve üst kuruluşları, Ticaret Bakanlığı veya Tarım ve Orman Bakanlığı tarafından yayımlanan **yeni örnek anasözleşmelere anasözleşmelerini intibak ettirmek zorundadır**.
-* İntibak işlemi, KOOPBİS entegrasyonu, zorunlu eğitim ve dış denetim hükümlerinin kooperatifin kendi anasözleşmesine bağlayıcı olarak eklenmesini içerir.
+* **7511 Sayılı Kanun Düzenlemesi:** İlk etapta 3 yıl olarak öngörülen intibak süresi, **7511 sayılı Kanun** ile kooperatiflerin mağduriyet yaşamaması ve genel kurullarını tamamlayabilmeleri amacıyla 5 yıla uzatılmış ve kesin son tarih **26 Ekim 2026** olarak belirlenmiştir.
+* İntibak işlemi, KOOPBİS entegrasyonu, 40 saatlik eğitim yükümlülüğü ve dış denetim standartlarının kooperatif anasözleşmesine bağlayıcı olarak işlenmesini içerir.
 
 ---
 
@@ -74,13 +76,13 @@ Kanun koyucu intibak sürecini kolaylaştırmak adına genel kurul karar nisabı
 
 ---
 
-## 5. Yasal Sürede İntibak Ettirmemenin Ağır Yaptırımı (İnfisah)
+## 5. 26 Ekim 2026 Son Tarihi ve İnfisah (Dağılma) Yaptırımı
 
 Geçici Madde 9 fıkra 2 hükmü emredicidir:
 > *"Belirlenen yasal süre içinde anasözleşmelerini yürürlükteki tip anasözleşmeye intibak ettirmeyen kooperatif ve üst kuruluşları **kanun gereği infisah etmiş (dağılmış) sayılır**."*
 
-* İnfisah eden kooperatif hiçbir yeni ticari faaliyette bulunamaz; yalnızca tasfiye amaçlı işlemler yapabilir.
-* Bakanlık veya ortaklar tarafından mahkemeye başvurularak tasfiye memurları atanması talep edilir ve ticaret sicilinden terkin edilir.
+* ⚠️ **Münfesih Duruma Düşme:** **26 Ekim 2026** tarihine kadar intibak işlemlerini (Genel Kurul Kararı -> Bakanlık İzni -> Ticaret Sicili Tescili) tamamlamayan kooperatifler tüzel kişiliklerini kaybeder; hiçbir yeni ticari işlem yapamazlar.
+* İnfisah eden kooperatif yalnızca tasfiye amaçlı işlemler yürütebilir. Bakanlık veya ortaklar tarafından tasfiye memurları atanması talep edilerek kooperatif sicilden terkin edilir.
 
 ---
 

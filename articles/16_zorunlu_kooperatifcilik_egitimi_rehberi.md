@@ -3,22 +3,23 @@
 <div class="wiki-infobox">
   <div class="wiki-infobox-title">Zorunlu Kooperatifçilik Eğitimi</div>
   <table>
-    <tr><th>Yasal Dayanak</th><td>1163 Sayılı Kanun & Yönetmelik 39278</td></tr>
-    <tr><th>Asgari Eğitim Süresi</th><td>40 Ders Saati</td></tr>
-    <tr><th>Kapsam</th><td>Yönetim ve Denetim Kurulu Üyeleri</td></tr>
+    <tr><th>Yasal Dayanak</th><td>1163 Sayılı Kanun & Kooperatifçilik Eğitimi Yönetmeliği</td></tr>
+    <tr><th>Resmî Gazete</th><td>14 Ocak 2022 / Sayı: 31719 (Mevzuat No: 39278)</td></tr>
+    <tr><th>Asgari Eğitim Süresi</th><td>40 Ders Saati (30 Saat Temel + 10 Saat Destekleyici)</td></tr>
+    <tr><th>Kapsam</th><td>Eşikleri Aşan Kooperatiflerin Yönetim & Denetim Kurulları</td></tr>
     <tr><th>Yetkili Kurumlar</th><td>Bakanlıkça Yetkilendirilen Üniversiteler ve Kuruluşlar</td></tr>
-    <tr><th>Yaptırım</th><td>Üyeliğin Kanun Gereği Kendiliğinden Düşmesi</td></tr>
-    <tr><th>Sistem Kaydı</th><td>KOOPBİS Portalına Belge Yükleme</td></tr>
+    <tr><th>Yaptırım</th><td>9 Ayda Alınmazsa Üyeliğin Kendiliğinden Düşmesi</td></tr>
+    <tr><th>Sistem Kaydı</th><td>KOOPBİS Portalına Belge Yükleme (Geçerlilik 8 Yıl)</td></tr>
   </table>
 </div>
 
-**Zorunlu Kooperatifçilik Eğitimi**, 7339 sayılı Kanun ve 39278 sayılı Kooperatifçilik Eğitimi Yönetmeliği uyarınca; kooperatiflerin ve üst kuruluşlarının yönetim ve denetim kurullarında görev alan kişilerin yönetsel, hukuki ve mali yetkinliklerini artırmak amacıyla başarıyla tamamlamaları kanunen mecburi kılınan 40 ders saatlik akredite eğitim programıdır.
+**Zorunlu Kooperatifçilik Eğitimi**, 7339 sayılı Kanun ve 14 Ocak 2022 tarihli ve 31719 sayılı Resmî Gazete'de yayımlanan Kooperatifçilik Eğitimi Yönetmeliği (Mevzuat No: 39278) uyarınca; belirlenen yasal eşikleri aşan kooperatiflerin ve üst kuruluşlarının yönetim ve denetim kurullarında görev alan kişilerin yönetsel, hukuki ve mali yetkinliklerini artırmak amacıyla başarıyla tamamlamaları kanunen mecburi kılınan 40 ders saatlik akredite eğitim programıdır.
 
 ---
 
 ## İçindekiler
 1. [Yasal Çerçeve ve Getirilme Gerekçesi](#1-yasal-çerçeve-ve-getirilme-gerekçesi)
-2. [Eğitim Yükümlüsü Olan Kişiler ve Muafiyet Koşulları](#2-eğitim-yükümlüsü-olan-kişiler-ve-muafiyet-koşulları)
+2. [Eğitim Yükümlüsü Olan Kooperatifler ve Muafiyet Koşulları](#2-eğitim-yükümlüsü-olan-kooperatifler-ve-muafiyet-koşulları)
 3. [40 Ders Saatlik Eğitim Müfredatı](#3-40-ders-saatlik-eğitim-müfredatı)
 4. [Yetkili Eğitim Sağlayıcıları ve Akreditasyon](#4-yetkili-eğitim-sağlayıcıları-ve-akreditasyon)
 5. [KOOPBİS Entegrasyonu ve Görevin Düşmesi Hükmü](#5-koopbis-entegrasyonu-ve-görevin-düşmesi-hükmü)
@@ -28,17 +29,33 @@
 
 ## 1. Yasal Çerçeve ve Getirilme Gerekçesi
 
-Geçmiş dönemlerde kooperatif organlarına seçilen yöneticilerin mevzuat, muhasebe ve vergi kurallarını yeterince bilmemesi nedeniyle oluşan suistimalleri, idari para cezalarını ve iflasları önlemek amacıyla 2021 yılında zorunlu eğitim kuralı ihdas edilmiştir.
+Geçmiş dönemlerde kooperatif organlarına seçilen yöneticilerin mevzuat, muhasebe ve vergi kurallarını yeterince bilmemesi nedeniyle oluşan suistimalleri, idari para cezalarını ve iflasları önlemek amacıyla 2021 yılında zorunlu eğitim kuralı ihdas edilmiştir. Üyelerin seçildikleri tarihten itibaren **en geç 9 ay içinde** bu eğitimi tamamlamaları emredicidir.
 
 ---
 
-## 2. Eğitim Yükümlüsü Olan Kişiler ve Muafiyet Koşulları
+## 2. Eğitim Yükümlüsü Olan Kooperatifler ve Muafiyet Koşulları
 
-* **Yükümlüler:** 1163 sayılı Kooperatifler Kanunu, 1581 sayılı Tarım Kredi Kooperatifleri Kanunu ve 4572 sayılı Tarım Satış Kooperatifleri Kanunu kapsamındaki kooperatif ve birliklerin yönetim ve denetim kurulu **asıl ve yedek üyeleri**.
-* **Muafiyet Şartları:**
-  * Üniversitelerin Hukuk, İktisat, İşletme, Maliye ve Kooperatifçilik lisans programlarından mezun olanlar,
-  * SMMM ve YMM unvanına sahip olanlar,
-  * Belirli süre kamuda kooperatif denetçisi/müfettişi olarak görev yapmış olanlar eğitim programından muaftır; ancak muafiyet belgelerini KOOPBİS'e ibraz etmekle yükümlüdürler.
+Yönetmeliğin 5. maddesi uyarınca eğitim, **tüm kooperatifler için değil, yalnızca aşağıdaki kriterleri taşıyan kooperatif ve üst kuruluşlarının** yönetim ve denetim kurulu asıl ve yedek üyeleri için zorunludur:
+
+1. **Faaliyet Konusuna Göre Doğrudan Kapsamda Olanlar:**
+   * Esnaf ve sanatkârlar kredi ve kefalet kooperatifleri (ESKKK),
+   * Tarım satış kooperatifleri (4572 SK),
+   * Tarım kredi kooperatifleri (1581 SK),
+   * Pancar ekicileri kooperatifleri.
+2. **Ciro Kriteri:** Faaliyet konusuna bakılmaksızın yıllık net satış hasılatı **20 Milyon TL ve üstü** olan kooperatifler.
+3. **Ortak Sayısı Kriteri:** Faaliyet konusuna bakılmaksızın **1.000 ve daha fazla ortağı** bulunan kooperatifler.
+4. **Yapı ve Taşıma Sektörü Kriteri:**
+   * İnşaat ruhsatı alınmış ve ortak sayısı **50 veya daha fazla** olan yapı, turizm geliştirme ve gayrimenkul işletme kooperatifleri,
+   * Ortak sayısı **50 veya daha fazla** olan motorlu taşıyıcılar / taşıma kooperatifleri.
+
+> *Not: Bu kriterlerin altında kalan küçük ölçekli kooperatiflerin (örneğin 7-10 ortaklı kadın girişim veya üretim kooperatifleri) yöneticileri için eğitim zorunluluğu bulunmamaktadır.*
+
+### Muafiyet Durumu ve Yaygın Hukuki Yanılgı:
+* ⚠️ **Hukuk / İşletme / SMMM Mezuniyeti Muafiyet SAĞLAMAZ:** Uygulamada sıkça düşülen *"Ben avukatım, mali müşavirim veya iktisat mezunuyum, eğitime katılmama gerek yok"* inancı **tamamen yanlıştır**. Yönetmelikte üniversite diploması veya meslek unvanına dayalı hiçbir muafiyet tanınmamıştır. Kapsama giren bir kooperatife seçilen hukukçu veya mali müşavir üye de eğitimi süresinde tamamlamak zorundadır; aksi halde görevi kanun gereği düşer.
+* **Yasal Muafiyet Halleri (Yön. m. 6):**
+  * Yönetmeliğin yürürlüğe girdiği tarihten önce Bakanlıkça yürütülen **KOOP-ES (Kooperatifçilik E-Sertifika Programı)** katılım belgesi almış olanlar (belge tarihinden itibaren 8 yıl süreyle),
+  * Bakanlık teşkilatında kooperatifçilik alanında en az 5 yıl süreyle müfettiş, denetmen, uzman veya şube müdürü olarak görev yapanlar,
+  * Kooperatif üst kuruluşlarında denetim ve yönetim hizmetlerinde en az 8 yıl profesyonel çalışmış olanlar.
 
 ---
 

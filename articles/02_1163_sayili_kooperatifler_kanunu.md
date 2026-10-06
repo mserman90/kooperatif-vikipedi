@@ -7,7 +7,7 @@
     <tr><th>Resmî Gazete</th><td>10 Mayıs 1969 / Sayı: 13195</td></tr>
     <tr><th>Mevzuat Türü</th><td>Temel Kanun (Genel Hüküm)</td></tr>
     <tr><th>Madde Sayısı</th><td>101 Asıl, 6 Ek, Geçici Maddeler</td></tr>
-    <tr><th>Temel Değişiklikler</th><td>3476 SK (1988), 4916 SK (2003), KHK/700 (2018), 7339 SK (2021), 7579 SK (2024)</td></tr>
+    <tr><th>Temel Değişiklikler</th><td>3476 SK (1988), 4916 SK (2003), KHK/700 (2018), 7339 SK (2021), 7511 SK (2024), 7579 SK (2026)</td></tr>
     <tr><th>Görevli Bakanlıklar</th><td>Ticaret Bakanlığı / Tarım ve Orman Bakanlığı / Çevre, Şehircilik ve İklim Değişikliği Bakanlığı</td></tr>
   </table>
 </div>
@@ -83,11 +83,11 @@ flowchart TD
 ### 4.2. Yönetim Kurulu (Madde 55-64)
 * En az **3 asıl ve 3 yedek üyeden** oluşur, görev süresi en çok 4 yıldır.
 * Üyelerin Türk vatandaşı olması ve yüz kızartıcı suçlardan mahkûm olmaması şarttır.
-* **Zorunlu Eğitim:** 7339 sayılı Kanun ile yönetim kurulu üyelerine 40 saatlik akredite kooperatifçilik eğitimi zorunluluğu getirilmiştir.
+* **Zorunlu Eğitim:** 7339 sayılı Kanun ve ilgili Yönetmelik ile kanuni eşikleri (20 Milyon TL net satış, 1.000 ortak, 50+ ortaklı yapı/taşıma veya ESKKK/TKK/TSK) sağlayan kooperatiflerin yöneticilerine 40 saatlik akredite kooperatifçilik eğitimi zorunluluğu getirilmiştir.
 
 ### 4.3. Denetim Kurulu ve Dış Denetim (Madde 65-69)
 * Denetçiler ortaklar arasından veya dışarıdan en az 1 yıl için seçilir.
-* **Madde 69 Reformu:** Belirlenen aktif toplamı, net satış veya ortak sayısı eşiklerini aşan kooperatifler Kamu Gözetimi Kurumu onaylı bağımsız denetçiler veya yetkilendirilmiş üst birliklerce **dış denetime** tabi tutulur.
+* **Madde 69 Reformu (Dış Denetim):** Yıllık 100 milyon TL net satış hasılatı, 2.000 ortak, 100+ ortaklı ruhsatlı yapı kooperatifi veya tarım kredi/satış/ESKKK şartlarından herhangi birini taşıyan kooperatifler; Kamu Gözetimi Kurumu onaylı bağımsız denetçiler, meslek mensupları (SMMM/YMM) veya yetkilendirilmiş üst birliklerce **dış denetime** tabi tutulur.
 
 ---
 
@@ -101,6 +101,7 @@ Kooperatifler ekonomik güçlerini artırmak amacıyla piramidal bir yapıda ör
 
 ## 6. Dağılma, İnfisah ve Tasfiye (Madde 81-85)
 * Kooperatif; anasözleşmede yazılı sürenin bitmesi, amacın gerçekleşmesi, genel kurul kararı, iflas veya mahkeme kararıyla sona erer.
+* **İntibak Yaptırımı (Geçici Madde 9 & 7511 SK):** 7511 sayılı Kanun ile uzatılan yasal süre olan **26 Ekim 2026** tarihine kadar anasözleşmelerini Bakanlık örnek anasözleşmesine intibak ettirmeyen kooperatifler **kanun gereği kendiliğinden infisah etmiş (dağılmış)** sayılır.
 * Tasfiye kurulu en az 2 kişiden oluşur; alacaklılara 3 defa ilanla çağrı yapılır ve borçlar ödendikten sonra kalan tasfiye artığı anasözleşmede hüküm yoksa ortaklar arasında sermaye paylarına göre paylaştırılır.
 * **6552 Sayılı Kanun:** Gayrifaal kalan münfesih kooperatifler için basitleştirilmiş ve hızlı tasfiye imkânı tanınmıştır.
 
@@ -109,7 +110,7 @@ Kooperatifler ekonomik güçlerini artırmak amacıyla piramidal bir yapıda ör
 ## 7. Cezai Sorumluluklar ve Güvenceler
 * **Ek Madde 2 & Madde 62:** Kooperatif yönetim ve denetim kurulu üyeleri, görevleri sebebiyle işledikleri suçlardan ötürü **kamu görevlisi** gibi cezalandırılır.
 * **Ek Madde 5:** KOOPBİS sistemine süresinde veri girişi yapmayan, yanıltıcı bilgi aktaran veya ortakların bilgi edinme hakkını engelleyen yöneticilere adli para cezası uygulanır.
-* **7579 Sayılı Kanun (Ek Madde 6):** Yapı kooperatiflerinde iskan alınmadan bireysel mülkiyet devri yapılması kanunla kesin surette yasaklanmış ve cezai yaptırıma bağlanmıştır.
+* **7579 Sayılı Kanun (Ek Madde 6 - 22 Mayıs 2026):** Yapı kooperatiflerinde yapı kullanma izin belgesi (iskan) alınmadan bireysel mülkiyet ve tapu devri yapılması kanunla kesin surette yasaklanmış; mahalli idarelerin kooperatif kurması veya ortak olması Cumhurbaşkanı iznine bağlanmıştır.
 
 ---
 

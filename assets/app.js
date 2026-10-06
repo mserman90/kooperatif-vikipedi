@@ -181,11 +181,67 @@ const ARTICLES_REGISTRY = [
     file: "articles/25_ornek_anasozlesmeler_kutuphanesi.md"
   },
   {
+    id: "27_emsal_yargitay_ve_danistay_ictihatlari",
+    title: "Yargıtay ve Danıştay Emsal İçtihatları Rehberi",
+    shortTitle: "⚖️ Emsal Mahkeme İçtihatları",
+    category: "Hukuk & Tarih",
+    file: "articles/27_emsal_yargitay_ve_danistay_ictihatlari.md"
+  },
+  {
+    id: "28_kentsel_donusum_ve_sosyal_kooperatifler",
+    title: "Kentsel Dönüşüm, Sosyal ve Platform Kooperatifçiliği",
+    shortTitle: "🏙️ Kentsel Dönüşüm & Sosyal Koop",
+    category: "Tarım Dışı Sektörler",
+    file: "articles/28_kentsel_donusum_ve_sosyal_kooperatifler.md"
+  },
+  {
+    id: "29_kooperatif_muhasebesi_ve_belge_sablonlari",
+    title: "Kooperatif Muhasebesi ve Resmi Belge Şablonları Kütüphanesi",
+    shortTitle: "📊 Muhasebe & Belge Şablonları",
+    category: "Maliye ve Vergi",
+    file: "articles/29_kooperatif_muhasebesi_ve_belge_sablonlari.md"
+  },
+  {
     id: "26_interaktif_mevzuat_atolyesi_ve_studio",
     title: "Etkileşimli Mevzuat Atölyesi: Quiz, Bilgi Kartları, Slaytlar ve Podcast",
     shortTitle: "🧠 Etkileşimli Atölye & Quiz (Studio)",
     category: "Studio & İnteraktif",
     file: "articles/26_interaktif_mevzuat_atolyesi_ve_studio.md"
+  },
+  {
+    id: "30_interaktif_hesaplama_ve_karar_destek_araclari",
+    title: "Kooperatif Karar Destek, Hesaplama ve Resmi Belge Sihirbazları",
+    shortTitle: "🛠️ Hesaplama & Karar Destek",
+    category: "Araçlar & Sihirbazlar",
+    file: "articles/30_interaktif_hesaplama_ve_karar_destek_araclari.md"
+  },
+  {
+    id: "31_koopdes_hibeler_ve_devlet_destekleri_rehberi",
+    title: "KOOP-DES, Kırsal Kalkınma ve Devlet Hibe Destekleri Rehberi",
+    shortTitle: "🌱 KOOP-DES & Hibeler",
+    category: "Maliye ve Vergi",
+    file: "articles/31_koopdes_hibeler_ve_devlet_destekleri_rehberi.md"
+  },
+  {
+    id: "32_kooperatif_tasfiyesi_ve_terkin_yol_haritasi",
+    title: "Kooperatif Tasfiyesi, Kapanış ve Sicilden Terkin Yol Haritası",
+    shortTitle: "📑 Tasfiye ve Terkin Rehberi",
+    category: "Yasal Başvuru",
+    file: "articles/32_kooperatif_tasfiyesi_ve_terkin_yol_haritasi.md"
+  },
+  {
+    id: "33_kooperatifler_hukuk_ve_maliye_sozlugu",
+    title: "Kooperatifler Hukuk, Maliye ve Uygulama Sözlüğü (A'dan Z'ye)",
+    shortTitle: "📖 Terimler Sözlüğü",
+    category: "Mevzuat ve Başvuru",
+    file: "articles/33_kooperatifler_hukuk_ve_maliye_sozlugu.md"
+  },
+  {
+    id: "34_gunluk_kooperatif_podcast_yayini",
+    title: "Kooperatifler Podcast & Sesli Rehber Yayın Merkezi",
+    shortTitle: "🎙️ Günlük Podcast",
+    category: "Studio & Sesli Rehber",
+    file: "articles/34_gunluk_kooperatif_podcast_yayini.md"
   }
 ];
 
@@ -193,7 +249,7 @@ const ARTICLES_REGISTRY = [
 const state = {
   currentArticleId: "00_ana_sayfa",
   articlesCache: {},
-  theme: localStorage.getItem("wiki_theme") || "light",
+  theme: localStorage.getItem("wiki_theme") || "dark",
   fontSize: parseInt(localStorage.getItem("wiki_font_size") || "15", 10),
   isNavigatingSection: false,
   // Quiz State
@@ -352,10 +408,58 @@ const QUIZ_QUESTIONS = [
     answer: 1,
     hint: "Yolsuzlukla mücadele ve şeffaflık kanunundaki bildirim süresi.",
     explanation: "Doğru Cevap: B. 3628 SK m. 6-7 uyarınca kooperatif yöneticileri tescil ve göreve başlama tarihinden itibaren 1 ay içinde kapalı zarfla bildirimde bulunmalıdır."
+  },
+  {
+    q: "7511 sayılı Kanun ile 1163 sayılı Kanun'un Geçici 9. maddesinde yapılan değişiklik uyarınca kooperatiflerin yeni tip anasözleşmeye intibak ettirilmesi için tanınan kesin son tarih nedir?",
+    options: [
+      "A. 31 Aralık 2024",
+      "B. 1 Mayıs 2025",
+      "C. 26 Ekim 2026",
+      "D. 1 Ocak 2027"
+    ],
+    answer: 2,
+    hint: "5 yıllık uzatılan intibak süresinin 2026 yılındaki son günü.",
+    explanation: "Doğru Cevap: C. 7511 sayılı Kanun ile intibak süresi 5 yıla çıkarılmış ve son tarih 26 Ekim 2026 olarak belirlenmiştir. Bu tarihe kadar intibak yaptırmayan kooperatifler kanun gereği dağılmış (infisah etmiş) sayılır."
+  },
+  {
+    q: "Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (m. 15) uyarınca, faaliyet konusuna bakılmaksızın bir kooperatifin dış denetime tabi olması için yıllık net satış hasılatı asgari kaç TL olmalıdır?",
+    options: [
+      "A. 10 Milyon TL",
+      "B. 20 Milyon TL",
+      "C. 50 Milyon TL",
+      "D. 100 Milyon TL"
+    ],
+    answer: 3,
+    hint: "Ticaret Bakanlığı'nca 30 milyon TL'den güncellenen ciro eşiği.",
+    explanation: "Doğru Cevap: D. Yönetmeliğin 15. maddesi uyarınca faaliyet konusuna bakılmaksızın yıllık net satış hasılatı 100 Milyon TL ve üzeri olan kooperatifler dış denetime tabidir."
+  },
+  {
+    q: "Kooperatifçilik Eğitimi Yönetmeliği uyarınca, kapsamdaki bir kooperatifin yönetim kuruluna seçilen bir Avukat veya Mali Müşavir hakkında aşağıdaki hukuki değerlendirmelerden hangisi doğrudur?",
+    options: [
+      "A. Diploması sebebiyle 40 saatlik zorunlu kooperatifçilik eğitiminden muaftır",
+      "B. Hukuk veya iktisat mezuniyeti otomatik muafiyet sağlamaz; 9 ay içinde eğitimi almak zorundadır",
+      "C. Yalnızca 10 saatlik destekleyici eğitimi alması yeterlidir",
+      "D. Bakanlıktan yazılı izin alırsa eğitimden muaf tutulur"
+    ],
+    answer: 1,
+    hint: "Lisans diplomasının veya meslek unvanının muafiyet sağlamadığı kuralını hatırlayınız.",
+    explanation: "Doğru Cevap: B. Yönetmelikte üniversite diploması veya SMMM/avukatlık unvanına dayalı bir muafiyet yoktur. Kapsamdaki kooperatif yöneticileri eğitimi 9 ayda tamamlamazsa üyeliği kendiliğinden düşer."
+  },
+  {
+    q: "1163 sayılı Kanun m. 45 ve ilgili Tebliğ uyarınca kooperatiflerin olağan genel kurul toplantılarını birleştirebilmeleri için aranan temel şartlar nelerdir?",
+    options: [
+      "A. Bir üst kuruluşa ortak olmak ve en fazla 3 hesap dönemini birleştirmek",
+      "B. Sadece yapı kooperatifi olmak ve 2 yılı birleştirmek",
+      "C. Bakanlıktan onay almak ve 5 yılı birleştirmek",
+      "D. Ortak sayısının 100'den az olması ve 2 yılı birleştirmek"
+    ],
+    answer: 0,
+    hint: "Üst kuruluş ortaklığı zorunluluğu ve azami hesap dönemi sayısı.",
+    explanation: "Doğru Cevap: A. Genel kurulların birleştirilebilmesi için kooperatifin mutlaka bir üst kuruluşa (birlik vb.) ortak olması ve en fazla 3 hesap dönemini kapsaması şarttır."
   }
 ];
 
-// ================= FLASHCARDS BİLGİ KARTLARI (12 Kart) =================
+// ================= FLASHCARDS BİLGİ KARTLARI (16 Kart) =================
 const FLASHCARDS_DATA = [
   {
     front: "7579 Sayılı Kanun ile Yapı Kooperatiflerine Getirilen Mülkiyet Devri Kısıtı Nedir?",
@@ -371,15 +475,15 @@ const FLASHCARDS_DATA = [
   },
   {
     front: "40 Saatlik Zorunlu Kooperatifçilik Eğitimi Hangi Organlar İçin Geçerlidir?",
-    back: "1163, 1581 ve 4572 sayılı kanunlara tabi kooperatif ve birliklerin Yönetim ve Denetim Kurulu asil üyeleri için zorunludur. Seçimden itibaren 9 ay içinde tamamlanmalıdır."
+    back: "Belirlenen yasal eşikleri (20M TL ciro, 1.000 ortak vb.) aşan kooperatiflerin Yönetim ve Denetim Kurulu asıl üyeleri için zorunludur. Seçimden itibaren 9 ay içinde tamamlanmalıdır."
   },
   {
     front: "Tarım Arazilerinde Kooperatif Hissesiyle Hobi Bahçesi Satışı Neden Geçersizdir?",
     back: "5403 sayılı Kanun m. 23 ve 7584 sayılı Kanun gereği tarım arazilerini bölmeye yönelik hisse satışları mutlak butlanla geçersizdir. Yapılar yıkılır ve TCK m. 184 uygulanır."
   },
   {
-    front: "Dış Denetim Kapsamında SBDS 2400 Standardının Rolü Nedir?",
-    back: "Bağımsız denetçiler ve birlik dış denetçileri, Kamu Gözetimi Kurumu (KGK) tarafından yayımlanan Sınırlı Bağımsız Denetim Standardı (SBDS 2400) kıyasen uygulama esaslarına göre denetim yapar."
+    front: "Dış Denetim Kapsamında Güncel Ciro ve Ortak Eşikleri Nelerdir?",
+    back: "Yıllık net satış hasılatı 100 Milyon TL ve üstü olanlar, 2.000 ve üzeri ortağı bulunanlar ile yapı ruhsatı almış 100+ ortaklı yapı kooperatifleri doğrudan dış denetime tabidir (Yön. m. 15)."
   },
   {
     front: "Tarımsal Örgütlerin Derecelendirilmesinde (Yön. 40451) Ön Koşul Nedir?",
@@ -402,8 +506,24 @@ const FLASHCARDS_DATA = [
     back: "Orman köyleri kalkındırma kooperatiflerine dikili ağaç tahsisi (Orman K. m. 34/40) ve 4734 SK m. 3/e uyarınca orman emvali üretiminde ihale istisnası tanınmıştır."
   },
   {
-    front: "Kooperatiflerde İntibak Yaptırmamanın Sonucu Nedir?",
-    back: "1163 sayılı Kanun Geçici 9. madde gereğince yasal sürede örnek anasözleşmeye intibak yaptırmayan kooperatifler kanun gereği kendiliğinden dağılmış (infisah etmiş) sayılır."
+    front: "7511 Sayılı Kanun Uyarınca Anasözleşme İntibakının Son Tarihi Nedir?",
+    back: "26 Ekim 2026. Bu tarihe kadar anasözleşmesini yürürlükteki tip anasözleşmeye intibak ettirip tescil ettirmeyen kooperatifler kanun gereği kendiliğinden infisah etmiş (dağılmış) sayılır."
+  },
+  {
+    front: "Hukuk veya İktisat Mezuniyeti Zorunlu Kooperatifçilik Eğitiminden Muafiyet Sağlar mı?",
+    back: "HAYIR. Kooperatifçilik Eğitimi Yönetmeliği'nde lisans diplomasına veya meslek unvanına (avukat, SMMM vb.) dayalı bir muafiyet yoktur. Kapsamdaki yöneticiler eğitimi almak zorundadır."
+  },
+  {
+    front: "Kooperatiflerde Ortak Dışı İşlem Yapılması Halinde Muafiyet Kalkar mı? (7061 SK)",
+    back: "7061 sayılı Kanun ile KVK m. 4/1-k'ya eklenen hüküm uyarınca kooperatifin muafiyeti kalkmaz; ortak dışı işlemler dolayısıyla bağlı bir 'İktisadi İşletme' oluşmuş kabul edilir ve sadece bu işletme vergilendirilir."
+  },
+  {
+    front: "Kooperatif Genel Kurulları En Fazla Kaç Dönem İçin Birleştirilebilir?",
+    back: "Kooperatifin bir üst kuruluşa ortak olması şartıyla, en fazla üç (3) hesap dönemi için olağan genel kurul birleştirilerek yapılabilir (1163 SK m. 45)."
+  },
+  {
+    front: "Kooperatiften İhraç Edilen Ortağın Mahkemeye Dava Açma Süresi Ne Kadardır?",
+    back: "İhraç kararının noter tebliğinden itibaren 3 ay içinde Asliye Ticaret Mahkemesinde iptal davası açılmalıdır. Dava açılınca ortaklık sıfatı kesin hükme kadar askıda kalır (1163 SK m. 16)."
   }
 ];
 
@@ -429,6 +549,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initRouter();
   initSearch();
   initControls();
+  initAiAssistant();
 });
 
 // Tema Başlatıcı
@@ -571,6 +692,13 @@ async function loadArticle(articleId, scrollToSectionId = null) {
     titleEl.textContent = artMeta.title;
     document.title = `${artMeta.title} - Kooperatifler Ansiklopedisi`;
 
+    // AI Özet Alanını Sıfırla
+    const summaryArea = document.getElementById("article-ai-summary-area");
+    if (summaryArea) {
+      summaryArea.style.display = "none";
+      summaryArea.innerHTML = "";
+    }
+
     // Markdown'ı HTML'e Çevir
     const renderedHtml = renderMarkdown(content);
     container.innerHTML = renderedHtml;
@@ -582,6 +710,26 @@ async function loadArticle(articleId, scrollToSectionId = null) {
     if (articleId === "26_interaktif_mevzuat_atolyesi_ve_studio") {
       initQuizEngine();
       initFlashcardsEngine();
+    }
+
+    // Karar Destek & Hesaplama Araçları Sayfası
+    if (articleId === "30_interaktif_hesaplama_ve_karar_destek_araclari") {
+      initInteractiveToolsEngine();
+    }
+
+    // Örnek Anasözleşmeler Kütüphanesi Sayfası
+    if (articleId === "25_ornek_anasozlesmeler_kutuphanesi") {
+      initBylawsLibraryEngine();
+    }
+
+    // Terimler Sözlüğü Sayfası
+    if (articleId === "33_kooperatifler_hukuk_ve_maliye_sozlugu") {
+      initGlossaryEngine();
+    }
+
+    // Podcast & Sesli Rehber Sayfası
+    if (articleId === "34_gunluk_kooperatif_podcast_yayini") {
+      initPodcastEngine();
     }
 
     // Varsa Mermaid diyagramlarını render et
@@ -1046,3 +1194,1309 @@ function initControls() {
     });
   }
 }
+
+// ================= KARAR DESTEK & HESAPLAMA ARAÇLARI MOTORU =================
+function initInteractiveToolsEngine() {
+  // 1. Uygunluk Sihirbazı
+  const btnAudit = document.getElementById("btn-run-audit-wizard");
+  const coopTypeSelect = document.getElementById("w-coop-type");
+  const buildingPermitGroup = document.getElementById("w-building-permit-group");
+
+  if (coopTypeSelect && buildingPermitGroup) {
+    coopTypeSelect.addEventListener("change", () => {
+      buildingPermitGroup.style.display = coopTypeSelect.value === "yapi" ? "block" : "none";
+    });
+  }
+
+  if (btnAudit) {
+    btnAudit.addEventListener("click", () => {
+      const coopType = document.getElementById("w-coop-type").value;
+      const memberCount = parseInt(document.getElementById("w-member-count").value || "0", 10);
+      const revenue = parseFloat(document.getElementById("w-revenue").value || "0");
+      const buildingPermit = document.getElementById("w-building-permit").value;
+      const resultPanel = document.getElementById("audit-wizard-result");
+
+      // Dış Denetim Değerlendirmesi
+      let auditRequired = false;
+      const auditReasons = [];
+
+      if (coopType === "eskkk" || coopType === "tarim_kredi") {
+        auditRequired = true;
+        auditReasons.push("Özel Kanunları ve Denetim Yönetmeliği m. 15/1-d uyarınca faaliyet konusuna bakılmaksızın doğrudan zorunludur.");
+      }
+      if (coopType === "yapi" && memberCount >= 100 && buildingPermit === "yes") {
+        auditRequired = true;
+        auditReasons.push("Yapı ruhsatı alınmış ve ortak sayısı 100 veya üzeri olan yapı kooperatifidir (Yön. m. 15/1-c).");
+      }
+      if (revenue >= 100000000) {
+        auditRequired = true;
+        auditReasons.push(`Yıllık net satış hasılatı (${revenue.toLocaleString('tr-TR')} TL), yasal eşik olan 100 Milyon TL'yi aşmaktadır (Yön. m. 15/1-a).`);
+      }
+      if (memberCount >= 2000) {
+        auditRequired = true;
+        auditReasons.push(`Ortak sayısı (${memberCount}), yasal eşik olan 2.000 kişiyi aşmaktadır (Yön. m. 15/1-b).`);
+      }
+
+      // Zorunlu Eğitim Değerlendirmesi
+      let trainingRequired = false;
+      const trainingReasons = [];
+
+      if (coopType === "eskkk" || coopType === "tarim_kredi") {
+        trainingRequired = true;
+        trainingReasons.push("Kredi/kefalet ve satış kooperatifi olması sebebiyle organ üyeleri için zorunludur.");
+      }
+      if ((coopType === "yapi" || coopType === "ulasim") && memberCount >= 50) {
+        trainingRequired = true;
+        trainingReasons.push(`Yapı veya motorlu taşıyıcılar kooperatifi olup ortak sayısı (${memberCount}) 50 eşiğini aşmaktadır.`);
+      }
+      if (revenue >= 20000000) {
+        trainingRequired = true;
+        trainingReasons.push(`Yıllık net satış hasılatı (${revenue.toLocaleString('tr-TR')} TL), 20 Milyon TL eğitim sınırını aşmaktadır.`);
+      }
+      if (memberCount >= 1000) {
+        trainingRequired = true;
+        trainingReasons.push(`Ortak sayısı (${memberCount}), 1.000 ortak eşiğini aşmaktadır.`);
+      }
+
+      // KOOPBİS Seviyesi
+      const koopbisLevel = auditRequired ? "Seviye 2 (Dış Denetçi Raporu ve Finansal Tablo Entegrasyonu Zorunlu)" : "Seviye 1 (Standart Yönetim & Hazirun Veri Girişi)";
+
+      resultPanel.style.display = "block";
+      resultPanel.innerHTML = `
+        <div style="border-bottom: 2px solid var(--wiki-border-light); padding-bottom: 12px; margin-bottom: 16px;">
+          <h3 style="margin: 0; color: var(--wiki-text);">📊 Teşhis ve Yasal Uyum Raporu</h3>
+        </div>
+
+        <div style="margin-bottom: 16px; padding: 12px; border-radius: 6px; background: ${auditRequired ? 'rgba(239, 68, 68, 0.08)' : 'rgba(34, 197, 94, 0.08)'}; border-left: 4px solid ${auditRequired ? '#ef4444' : '#22c55e'};">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <strong style="font-size: 15px;">1. Dış Denetim Durumu:</strong>
+            <span class="wiki-badge ${auditRequired ? 'wiki-badge-danger' : 'wiki-badge-success'}">${auditRequired ? 'DIŞ DENETİME TABİ' : 'DIŞ DENETİMDEN MUAF'}</span>
+          </div>
+          <div style="margin-top: 8px; font-size: 13px; line-height: 1.5;">
+            ${auditRequired 
+              ? `<ul style="margin-left: 20px; color: #b91c1c;">${auditReasons.map(r => `<li>${r}</li>`).join('')}</ul>
+                 <p style="margin-top: 6px; font-weight: 600;">⚖️ Yaptırım: Dış denetim yaptırılmadan genel kurula sunulan bilanço hükümsüzdür. Yöneticiler TCK m. 257 kapsamında görevi kötüye kullanma suçundan yargılanır.</p>
+                 <p style="margin-top: 4px; font-size: 12px; color: var(--wiki-text-muted);">Standart: KGK SBDS 2400 kıyasen uygulanır. Yetkili: SMMM/YMM Bağımsız Denetçi veya Üst Birlik Dış Denetçisi.</p>`
+              : `<p style="color: #15803d;">Mevcut kriterlerinize göre dış denetim zorunluluğu bulunmamaktadır. Kooperatif içi denetim kurulu raporu yeterlidir.</p>`
+            }
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px; padding: 12px; border-radius: 6px; background: ${trainingRequired ? 'rgba(245, 158, 11, 0.08)' : 'rgba(34, 197, 94, 0.08)'}; border-left: 4px solid ${trainingRequired ? '#f59e0b' : '#22c55e'};">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <strong style="font-size: 15px;">2. Zorunlu Kooperatifçilik Eğitimi:</strong>
+            <span class="wiki-badge ${trainingRequired ? 'wiki-badge-warning' : 'wiki-badge-success'}">${trainingRequired ? '40 SAAT EĞİTİM ZORUNLU' : 'EĞİTİMDEN MUAF'}</span>
+          </div>
+          <div style="margin-top: 8px; font-size: 13px; line-height: 1.5;">
+            ${trainingRequired
+              ? `<ul style="margin-left: 20px; color: #b45309;">${trainingReasons.map(r => `<li>${r}</li>`).join('')}</ul>
+                 <p style="margin-top: 6px; font-weight: 600;">⚠️ Önemli Kural: Yönetim ve Denetim Kurulu asıl üyeleri seçildikten itibaren 9 ay içinde eğitimi tamamlamalıdır. Hukuk/İktisat fakültesi diploması veya SMMM unvanı MUAFİYET SAĞLAMAZ. Tamamlamayanların üyeliği kendiliğinden düşer.</p>`
+              : `<p style="color: #15803d;">Mevcut ciro ve ortak sayınıza göre yöneticileriniz için 40 saatlik eğitim şartı aranmamaktadır.</p>`
+            }
+          </div>
+        </div>
+
+        <div style="padding: 12px; border-radius: 6px; background: var(--wiki-surface); border: 1px solid var(--wiki-border-light);">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <strong style="font-size: 14px;">3. KOOPBİS Yetkilendirme ve Veri Sorumluluğu:</strong>
+            <span class="wiki-badge wiki-badge-info">${koopbisLevel}</span>
+          </div>
+          <p style="margin-top: 6px; font-size: 13px; color: var(--wiki-text-muted);">
+            Tüm ortak bilgileri, yönetim kurulu kararları ve genel kurul hazirun cetvelleri KOOPBİS üzerinden yürütülmelidir. 7511 sayılı Kanun intibak süresi (26 Ekim 2026) takibi zorunludur.
+          </p>
+        </div>
+      `;
+    });
+  }
+
+  // 2. Genel Kurul Takvim Hesaplayıcı
+  const btnGk = document.getElementById("btn-calc-gk-timeline");
+  const gkDateInput = document.getElementById("gk-date");
+  if (gkDateInput && !gkDateInput.value) {
+    const defaultDate = new Date();
+    defaultDate.setDate(defaultDate.getDate() + 60);
+    gkDateInput.value = defaultDate.toISOString().split("T")[0];
+  }
+
+  if (btnGk) {
+    btnGk.addEventListener("click", () => {
+      const val = document.getElementById("gk-date").value;
+      if (!val) return;
+      const targetDate = new Date(val);
+      const resultPanel = document.getElementById("gk-timeline-result");
+
+      const formatDate = (d) => d.toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric", weekday: "long" });
+      const addDays = (d, days) => {
+        const copy = new Date(d);
+        copy.setDate(copy.getDate() + days);
+        return copy;
+      };
+
+      const datePttCall = addDays(targetDate, -30);
+      const dateRepPetition = addDays(targetDate, -15);
+      const dateFinancialAudit = addDays(targetDate, -15);
+      const dateKoopbisLock = addDays(targetDate, -3);
+      const dateRegistration = addDays(targetDate, 30);
+
+      resultPanel.style.display = "block";
+      resultPanel.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+          <h3 style="margin: 0;">🗓️ Genel Kurul Yasal Çağrı ve Süreç Takvimi</h3>
+          <button id="btn-copy-timeline" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Takvimi Kopyala</button>
+        </div>
+
+        <div class="wiki-timeline">
+          <div class="wiki-timeline-step" style="border-left-color: #ef4444;">
+            <div class="wiki-timeline-date">${formatDate(datePttCall)}</div>
+            <div class="wiki-timeline-content">
+              <strong>📮 Çağrı Mektuplarının PTT'ye Teslim Edileceği Son Gün (En Az 30 Gün Önce)</strong><br>
+              1163 SK m. 45 gereği tüm ortaklara taahhütlü mektup gönderilmelidir. Bu tarihten sonra yapılan bildirimler genel kurulun iptali (mutlak butlan) sonucunu doğurur.
+            </div>
+          </div>
+
+          <div class="wiki-timeline-step" style="border-left-color: #f59e0b;">
+            <div class="wiki-timeline-date">${formatDate(dateRepPetition)}</div>
+            <div class="wiki-timeline-content">
+              <strong>🏛️ Bakanlık Temsilcisi Başvuru Son Günü (En Az 15 Gün Önce)</strong><br>
+              Valilik / Ticaret veya Tarım İl Müdürlüğü'ne harç makbuzu, gündem ve çağrı örneği ile resmi talep dilekçesi verilmelidir (1163 SK Ek m. 3).
+            </div>
+          </div>
+
+          <div class="wiki-timeline-step" style="border-left-color: #3b82f6;">
+            <div class="wiki-timeline-date">${formatDate(dateFinancialAudit)}</div>
+            <div class="wiki-timeline-content">
+              <strong>📑 Bilanço, Gelir Tablosu ve Denetim Raporlarının Ortaklara Açılması</strong><br>
+              Mali tablolar, yönetim ve denetim raporları kooperatif merkezinde ve varsa internet sitesinde ortakların tetkikine hazır bulundurulmalıdır.
+            </div>
+          </div>
+
+          <div class="wiki-timeline-step" style="border-left-color: #8b5cf6;">
+            <div class="wiki-timeline-date">${formatDate(dateKoopbisLock)}</div>
+            <div class="wiki-timeline-content">
+              <strong>💻 KOOPBİS Hazirun Cetvelinin Alınması ve Mühürlenmesi</strong><br>
+              Ortaklar listesi doğrudan KOOPBİS üzerinden sistem çıktısı olarak üretilmeli ve toplantı günü Bakanlık temsilcisine onaylatılmalıdır.
+            </div>
+          </div>
+
+          <div class="wiki-timeline-step" style="border-left-color: #10b981; background: var(--wiki-highlight);">
+            <div class="wiki-timeline-date" style="color: #047857; font-size: 15px;">🎯 ${formatDate(targetDate)}</div>
+            <div class="wiki-timeline-content">
+              <strong style="color: #047857; font-size: 15px;">🏁 GENEL KURUL TOPLANTI GÜNÜ</strong><br>
+              Yoklama, divan seçimi, raporların okunması, ibra oylaması ve yeni organ seçimleri icra edilir.
+            </div>
+          </div>
+
+          <div class="wiki-timeline-step" style="border-left-color: #6b7280;">
+            <div class="wiki-timeline-date">${formatDate(dateRegistration)}</div>
+            <div class="wiki-timeline-content">
+              <strong>📢 Ticaret Siciline Tescil ve İlan Son Tarihi (En Geç 1 Ay İçinde)</strong><br>
+              Alınan genel kurul kararları, divan tutanağı ve yeni yönetim kurulu yetki dağılımı Ticaret Sicil Müdürlüğü'ne tescil ettirilmelidir (1163 SK m. 52).
+            </div>
+          </div>
+        </div>
+      `;
+
+      const copyBtn = document.getElementById("btn-copy-timeline");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", () => {
+          const text = `GENEL KURUL SÜREÇ TAKVİMİ (${formatDate(targetDate)}):\n` +
+            `- Çağrı Mektupları PTT Son Gün: ${formatDate(datePttCall)}\n` +
+            `- Bakanlık Temsilcisi Dilekçe Son Gün: ${formatDate(dateRepPetition)}\n` +
+            `- Raporların Tetkike Açılması: ${formatDate(dateFinancialAudit)}\n` +
+            `- KOOPBİS Hazirun Çekim: ${formatDate(dateKoopbisLock)}\n` +
+            `- GENEL KURUL GÜNÜ: ${formatDate(targetDate)}\n` +
+            `- Tescil ve İlan Son Gün: ${formatDate(dateRegistration)}`;
+          navigator.clipboard.writeText(text).then(() => {
+            copyBtn.textContent = "✅ Kopyalandı!";
+            setTimeout(() => { copyBtn.textContent = "📋 Takvimi Kopyala"; }, 2000);
+          });
+        });
+      }
+    });
+  }
+
+  // 3. Yasal Aidat Faizi Hesaplayıcı
+  const btnInterest = document.getElementById("btn-calc-interest");
+  const iDueDate = document.getElementById("i-due-date");
+  const iPayDate = document.getElementById("i-pay-date");
+
+  if (iDueDate && !iDueDate.value) {
+    const d = new Date();
+    d.setMonth(d.getMonth() - 6);
+    iDueDate.value = d.toISOString().split("T")[0];
+  }
+  if (iPayDate && !iPayDate.value) {
+    iPayDate.value = new Date().toISOString().split("T")[0];
+  }
+
+  if (btnInterest) {
+    btnInterest.addEventListener("click", () => {
+      const principal = parseFloat(document.getElementById("i-principal").value || "0");
+      const d1 = new Date(document.getElementById("i-due-date").value);
+      const d2 = new Date(document.getElementById("i-pay-date").value);
+      const claimedMonthlyRate = parseFloat(document.getElementById("i-claimed-rate").value || "0");
+      const resultPanel = document.getElementById("interest-calc-result");
+
+      if (isNaN(d1.getTime()) || isNaN(d2.getTime()) || d2 <= d1) {
+        alert("Lütfen geçerli bir vade tarihi ve bundan ileri bir ödeme tarihi seçiniz.");
+        return;
+      }
+
+      const diffTime = Math.abs(d2 - d1);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      const diffMonths = (diffDays / 30);
+
+      // Yasal Sınır: TBK m. 120 (azami 2 katı = aylık %4.0)
+      const LEGAL_MONTHLY_MAX = 4.0;
+      const isRateExcessive = claimedMonthlyRate > LEGAL_MONTHLY_MAX;
+      const appliedMonthlyRate = isRateExcessive ? LEGAL_MONTHLY_MAX : claimedMonthlyRate;
+
+      const legalInterest = (principal * (appliedMonthlyRate / 100) * diffMonths);
+      const claimedInterest = (principal * (claimedMonthlyRate / 100) * diffMonths);
+      const totalAmount = principal + legalInterest;
+
+      resultPanel.style.display = "block";
+      resultPanel.innerHTML = `
+        <div style="border-bottom: 2px solid var(--wiki-border-light); padding-bottom: 10px; margin-bottom: 14px;">
+          <h3 style="margin: 0;">🧮 Faiz ve Yasal Tavan İnceleme Raporu</h3>
+        </div>
+
+        ${isRateExcessive ? `
+          <div style="padding: 12px; background: #fef2f2; border-left: 4px solid #ef4444; border-radius: 4px; margin-bottom: 16px;">
+            <strong style="color: #991b1b;">⚠️ FAHİŞ FAİZ UYARISI (TBK m. 120 İhlali):</strong><br>
+            <span style="font-size: 13px; color: #7f1d1d;">
+              Talep edilen aylık %${claimedMonthlyRate} faiz oranı, Türk Borçlar Kanunu m. 120'de öngörülen yasal tavanı (yıllık yasal faizin azami 2 katı = aylık %${LEGAL_MONTHLY_MAX}) aşmaktadır. 
+              <strong>Yargıtay Hukuk Genel Kurulu kararlarına göre aşan kısım mutlak butlanla geçersizdir.</strong> Hesaplama yasal azami tavan olan %${LEGAL_MONTHLY_MAX} üzerinden yapılmıştır.
+            </span>
+          </div>
+        ` : `
+          <div style="padding: 12px; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 4px; margin-bottom: 16px;">
+            <strong style="color: #166534;">✅ YASAL SINIRLAR DAHİLİNDE:</strong><br>
+            <span style="font-size: 13px; color: #14532d;">
+              Talep edilen aylık %${claimedMonthlyRate} faiz oranı TBK m. 120'deki yasal tavanı aşmamaktadır.
+            </span>
+          </div>
+        `}
+
+        <table class="wiki-table" style="width: 100%; margin-top: 10px;">
+          <tr><td><strong>Asıl Alacak Tutarı (Aidat):</strong></td><td style="font-weight: 700;">${principal.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>
+          <tr><td><strong>Gecikme Süresi:</strong></td><td>${diffDays} Gün (~${diffMonths.toFixed(1)} Ay)</td></tr>
+          <tr><td><strong>Uygulanan Aylık Yasal Faiz Oranı:</strong></td><td>%${appliedMonthlyRate.toFixed(2)}</td></tr>
+          <tr><td><strong>Hesaplanan Yasal Faiz Tutarı:</strong></td><td style="color: #b91c1c; font-weight: 700;">${legalInterest.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>
+          ${isRateExcessive ? `<tr><td><strong>Geçersiz (İptal Edilen) Fazla Faiz:</strong></td><td style="color: #9ca3af; text-decoration: line-through;">${(claimedInterest - legalInterest).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>` : ''}
+          <tr style="background: var(--wiki-surface); font-size: 15px;"><td><strong>TOPLAM TAHSİL EDİLEBİLİR ALACAK:</strong></td><td style="color: var(--wiki-link); font-weight: 800;">${totalAmount.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>
+        </table>
+      `;
+    });
+  }
+
+  // 4. Bakanlık Temsilcisi Dilekçe Üretici
+  const btnRepPetition = document.getElementById("btn-generate-rep-petition");
+  if (btnRepPetition) {
+    btnRepPetition.addEventListener("click", () => {
+      const ministry = document.getElementById("p-ministry").value;
+      const city = document.getElementById("p-city").value.toUpperCase();
+      const coopName = document.getElementById("p-coop-name").value.toUpperCase();
+      const regNo = document.getElementById("p-reg-no").value;
+      const mDate = document.getElementById("p-meeting-date").value;
+      const mPlace = document.getElementById("p-meeting-place").value;
+      const output = document.getElementById("petition-rep-output");
+
+      let dirName = "TİCARET İL MÜDÜRLÜĞÜ'NE";
+      if (ministry === "tarim") dirName = "TARIM VE ORMAN İL MÜDÜRLÜĞÜ'NE";
+      if (ministry === "cevre") dirName = "ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ İL MÜDÜRLÜĞÜ'NE";
+
+      const text = `T.C.\n${city} VALİLİĞİ\n${dirName}\n${city}\n\n` +
+        `KONU: Kooperatifimiz Genel Kurul Toplantısına Bakanlık Temsilcisi Görevlendirilmesi Talebi hk.\n\n` +
+        `KOOPERATİF UNVANI : ${coopName}\n` +
+        `TİCARET SİCİL / MERSİS : ${regNo}\n\n` +
+        `Kooperatifimiz Yönetim Kurulu'nun almış olduğu karar uyarınca, 1163 sayılı Kooperatifler Kanunu ve Anasözleşmemiz hükümleri dairesinde aşağıda belirtilen gün, saat ve adreste Olağan Genel Kurul toplantısı icra edilecektir:\n\n` +
+        `Toplantı Tarihi ve Saati : ${mDate}\n` +
+        `Toplantı Adresi : ${mPlace}\n\n` +
+        `1163 sayılı Kooperatifler Kanunu'nun Ek 3. maddesi gereğince toplantımızda hazır bulunmak üzere bir Bakanlık Temsilcisi (Hükümet Komiseri) görevlendirilmesini saygılarımızla arz ve talep ederiz.\n\n` +
+        `EK-1: Yönetim Kurulu Genel Kurul Çağrı Kararı Örneği\n` +
+        `EK-2: Genel Kurul Gündemi\n` +
+        `EK-3: Bakanlık Temsilcisi Ücreti Yatırıldı Banka Dekontu\n` +
+        `EK-4: İmza Sirküleri Sureti\n\n` +
+        `${coopName}\nYÖNETİM KURULU`;
+
+      output.style.display = "block";
+      output.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <strong>📄 Resmi Dilekçe Metni (A4 Formatı):</strong>
+          <button id="btn-copy-rep-pet" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Dilekçeyi Kopyala</button>
+        </div>
+        <div class="wiki-doc-preview">${text}</div>
+      `;
+
+      const copyBtn = document.getElementById("btn-copy-rep-pet");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", () => {
+          navigator.clipboard.writeText(text).then(() => {
+            copyBtn.textContent = "✅ Panoya Kopyalandı!";
+            setTimeout(() => { copyBtn.textContent = "📋 Dilekçeyi Kopyala"; }, 2000);
+          });
+        });
+      }
+    });
+  }
+
+  // 5. İhraç İhtarnamesi Üretici
+  const btnExpNotice = document.getElementById("btn-generate-exp-notice");
+  if (btnExpNotice) {
+    btnExpNotice.addEventListener("click", () => {
+      const stage = document.getElementById("exp-stage").value;
+      const memberName = document.getElementById("exp-member-name").value;
+      const debtDetail = document.getElementById("exp-debt-detail").value;
+      const iban = document.getElementById("exp-iban").value;
+      const output = document.getElementById("exp-notice-output");
+
+      const title = stage === "first" ? "BİRİNCİ İHTARNAME" : "İKİNCİ (SON) İHTARNAME VE İHRAÇ İHTARI";
+      const legalWarning = stage === "first" 
+        ? "İşbu ihtarnamenin tarafınıza tebliğ edildiği tarihten itibaren EN GEÇ 1 (BİR) AY içinde yukarıda dökümü yapılan aidat ve yasal gecikme faizi borcunuzu ödemeniz, aksi takdirde 1163 sayılı Kanun m. 16 gereğince ikinci ihtarname keşide edileceği ihtar olunur."
+        : "İşbu ikinci ihtarnamenin tarafınıza tebliğ edildiği tarihten itibaren EN GEÇ 1 (BİR) AY içinde borcunuzu ödemediğiniz takdirde, 1163 sayılı Kanun'un 16. maddesi ve Anasözleşmemiz hükümleri gereğince YÖNETİM KURULU KARARIYLA KOOPERATİF ORTAKLIĞINDAN İHRAÇ EDİLECEĞİNİZ hususu kesin ve son olarak İHTAR OLUNUR.";
+
+      const text = `${title}\n\n` +
+        `KEŞİDECİ (ALACAKLI) : S.S. KOOPERATİFİ YÖNETİM KURULU\n` +
+        `MUHATAP (BORÇLU)     : ${memberName}\n` +
+        `KONU                : 1163 Sayılı Kooperatifler Kanunu m. 16 Uyarınca Ödenmemiş Aidat Borçlarının Ödenmesi ve İhraç İhtarı.\n\n` +
+        `Sayın Ortak;\n` +
+        `Kooperatifimiz ortaklar defterinde kayıtlı bulunmaktasınız. Yapılan hesap ve defter tetkikinde;\n\n` +
+        `GECİKEN BORÇ DÖKÜMÜ:\n${debtDetail}\n\n` +
+        `tutarındaki anapara aidat ve yasal sınırları aşmayan faiz borcunuzu vadesinde ödemediğiniz tespit edilmiştir.\n\n` +
+        `${legalWarning}\n\n` +
+        `Ödemenin kooperatifimizin ${iban} numaralı resmi banka hesabına, açıklama kısmına ad-soyad ve borç dönemi yazılarak yapılması; ayrıca işbu noter ihtar masrafının da tarafınızdan karşılanması gerektiği bilvekale ihtar olunur.\n\n` +
+        `KEŞİDECİ KOOPERATİF\nYÖNETİM KURULU`;
+
+      output.style.display = "block";
+      output.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <strong>📜 Noter İhtarnamesi Metni (1163 SK m. 16 Tam Uyumlu):</strong>
+          <button id="btn-copy-exp-notice" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 İhtarı Kopyala</button>
+        </div>
+        <div class="wiki-doc-preview">${text}</div>
+      `;
+
+      const copyBtn = document.getElementById("btn-copy-exp-notice");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", () => {
+          navigator.clipboard.writeText(text).then(() => {
+            copyBtn.textContent = "✅ Panoya Kopyalandı!";
+            setTimeout(() => { copyBtn.textContent = "📋 İhtarı Kopyala"; }, 2000);
+          });
+        });
+      }
+    });
+  }
+}
+
+// ================= TERİMLER SÖZLÜĞÜ ARAMA MOTORU =================
+function initGlossaryEngine() {
+  const filterInput = document.getElementById("glossary-filter-input");
+  if (!filterInput) return;
+
+  filterInput.addEventListener("input", () => {
+    const q = filterInput.value.trim().toLowerCase();
+    const items = document.querySelectorAll(".wiki-glossary-item");
+    items.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(q) ? "block" : "none";
+    });
+  });
+}
+
+// ================= ÖRNEK ANASÖZLEŞMELER METİN BANKASI =================
+const BYLAWS_TEXTS = {
+  konut_yapi: `S.S. ................................................. KONUT YAPI KOOPERATİFİ ANASÖZLEŞMESİ
+(1163 Sayılı Kooperatifler Kanunu, 7339 ve 7579 Sayılı Kanun Hükümlerine Uyarlanmış Örnek Tip Anasözleşme)
+
+BÖLÜM I: KURULUŞ, UNVAN, MERKEZ VE SÜRE
+Madde 1 - Kuruluş: Bu anasözleşmede adları, soyadları, T.C. kimlik numaraları ve yerleşim yerleri yazılı kurucular tarafından 1163 sayılı Kooperatifler Kanunu hükümlerine göre değişir ortaklı ve değişir sermayeli bir Konut Yapı Kooperatifi kurulmuştur.
+Madde 2 - Unvan: Kooperatifin unvanı "Sınırlı Sorumlu ................................................. Konut Yapı Kooperatifi"dir.
+Madde 3 - Merkez: Kooperatifin merkezi ................................................. ilindedir.
+Madde 4 - Süre: Kooperatifin süresi kuruluşunun ticaret siciline tescil edildiği tarihten itibaren ..... yıldır. Ancak bu süre Genel Kurul kararı ve Bakanlık izni ile uzatılabilir veya kısaltılabilir.
+
+BÖLÜM II: AMAÇ VE ÇALIŞMA KONULARI
+Madde 5 - Amaç: Kooperatifin amacı; ortaklarının konut ihtiyaçlarını karşılamak, sağlıklı, güvenli ve fen kurallarına uygun meskenler inşa etmek veya ettirmek ve bu amaçla arsa/arazi temin etmektir.
+Madde 6 - Çalışma Konuları:
+1. İmar planlarına uygun arsa ve arazi satın alır, parselasyon, ifraz ve tevhit işlemlerini yürütür.
+2. Ortakları için konut inşa eder, taşeronluk veya anahtar teslimi yapım ihaleleri düzenler.
+3. Altyapı, çevre düzenlemesi, yol, su, kanalizasyon ve elektrik tesisatlarını kurar veya kurdurur.
+4. ÖNEMLİ YASAL KISITLAMA (7579 SK): Yapı kullanma izin belgesi (iskan) alınmadan bağımsız bölümlerin ortaklar adına tapuda devri yapılamaz; noter satış vaadi veya harici hisse devri yoluyla mülkiyet aktarılamaz.
+5. Mahalli idarelerin kooperatife ortak olması veya arsa tahsis etmesi Cumhurbaşkanı iznine tabidir (1163 SK Ek m. 6).
+
+BÖLÜM III: SERMAYE VE PAYLAR
+Madde 7 - Sermaye: Kooperatifin sermayesi değişkendir ve ortakların taahhüt ettikleri payların toplamından oluşur.
+Madde 8 - Paylar: Bir ortaklık payının değeri 100 (yüz) Türk Lirası'dır. Her ortak en az 1 pay taahhüt etmek zorundadır. Ortaklar eşit oranda konut edinme hakkına ve mali katılım yükümlülüğüne sahiptir.
+Madde 9 - Pay Devri: Ortaklık payı, yönetim kurulunun yazılı onayı ile diğer bir ortağa veya ortaklık şartlarını taşıyan üçüncü bir kişiye devredilebilir.
+
+BÖLÜM IV: ORTAKLIK SIFATININ KAZANILMASI VE KAYBEDİLMESİ
+Madde 10 - Ortak Olma Şartları: Medeni hakları kullanma ehliyetine sahip olmak ve aynı kooperatifte başka bir ortaklık payı üzerinde konut tahsis hakkı bulunmamak.
+Madde 11 - Ortaklıktan Çıkma (İstifa): Her ortak, hesap dönemi sonundan en az 6 ay önce yönetim kuruluna yazılı bildirimde bulunarak ortaklıktan çıkabilir.
+Madde 12 - Ortaklıktan Çıkarılma (İhraç - 1163 SK m. 16):
+Ortakların parasal yükümlülüklerini yerine getirmemeleri halinde ihraç prosedürü:
+a) Aidat borcunu vadesinde ödemeyen ortağa, en az 1'er aylık süre verilerek noter aracılığıyla 2 ayrı ihtarname gönderilir.
+b) İkinci ihtarnamenin tebliğinden itibaren 1 ay içinde borç ödenmezse Yönetim Kurulu kararıyla ihraç edilir.
+c) İhraç kararı ortağa noterden tebliğ edilir; ortağın 3 ay içinde Asliye Ticaret Mahkemesinde iptal davası açma hakkı saklıdır.
+
+BÖLÜM V: GENEL KURUL
+Madde 13 - Görev ve Yetkiler: Genel kurul, bütün ortakların katılımıyla toplanan en yetkili organdır. Bilanço, gelir-gider farkı hesapları, yönetim ve denetim kurullarının ibrası, gayrimenkul alım-satım sınırlarının belirlenmesi ve ihraç itirazları genel kurulun devredilemez yetkilerindendir.
+Madde 14 - Toplantı Zamanı ve Çağrı: Olağan genel kurul, hesap dönemini takip eden ilk 6 ay içinde (Ocak-Haziran) toplanır. Çağrı, toplantıdan EN AZ 30 GÜN ÖNCE taahhütlü mektupla ve KOOPBİS sistemi üzerinden yapılır.
+Madde 15 - Bakanlık Temsilcisi Şartı: Genel kurul toplantılarında 1163 sayılı Kanun Ek m. 3 uyarınca Bakanlık Temsilcisinin hazır bulunması şarttır. Temsilcisiz genel kurullar hükümsüzdür.
+Madde 16 - Hazirun Listesi: Toplantıya katılacak ortaklar cetveli doğrudan KOOPBİS sistemi üzerinden üretilir.
+
+BÖLÜM VI: YÖNETİM KURULU
+Madde 17 - Seçimi ve Süresi: Genel kurulca ortaklar arasından en az 3 asıl, 3 yedek üye olarak en fazla 4 yıl için seçilir.
+Madde 18 - Zorunlu Kooperatifçilik Eğitimi: Ortak sayısı 50 ve üzeri olan yapı kooperatiflerinde Yönetim Kurulu üyeleri, seçimden itibaren 9 AY İÇİNDE 40 saatlik zorunlu kooperatifçilik eğitimini tamamlamak zorundadır. Eğitimi tamamlamayanların üyeliği kendiliğinden düşer.
+Madde 19 - KOOPBİS Yükümlülüğü: Yönetim kurulu, ortaklık bilgilerini, mali tabloları ve genel kurul kararlarını KOOPBİS'e eksiksiz işlemekle yükümlüdür (TCK m. 257 adli sorumluluğu).
+
+BÖLÜM VII: DENETİM KURULU VE DIŞ DENETİM
+Madde 20 - Denetim Kurulu: Genel kurulca en az 2 asıl, 2 yedek üye olarak seçilir.
+Madde 21 - Dış Denetim: Yapı ruhsatı alınmış ve 100 veya üzeri ortağı bulunan kooperatiflerde finansal tablolar, bağımsız dış denetçi tarafından KGK SBDS 2400 standardına göre incelenmek zorundadır. Rapor genel kurula sunulmadan ibra yapılamaz.
+
+BÖLÜM VIII: DAĞILMA VE TASFİYE
+Madde 22 - Dağılma Sebepleri: Konutların tamamlanıp kat mülkiyeti tapularının tescili, genel kurulun 2/3 oyu ile tasfiye kararı veya intibak süresinin (26 Ekim 2026) kaçırılması.
+Madde 23 - Tasfiye Usulü: TTSG'de birer hafta arayla 3 defa alacaklılara çağrı yapılır. 3. ilandan itibaren 6 aylık yasal bekleme süresi geçmedikçe kalan malvarlığı dağıtılamaz. Defterler TTK m. 82 uyarınca 10 yıl saklanır.`,
+
+  kadin_girisimi: `S.S. ................................................. KADIN GİRİŞİMİ ÜRETİM VE İŞLETME KOOPERATİFİ ANASÖZLEŞMESİ
+(Ticaret Bakanlığı Onaylı Tip Anasözleşme - KOOP-DES ve Belediye Protokolleri Uyumlu)
+
+BÖLÜM I: KURULUŞ, UNVAN VE MERKEZ
+Madde 1 - Kuruluş: Kadın emeğinin değerlendirilmesi, kadınların ekonomik ve sosyal hayata katılımının artırılması amacıyla 1163 sayılı Kooperatifler Kanunu hükümlerine göre kurulmuştur.
+Madde 2 - Unvan: "Sınırlı Sorumlu ................................................. Kadın Girişimi Üretim ve İşletme Kooperatifi"dir.
+Madde 3 - Merkez: Kooperatifin merkezi ................................................. ilidir.
+
+BÖLÜM II: AMAÇ VE ÇALIŞMA KONULARI
+Madde 4 - Amaç: Ortaklarının ekonomik, mesleki ve sosyal menfaatlerini korumak; ortakların ürettiği el sanatları, tarımsal gıda, tekstil, sanayi ve hizmet ürünlerini pazarlamak, kadın istihdamını desteklemek ve ortaklarına düzenli gelir sağlamaktır.
+Madde 5 - Faaliyet Alanları:
+1. Üretim atölyeleri, mutfaklar, paketleme ve etiketleme tesisleri kurmak ve işletmek.
+2. Ticaret Bakanlığı KOOP-DES hibe programından yararlanarak makine, ekipman ve nitelikli istihdam hibesi temin etmek.
+3. 5393 sayılı Belediye Kanunu m. 75 uyarınca yerel yönetimlerle ortak hizmet projeleri yürütmek, satış stantları ve büfe kiralamak.
+4. E-ticaret platformları kurmak, ulusal ve uluslararası fuarlarda stant açarak doğrudan satış yapmak.
+5. Ortaklarına mesleki eğitim, kooperatifçilik ve finansal okuryazarlık eğitimleri vermek.
+
+BÖLÜM III: ORTAKLIK ŞARTLARI VE SERMAYE
+Madde 6 - Ortaklık Şartları: Fiil ehliyetine sahip olmak ve kadın girişimci niteliği taşımak. Kooperatif ortaklarının en az %90'ı kadınlardan oluşur.
+Madde 7 - Sermaye ve Paylar: Bir ortaklık payı 100 TL'dir. Ortaklar eşit haklara sahip olup tek oy ilkesi geçerlidir.
+Madde 8 - Sermaye Koyma Borcu: Ortaklar taahhüt ettikleri pay bedellerini nakit veya anasözleşmede kabul edilen ayni sermaye olarak ifa ederler.
+
+BÖLÜM IV: VERGİ VE MALİ REJİM (KVK m. 4/1-k)
+Madde 9 - Muafiyet Şartları:
+Kooperatif, Kurumlar Vergisi Kanunu m. 4/1-k kapsamındaki muafiyet şartlarını korur:
+a) Sermaye üzerinden kazanç dağıtılmaz.
+b) Yönetim ve denetim organlarına kâr üzerinden hisse verilmez.
+c) Yedek akçeler ortaklara paylaştırılamaz.
+d) Faaliyetler münhasıran ortaklarla yürütülür; ortak dışı işlemler ayrı bir iktisadi işletme olarak muhasebeleştirilir (7061 SK).
+Madde 10 - Risturn: Gelir-gider olumlu farkı, ortakların kooperatife teslim ettikleri ürün veya emek hacmi oranında iade edilir. Bu iade kâr dağıtımı sayılmaz.
+
+BÖLÜM V: ORGANLAR VE YÖNETİM
+Madde 11 - Yönetim Kurulu: Ortaklar arasından 3 veya 5 üyeden oluşur, en fazla 4 yıl süreyle seçilir.
+Madde 12 - Denetim Kurulu: 2 asıl üyeden oluşur. Yıllık denetim raporu düzenleyerek genel kurula ve KOOPBİS sistemine sunar.
+Madde 13 - KOOPBİS Entegrasyonu: Tüm ortaklık hareketleri, genel kurul tutanakları ve mali tablolar KOOPBİS'e tescil edilir.`,
+
+  tarimsal_kalkinma: `S.S. ................................................. TARIMSAL KALKINMA KOOPERATİFİ ANASÖZLEŞMESİ
+(Tarım ve Orman Bakanlığı Onaylı Tip Anasözleşme - KKYDP ve IPARD Uyumlu)
+
+BÖLÜM I: KURULUŞ, UNVAN VE ÇALIŞMA BÖLGESİ
+Madde 1 - Kuruluş: Tarım ve Orman Bakanlığı izni ile 1163 sayılı Kooperatifler Kanunu hükümlerine göre kurulmuştur.
+Madde 2 - Unvan: "Sınırlı Sorumlu ................................................. Tarımsal Kalkınma Kooperatifi"dir.
+Madde 3 - Çalışma Bölgesi: ................................................. ili ve ilçesi mülki sınırlarıdır.
+
+BÖLÜM II: AMAÇ VE FAALİYET KONULARI
+Madde 4 - Amaç: Ortaklarının tarımsal ve hayvansal üretimini artırmak, verimliliği yükseltmek, ürünlerini doğrudan değerlendirerek aracıları azaltmak ve ortakların gelir seviyesini yükseltmektir.
+Madde 5 - Faaliyet Konuları:
+1. Ortaklar için kaliteli tohum, fidan, gübre, karma yem, zirai ilaç ve tarım makinelerini toptan temin etmek.
+2. Çiğ süt toplama merkezleri, soğuk hava depoları, zeytinyağı sıkım ve hububat eleme-paketleme tesisleri kurmak.
+3. Kırsal Kalkınma Yatırımları (KKYDP %50 hibe) ve AB IPARD III fonlarına proje hazırlamak.
+4. 5957 sayılı Kanun uyarınca toptancı hallerinde üretici örgütü sıfatıyla doğrudan satış yeri edinmek.
+5. HOBİ BAHÇESİ YASAĞI (5403 SK m. 23 & 7584 SK): Kooperatif, tarım arazilerini fiilen bölerek ortaklarına hobi bahçesi olarak tahsis edemez, hisse devri yapamaz. Bu nitelikteki sözleşmeler mutlak butlanla geçersizdir.
+
+BÖLÜM III: ORTAKLIK VE PAYLAR
+Madde 6 - Ortak Olma Şartları: Çiftçi Kayıt Sistemi'ne (ÇKS) kayıtlı olmak veya çalışma bölgesinde fiilen tarımsal üretimle iştigal etmek.
+Madde 7 - Ürün Teslim Yükümlülüğü: Ortaklar, sözleşmeli tarım ve genel kurul kararları kapsamında ürettikleri ürünlerin belirlenen asgari oranını kooperatife teslim etmekle yükümlüdür.
+Madde 8 - Paylar: Bir pay 100 TL'dir. Tarımsal derecelendirmede A ve B sınıfı kooperatif ortakları destekleme primlerinden ilave puan alır.
+
+BÖLÜM IV: RİSTURN VE YEDEK AKÇELER
+Madde 9 - Risturn: Ortak içi işlemlerden doğan müspet gelir-gider farkı, ortakların teslim ettiği ürün miktarı ve satın aldığı girdi hacmine göre risturn olarak dağıtılır.
+Madde 10 - Fonlar: Net müspet farkın %10'u kanuni yedek akçeye, %5'i tarımsal geliştirme ve eğitim fonuna aktarılır. Yedek akçeler ortaklara paylaştırılamaz.
+
+BÖLÜM V: ORGANLAR VE DENETİM
+Madde 11 - Yönetim Kurulu: 5 asıl üyeden oluşur. 20M TL ciro veya 1.000 ortak eşiğini aşarsa yöneticiler 40 saatlik zorunlu eğitimi tamamlamak zorundadır.
+Madde 12 - Denetim ve KOOPBİS: Bilanço ve ortaklar cetveli KOOPBİS sistemi üzerinden Bakanlığa bildirilir.`,
+
+  motorlu_tasiyicilar: `S.S. ................................................. MOTORLU TAŞIYICILAR KOOPERATİFİ ANASÖZLEŞMESİ
+(Karayolu Taşıma Kanunu ve 1163 SK Uyumlu Tip Anasözleşme)
+
+BÖLÜM I: KURULUŞ, UNVAN VE MERKEZ
+Madde 1 - Kuruluş: Karayoluyla yük ve yolcu taşımacılığı yapan esnaf ve sanatkârların güçlerini birleştirmek amacıyla 1163 sayılı Kanuna göre kurulmuştur.
+Madde 2 - Unvan: "Sınırlı Sorumlu ................................................. Motorlu Taşıyıcılar Kooperatifi"dir.
+Madde 3 - Merkez: ................................................. ilindedir.
+
+BÖLÜM II: AMAÇ VE ÇALIŞMA KONULARI
+Madde 4 - Amaç: Ortaklarının karayolu taşımacılık faaliyetlerini koordine etmek, hat, durak ve güzergah düzenini sağlamak, akaryakıt ve yedek parça maliyetlerini düşürmektir.
+Madde 5 - Faaliyet Alanları:
+1. Ulaştırma ve Altyapı Bakanlığı'ndan ilgili yetki belgelerini (K1, D1, D4 vb.) temin etmek ve ortaklarına kullandırmak.
+2. Şehir içi ve şehirlerarası yolcu ve yük taşıma sıralarını (rotasyon) hakkaniyetle düzenlemek.
+3. Garaj, terminal, bakım-onarım istasyonu ve akaryakıt pompası kurarak ortakların işletme giderlerini azaltmak.
+4. Ortakların araçlarının kasko ve zorunlu trafik sigortalarını havuz indirimiyle yaptırmak.
+
+BÖLÜM III: ORTAKLIK VE ARAÇ ŞARTLARI
+Madde 6 - Ortaklık Şartları: Adına kayıtlı ticari taşıtı bulunmak veya hat/plaka tahsis hakkına sahip olmak, SRC ve psikoteknik belgelerine haiz olmak.
+Madde 7 - Araç Devri ve Hat Hakkı: Taşıtını devreden ortağın hat ve sıra hakkı yönetim kurulunun onayı ile yeni malike devredilebilir.
+Madde 8 - Ortak Sayısı Eşiği: Ortak sayısı 50 ve üzeri olduğunda Yönetim ve Denetim Kurulu asıl üyeleri 9 ay içinde 40 saatlik Zorunlu Kooperatifçilik Eğitimini tamamlamak mecburiyetindedir.
+
+BÖLÜM IV: YÖNETİM VE MALİ REJİM
+Madde 9 - Taşıma Gelirlerinin Dağıtımı: Ortak havuz sisteminde toplanan navlun ve bilet gelirleri, yapılan sefer ve kilometre esasına göre hak sahiplerine aktarılır.
+Madde 10 - KOOPBİS Bildirimi: Tüm ortak plaka kayıtları ve yetki belgeleri KOOPBİS sistemine işlenir.`,
+
+  sulama: `S.S. ................................................. SULAMA KOOPERATİFİ ANASÖZLEŞMESİ
+(Tarım ve Orman Bakanlığı Onaylı Tip Anasözleşme - DSİ ve KKYDP Uyumlu)
+
+BÖLÜM I: KURULUŞ VE AMAÇ
+Madde 1 - Kuruluş: 1163 sayılı Kooperatifler Kanunu ve 6172 sayılı Sulama Birlikleri Kanunu ilkeleri dairesinde kurulmuştur.
+Madde 2 - Amaç: Çalışma bölgesindeki tarım arazilerinin verimli, planlı ve tasarruflu şekilde sulanmasını sağlamak, yeraltı ve yerüstü su tesislerini işletmek.
+Madde 3 - Çalışma Konuları:
+1. DSİ veya mülki idarece inşa edilen derin kuyu, pompa istasyonu, baraj ve gölet sulama tesislerini devralıp işletmek.
+2. Basınçlı borulu şebeke, damla ve yağmurlama sistemleri kurarak su israfını önlemek.
+3. Sulama pompalarının elektrik giderlerini karşılamak üzere Güneş Enerjisi Santrali (GES) yatırımları yapmak.
+4. Sayaçlı su kullanım tarifesi belirlemek ve su kullanım bedellerini tahsil etmek.
+
+BÖLÜM II: ORTAKLIK VE SU HAKKI
+Madde 4 - Ortaklık Şartları: Sulama sahası içinde tapulu veya kira sözleşmeli tarım arazisine sahip olmak.
+Madde 5 - Su Kullanım Yükümlülüğü: Ortaklar kooperatif su dağıtım planına ve münavebe cetveline uymak, su israfından kaçınmakla yükümlüdür.
+Madde 6 - Tesislerin Korunması: Sulama kanallarına veya boru hatlarına zarar veren ortaklar zararı tazmin eder ve su hakkı geçici olarak durdurulur.`,
+
+  tuketim: `S.S. ................................................. TÜKETİM KOOPERATİFİ ANASÖZLEŞMESİ
+(Ticaret Bakanlığı Onaylı Tip Anasözleşme - KVK 4/1-k Uyumlu)
+
+BÖLÜM I: KURULUŞ VE AMAÇ
+Madde 1 - Unvan: "Sınırlı Sorumlu ................................................. Tüketim Kooperatifi"dir.
+Madde 2 - Amaç: Ortaklarının gıda, giyim, yakacak ve dayanıklı tüketim malları ihtiyaçlarını en uygun fiyatla, kaliteli ve güvenilir biçimde karşılamaktır.
+Madde 3 - Çalışma Konuları:
+1. Tüketim maddelerini doğrudan üreticiden veya toptancıdan aracısız satın alarak tanzim satış mağazaları açmak.
+2. Ortaklarına peşin veya vadeli satış kartları tanımlamak.
+3. E-market ve mobil sipariş ağı kurarak adrese teslimat sağlamak.
+
+BÖLÜM II: VERGİ MUAFİYETİ VE RİSTURN
+Madde 4 - Ortak İçi Satış Kuralı: Kooperatif satışlarını münhasıran ortaklarına yapar. Ortak dışı üçüncü kişilere satış yapılması halinde 7061 sayılı Kanun uyarınca ayrı bir iktisadi işletme tescil edilir.
+Madde 5 - Risturn İadesi: Yıl sonu maliyet farkları ortakların yaptıkları alışveriş tutarı oranında risturn olarak iade edilir. Sermaye üzerinden kazanç dağıtılamaz.`,
+
+  site_isletme: `S.S. ................................................. TOPLU YAPI VE SİTE İŞLETME KOOPERATİFİ ANASÖZLEŞMESİ
+(Ticaret Bakanlığı Onaylı Tip Anasözleşme - 634 SK Kat Mülkiyeti Entegrasyonu)
+
+BÖLÜM I: KURULUŞ VE AMAÇ
+Madde 1 - Amaç: Konut veya işyeri yapımı tamamlanmış toplu yapı ve sitelerin ortak kullanım alanlarını, sosyal tesislerini, teknik altyapısını ve çevre düzenini yönetmek ve işletmektir.
+Madde 2 - Faaliyet Konuları:
+1. Güvenlik, temizlik, peyzaj, havuz, otopark ve ısıtma/soğutma hizmetlerini yürütmek veya taşere etmek.
+2. 634 sayılı Kat Mülkiyeti Kanunu hükümlerine uygun olarak işletme projesi hazırlamak ve genel kurul onayına sunmak.
+3. Aidat ve ortak gider avanslarını tahakkuk ettirmek, geciken aidatlara yasal sınırlar dahilinde faiz uygulamak.
+4. Gayrimenkul bakım, onarım ve yenileme ihaleleri düzenlemek.
+
+BÖLÜM II: ORTAKLIK VE AİDAT
+Madde 3 - Ortaklık: Toplu yapıdaki bağımsız bölüm malikleri veya intifa hakkı sahipleri ortak olabilir.
+Madde 4 - İcra Takip Yetkisi: Vadesinde ödenmeyen aidat ve gider payları için Yönetim Kurulu 634 SK ve İcra ve İflas Kanunu hükümlerine göre doğrudan icra takibi yapmaya yetkilidir.`,
+
+  yenilenebilir_enerji: `S.S. ................................................. YENİLENEBİLİR ENERJİ ÜRETİM KOOPERATİFİ ANASÖZLEŞMESİ
+(Ticaret Bakanlığı ve EPDK Lisanssız Elektrik Mevzuatı Uyumlu)
+
+BÖLÜM I: KURULUŞ VE AMAÇ
+Madde 1 - Amaç: Güneş (GES), rüzgar (RES), biyokütle veya jeotermal kaynaklardan lisanssız elektrik üretmek ve üretilen elektriği ortakların tüketimleriyle mahsuplaştırmaktır.
+Madde 2 - Faaliyet Alanları:
+1. EPDK Elektrik Piyasasında Lisanssız Elektrik Üretim Yönetmeliği uyarınca çağrı mektubu ve bağlantı anlaşması almak.
+2. Güneş tarlaları ve çatı tipi GES santralleri kurmak.
+3. Görevli tedarik şirketi ve TEİAŞ ile mahsuplaşma protokolleri imzalamak.
+4. Üretilen enerjiyi ortakların abone numaraları üzerinden tüketim oranlarına göre takas etmek; fazlasını şebekeye satarak gelir elde etmek.`
+};
+
+// ================= ÖRNEK ANASÖZLEŞMELER KÜTÜPHANESİ MOTORU =================
+function initBylawsLibraryEngine() {
+  const selectEl = document.getElementById("bylaw-select");
+  const container = document.getElementById("bylaw-text-container");
+  const copyBtn = document.getElementById("btn-copy-bylaw");
+  const printBtn = document.getElementById("btn-print-bylaw");
+  const downloadBtn = document.getElementById("btn-download-bylaw");
+  const searchInput = document.getElementById("bylaw-search-input");
+
+  if (!selectEl || !container) return;
+
+  function loadText(type) {
+    const raw = BYLAWS_TEXTS[type] || "Seçilen türe ait anasözleşme metni hazırlanıyor...";
+    container.textContent = raw;
+  }
+
+  // Başlangıç yüklemesi
+  loadText(selectEl.value);
+
+  selectEl.addEventListener("change", () => {
+    loadText(selectEl.value);
+    if (searchInput) searchInput.value = "";
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener("click", () => {
+      const text = container.textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        copyBtn.textContent = "✅ Metin Kopyalandı!";
+        setTimeout(() => { copyBtn.textContent = "📋 Tüm Metni Kopyala"; }, 2000);
+      });
+    });
+  }
+
+  if (printBtn) {
+    printBtn.addEventListener("click", () => {
+      const win = window.open("", "_blank");
+      if (!win) return;
+      const title = selectEl.options[selectEl.selectedIndex].text;
+      const htmlContent = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>' + title + '</title>' +
+        '<style>body { font-family: "Times New Roman", serif; padding: 40px; font-size: 13px; line-height: 1.6; color: #111; }' +
+        'h2 { text-align: center; font-size: 16px; margin-bottom: 24px; text-transform: uppercase; }' +
+        'pre { white-space: pre-wrap; font-family: inherit; }' +
+        '@media print { body { padding: 0; } }</style></head><body>' +
+        '<h2>' + title + '</h2>' +
+        '<pre>' + container.textContent + '</pre>' +
+        '<script>window.onload = function() { window.print(); };<' + '/script></body></html>';
+      win.document.write(htmlContent);
+      win.document.close();
+    });
+  }
+
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", () => {
+      const type = selectEl.value;
+      const content = container.textContent;
+      const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = type + "_ornek_anasozlesmesi.txt";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.trim().toLowerCase();
+      const currentFullText = BYLAWS_TEXTS[selectEl.value] || "";
+      if (!q) {
+        container.textContent = currentFullText;
+        return;
+      }
+      const paragraphs = currentFullText.split("\n\n");
+      const matched = paragraphs.filter(p => p.toLowerCase().includes(q));
+      if (matched.length > 0) {
+        container.textContent = matched.join("\n\n----------------------------------------\n\n");
+      } else {
+        container.textContent = 'Arama sonucu: "' + q + '" ifadesi metinde bulunamadı.';
+      }
+    });
+  }
+}
+
+// ================= PODCAST & SESLİ REHBER MOTORU =================
+const PODCAST_EPISODES = {
+  ep1: {
+    title: "Bölüm 1: 7511 SK İntibak Reformu ve 26 Ekim 2026 Geri Sayımı",
+    audioSrc: "assets/audio/bolum_1.mp3",
+    dialogs: [
+      { speaker: "Avukat Deniz Hanım", text: "Can Bey merhaba, bugün Türkiye genelindeki 50 bini aşkın kooperatifi ve 8 milyondan fazla ortağı doğrudan ilgilendiren, adeta saatli bomba gibi yaklaşan bir tarihi konuşuyoruz: 26 Ekim 2026. Bildiğiniz gibi 7511 sayılı Kanun ile anasözleşme intibak süresi son kez 5 yıla uzatıldı. Neden bu kadar kritik?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Deniz Hanım, sahadaki en büyük yanılgı daha vakit var, son günlerde hallederiz düşüncesi. Ancak bu bir vergi beyannamesi uzatması gibi değil. Kanun metni çok açık: 26 Ekim 2026 tarihine kadar anasözleşmesini Ticaret veya Tarım Bakanlığı'nın güncel tip anasözleşmesine intibak ettirip tescil ettirmeyen kooperatifler kanun gereği kendiliğinden dağılmış sayılacak!" },
+      { speaker: "Avukat Deniz Hanım", text: "Yani mahkeme kararına veya bakanlık yazısına gerek kalmaksızın, tüzel kişilik doğrudan tasfiye haline girecek. Peki Can Bey, intibak için olağan genel kurul mu beklenmeli yoksa olağanüstü genel kurul yapılabilir mi?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Kesinlikle olağanüstü genel kurul toplanabilir ve beklenmemelidir. Hatta 2026 yılı Haziran ayındaki olağan genel kurullarda bu madde mutlaka gündeme alınmalı. MERSİS üzerinden anasözleşme tadil tasarısı hazırlanıyor, İl Müdürlüğü'nden onay alınıyor ve genel kurulda oylanıyor. Karar nisabı ise toplantıda mevcut ortakların 2 bölü 3 çoğunluğudur." }
+    ]
+  },
+  ep2: {
+    title: "Bölüm 2: Dış Denetim ve 40 Saatlik Zorunlu Eğitim Eşikleri (100M TL & 2000 Ortak)",
+    audioSrc: "assets/audio/bolum_2.mp3",
+    dialogs: [
+      { speaker: "Mali Müşavir Can Bey", text: "Deniz Hanım, yöneticilerin en çok ceza aldığı konulardan biri de dış denetim. 1 Şubat 2022 tarihli Yönetmeliğin 15. maddesi güncellendi. Artık faaliyet konusuna bakılmaksızın yıllık net satış hasılatı 100 Milyon TL olan veya ortak sayısı 2.000'i aşan her kooperatif bağımsız dış denetime tabidir." },
+      { speaker: "Avukat Deniz Hanım", text: "Ayrıca yapı kooperatiflerinde de yapı ruhsatı alınmış ve 100 ortağı varsa ciroya bakılmaksızın doğrudan dış denetim şartı var. Dış denetim yaptırılmadan sunulan bilanço genel kurulda ibra edilirse ne olur?" },
+      { speaker: "Mali Müşavir Can Bey", text: "O ibra kararı kanunen yok hükmündedir! Üstelik yönetim kurulu üyeleri Türk Ceza Kanunu m. 257 kapsamında görevi kötüye kullanma suçlamasıyla ceza mahkemesinde yargılanır. Denetim de sıradan bir rapor değil; Kamu Gözetimi Kurumu'nun SBDS 2400 standardına göre bağımsız denetçilerce hazırlanmalıdır." },
+      { speaker: "Avukat Deniz Hanım", text: "Peki 40 saatlik zorunlu kooperatifçilik eğitimi? Hukuk veya İktisat mezunu yöneticiler bundan muaf mı?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Asla! Sahadaki en büyük mit bu. Yönetmelikte hiçbir üniversite diplomasına veya avukatlık/mali müşavirlik unvanına dayalı muafiyet yoktur. Seçimden itibaren 9 ay içinde 40 saatlik akredite eğitimi almayan yöneticinin üyeliği kendiliğinden düşer." }
+    ]
+  },
+  ep3: {
+    title: "Bölüm 3: 7579 SK İskansız Tapu Devri Yasağı ve İnşaat Güvencesi",
+    audioSrc: "assets/audio/bolum_3.mp3",
+    dialogs: [
+      { speaker: "Avukat Deniz Hanım", text: "Can Bey, inşaatı devam eden yapı kooperatiflerinde geçmişte yaşanan suiistimaller 7579 sayılı Kanun ile kökten kesildi. Artık Yapı Kullanma İzin Belgesi alınmadan tapuda veya noter satış vaadiyle ortaklara mülkiyet devri yapılması kesinlikle yasaklandı." },
+      { speaker: "Mali Müşavir Can Bey", text: "Harika bir güvence oldu. Çünkü kaba inşaat halindeyken hisse devredilip kooperatif borç içinde bırakılıyordu. Şimdi iskan alınmadan ferdi mülkiyete geçilemiyor. Ayrıca belediyelerin kooperatif kurması da Cumhurbaşkanı onayına bağlandı." }
+    ]
+  },
+  ep4: {
+    title: "Bölüm 4: Vergi Muafiyetinin 4 Altın Şartı ve Risturn Dağıtımı",
+    audioSrc: "assets/audio/bolum_4.mp3",
+    dialogs: [
+      { speaker: "Mali Müşavir Can Bey", text: "Kooperatiflerin kurumlar vergisi muafiyetinde 5520 sayılı Kanun m. 4/1-k'daki 4 şart emredicidir: Sermayeye kâr dağıtmama, yöneticilere pay vermeme, yedek akçeleri bölüşmeme ve yalnızca ortaklarla işlem yapma." },
+      { speaker: "Avukat Deniz Hanım", text: "Can Bey, kooperatif ortak olmayan biriyle işlem yaparsa muafiyeti tamamen biter mi?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Eskiden biterdi, ancak 7061 sayılı Kanun reformu ile bu değişti. Artık kooperatifin genel muafiyeti bozulmuyor; yalnızca ortak dışı işlemler dolayısıyla bağlı bir İktisadi İşletme doğmuş sayılıyor ve sadece o kısım kurumlar vergisine tabi oluyor." }
+    ]
+  },
+  ep5: {
+    title: "Bölüm 5: Yapı Kooperatiflerinde Ferdi Mülkiyet, Şerefiye ve Tapu Harcı",
+    audioSrc: "assets/audio/bolum_5.mp3",
+    dialogs: [
+      { speaker: "Avukat Deniz Hanım", text: "Can Bey, yapı kooperatiflerinde inşaat bittiğinde en çok ihtilaf yaşanan safha ferdi mülkiyete geçiş ve şerefiye bedelleridir. Bir daire 5. katta deniz manzaralı, diğeri zemin katta kuzey cepheli. Bu adalet nasıl sağlanır?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Deniz Hanım, 1163 sayılı Kanun Ek m. 2 gereğince genel kurulda bir Şerefiye Komisyonu veya SPK lisanslı gayrimenkul değerleme uzmanı görevlendirilir. Her bağımsız bölümün konumu, katı, cephesi ve kullanım alanına göre bir değer farkı raporu hazırlanır. Ortaklar bu farkları kooperatife öder veya alacaklı çıkar." },
+      { speaker: "Avukat Deniz Hanım", text: "Peki şerefiye raporuna itiraz süresi nedir?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Şerefiye cetveli ortaklara tebliğ edilir veya genel kurulda onaylanır. Ortakların bildirimden itibaren 15 gün içinde itiraz etme, genel kurul onayından itibaren 1 ay içinde ise mahkemede tespit ve uyarlama davası açma hakkı vardır." },
+      { speaker: "Avukat Deniz Hanım", text: "Harç boyutu da ortaklar için büyük avantaj sağlıyor değil mi?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Kesinlikle! 492 sayılı Harçlar Kanunu m. 59/c uyarınca yapı kooperatiflerinin ortaklarına yapacağı ilk konut veya işyeri tahsis ve tapu devirleri Tapu Harcından tamamen Muaftır. Normal satışlardaki binde 20 artı 20 harç ödenmez, yalnızca maktu döner sermaye bedeli tahsil edilir." }
+    ]
+  },
+  ep6: {
+    title: "Bölüm 6: Kırsal Kalkınma ve Kadın Kooperatiflerinde KOOP-DES & Hibeler",
+    audioSrc: "assets/audio/bolum_6.mp3",
+    dialogs: [
+      { speaker: "Avukat Deniz Hanım", text: "Can Bey, son yıllarda kadın emeğini değerlendiren üretim kooperatifleri hızla çoğalıyor. Devletin kadın kooperatiflerine sunduğu en cazip finansal destekler nelerdir?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Ticaret Bakanlığı'nın KOOP-DES programı tam bir can suyu. Ortaklarının en az yüzde 90'ı kadınlardan oluşan kooperatiflere, kalkınmada öncelikli yörelerde yüzde 90, diğer illerde yüzde 75 oranında hibe veriliyor. Tamamen geri ödemesiz!" },
+      { speaker: "Avukat Deniz Hanım", text: "Bu hibe hangi harcamalar için kullanılabiliyor?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Üretim ve paketleme makineleri, soğuk hava depoları, e-ticaret altyapısı, laboratuvar test cihazları ve en önemlisi 2 nitelikli personele kadar 1 yıllık maaş desteği doğrudan hibe kapsamındadır. Üstelik belediyelerle 5393 sayılı Kanun m. 75 kapsamında ortak hizmet protokolleri de yapılabiliyor." },
+      { speaker: "Avukat Deniz Hanım", text: "Yani kadın kooperatifleri sıfır sermaye riskiyle modern üretim tesisleri kurabiliyor." }
+    ]
+  },
+  ep7: {
+    title: "Bölüm 7: Kooperatif Tasfiyesi, Alacaklılara 3 TTSG Çağrısı ve Kapanış",
+    audioSrc: "assets/audio/bolum_7.mp3",
+    dialogs: [
+      { speaker: "Avukat Deniz Hanım", text: "Can Bey, amacına ulaşan ya da faaliyetini sonlandırmak isteyen kooperatiflerde tasfiye süreci nasıl işler? Genel kurulda kapattık demekle tüzel kişilik sona erer mi?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Asla ermez Deniz Hanım! Kooperatif tüzel kişiliği ancak tasfiye süreci tamamlanıp Ticaret Sicilinden kaydı silindiğinde son bulur. 1163 sayılı Kanun m. 81 ve TTK m. 536 uyarınca tasfiye memurları atanır ve unvana Tasfiye Halinde ibaresi eklenir." },
+      { speaker: "Avukat Deniz Hanım", text: "Alacaklılara çağrı ilanları neden bu kadar katı kurallara bağlı?" },
+      { speaker: "Mali Müşavir Can Bey", text: "Çünkü alacaklıların hakkını korumak zorunludur. Türkiye Ticaret Sicili Gazetesi'nde birer hafta arayla 3 defa alacaklılara çağrı ilanı yayımlanmalıdır. Kanun gereği 3. ilanın yayımından itibaren en az 6 ay geçmedikçe kalan malvarlığı ortaklar arasında paylaştırılamaz!" },
+      { speaker: "Avukat Deniz Hanım", text: "Tasfiye bittikten sonra defterler ve belgeler ne kadar süre saklanmalı?" },
+      { speaker: "Mali Müşavir Can Bey", text: "TTK m. 82 uyarınca kooperatifin yevmiye, kebir, envanter, karar ve ortaklar defterleri ile mali evrakları 10 yıl süreyle saklanmak zorundadır." }
+    ]
+  }
+};
+
+let currentTtsIndex = 0;
+let isTtsPlaying = false;
+
+function initPodcastEngine() {
+  const epSelect = document.getElementById("podcast-episode-select");
+  const audioEl = document.getElementById("podcast-audio-element");
+  const audioSrc = document.getElementById("podcast-audio-source");
+  const titleEl = document.getElementById("podcast-playing-title");
+  const ttsPlayBtn = document.getElementById("btn-tts-play");
+  const ttsStopBtn = document.getElementById("btn-tts-stop");
+  const rateSelect = document.getElementById("tts-rate-select");
+
+  if (!epSelect) return;
+
+  function loadEpisode(key) {
+    const ep = PODCAST_EPISODES[key];
+    if (!ep) return;
+    if (titleEl) titleEl.textContent = ep.title;
+    if (audioSrc && audioEl) {
+      audioSrc.src = ep.audioSrc;
+      audioEl.load();
+    }
+    stopTtsPlayback();
+  }
+
+  epSelect.addEventListener("change", () => {
+    loadEpisode(epSelect.value);
+  });
+
+  if (ttsPlayBtn) {
+    ttsPlayBtn.addEventListener("click", () => {
+      const epKey = epSelect.value;
+      const ep = PODCAST_EPISODES[epKey];
+      if (!ep) return;
+
+      if (!window.speechSynthesis) {
+        alert("Tarayıcınız Web Speech API ses özelliğini desteklemiyor.");
+        return;
+      }
+
+      stopTtsPlayback();
+      isTtsPlaying = true;
+      currentTtsIndex = 0;
+      ttsPlayBtn.textContent = "⏳ Seslendiriliyor...";
+
+      const rate = rateSelect ? parseFloat(rateSelect.value || "1.0") : 1.0;
+      playNextTtsLine(ep.dialogs, rate, () => {
+        isTtsPlaying = false;
+        ttsPlayBtn.textContent = "🔊 Canlı Seslendir (Web Speech API)";
+      });
+    });
+  }
+
+  if (ttsStopBtn) {
+    ttsStopBtn.addEventListener("click", () => {
+      stopTtsPlayback();
+      if (ttsPlayBtn) ttsPlayBtn.textContent = "🔊 Canlı Seslendir (Web Speech API)";
+    });
+  }
+
+  // AI Podcast Stüdyosu Motorunu Başlat
+  initPodcastAiStudio();
+}
+
+function stopTtsPlayback() {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  isTtsPlaying = false;
+}
+
+function playNextTtsLine(dialogs, rate = 1.0, onComplete) {
+  if (!isTtsPlaying || currentTtsIndex >= dialogs.length) {
+    if (onComplete) onComplete();
+    return;
+  }
+
+  const item = dialogs[currentTtsIndex];
+  const u = new SpeechSynthesisUtterance(item.speaker + " diyor ki: " + item.text);
+  u.lang = "tr-TR";
+  u.rate = rate || 1.0;
+
+  u.onend = () => {
+    currentTtsIndex++;
+    playNextTtsLine(dialogs, rate, onComplete);
+  };
+
+  u.onerror = () => {
+    currentTtsIndex++;
+    playNextTtsLine(dialogs, rate, onComplete);
+  };
+
+  window.speechSynthesis.speak(u);
+}
+
+// ================= AI PODCAST SENARYO ATÖLYESİ (NOTEBOOKLM ENTEGRATÖRÜ) =================
+function initPodcastAiStudio() {
+  const presetSelect = document.getElementById("ai-podcast-preset");
+  const notesTextarea = document.getElementById("ai-podcast-notes");
+  const btnGenerate = document.getElementById("btn-generate-podcast-script");
+  const btnStudioTtsPlay = document.getElementById("btn-studio-tts-play");
+  const btnCopyPrompt = document.getElementById("btn-copy-notebooklm-prompt");
+  const btnDownloadTxt = document.getElementById("btn-download-script-txt");
+  const resultBox = document.getElementById("ai-podcast-result-box");
+  const scriptContent = document.getElementById("ai-podcast-script-content");
+  const rateSelect = document.getElementById("tts-rate-select");
+
+  if (!btnGenerate) return;
+
+  const PRESETS = {
+    gk_iptal: "Konu: Genel Kurul Kararlarının İptali Davaları (1163 SK m. 53). 1 aylık hak düşürücü süre, muhalefet şerhinin tutanağa işletilmesi şartı, çağrı usulsüzlüğü halleri ve butlan/yokluk farkı.",
+    tarim_derece: "Konu: Tarımsal Amaçlı Örgütlerin Derecelendirilmesi (Yön. 40451). A, B ve C grubu sertifikasyonu, sübvansiyonlu Ziraat Bankası kredi faiz indirimleri, hibe öncelikleri ve derecelendirme kriterleri.",
+    yonetim_sorumluluk: "Konu: Kooperatif Yönetim Kurulu Üyelerinin Hukuki ve Cezai Sorumluluğu. TCK m. 257 görevi kötüye kullanma, TTK m. 553 özen yükümlülüğü, KOOPBİS'e veri girmemenin adli sonuçları ve şahsi malvarlığıyla sorumluluk.",
+    egk_genkop: "Konu: Kooperatiflerde Elektronik Genel Kurul (GENKOP) Uygulaması. E-imza ile katılım, güvenli oy kullanma sistemi, fiziki ve hibrit toplantı protokolleri ve Ticaret Bakanlığı denetimi."
+  };
+
+  if (presetSelect) {
+    presetSelect.addEventListener("change", () => {
+      const val = presetSelect.value;
+      if (PRESETS[val]) {
+        notesTextarea.value = PRESETS[val];
+      } else if (val === "custom") {
+        notesTextarea.value = "";
+      }
+    });
+  }
+
+  let generatedDialogs = [];
+
+  btnGenerate.addEventListener("click", async () => {
+    const rawNotes = (notesTextarea && notesTextarea.value.trim()) || "";
+    if (!rawNotes) {
+      alert("Lütfen bir konu seçiniz veya NotebookLM notlarınızı yapıştırınız.");
+      return;
+    }
+
+    btnGenerate.disabled = true;
+    btnGenerate.textContent = "⏳ Senaryo Yazılıyor...";
+    if (resultBox) resultBox.style.display = "block";
+    if (scriptContent) scriptContent.innerHTML = "<em>Yapay zeka kooperatif uzmanları (Avukat Deniz Hanım ve SMMM Can Bey) için diyalog senaryosu hazırlıyor...</em>";
+
+    const prompt = `Aşağıdaki kooperatif konusunu veya notlarını kullanarak, bir podcast programı için Avukat Deniz Hanım ve SMMM Can Bey arasında geçen profesyonel, akıcı, Türk mevzuatına (1163 sayılı Kanun ve ilgili yönetmelikler) dayanan bir diyalog senaryosu yaz.
+
+Metin tam olarak şu formatta olmalıdır:
+Av. Deniz Hanım: [Açılış ve soru]
+SMMM Can Bey: [Cevap ve mevzuat analizi]
+Av. Deniz Hanım: [Kritik detay veya risk sorusu]
+SMMM Can Bey: [Cezai yaptırımlar, süreler veya pratik çözüm]
+Av. Deniz Hanım: [Kapanış ve özet]
+
+Kaynak Notlar:
+${rawNotes}`;
+
+    let scriptText = "";
+    try {
+      if (window.puter && window.puter.ai && typeof window.puter.ai.chat === "function") {
+        const res = await window.puter.ai.chat(prompt, { model: "gpt-4o-mini" });
+        scriptText = (res && res.message && res.message.content) || (res && res.text) || String(res);
+      } else {
+        scriptText = generateLocalPodcastScript(rawNotes);
+      }
+    } catch (e) {
+      scriptText = generateLocalPodcastScript(rawNotes);
+    }
+
+    btnGenerate.disabled = false;
+    btnGenerate.textContent = "🪄 Podcast Senaryosu Oluştur";
+
+    if (scriptContent) scriptContent.textContent = scriptText;
+    if (btnStudioTtsPlay) btnStudioTtsPlay.style.display = "inline-flex";
+    if (btnCopyPrompt) btnCopyPrompt.style.display = "inline-flex";
+    if (btnDownloadTxt) btnDownloadTxt.style.display = "inline-flex";
+
+    generatedDialogs = parseScriptToDialogs(scriptText);
+  });
+
+  if (btnStudioTtsPlay) {
+    btnStudioTtsPlay.addEventListener("click", () => {
+      if (!window.speechSynthesis) {
+        alert("Tarayıcınız ses sentezini desteklemiyor.");
+        return;
+      }
+      if (generatedDialogs.length === 0) return;
+
+      stopTtsPlayback();
+      isTtsPlaying = true;
+      currentTtsIndex = 0;
+      btnStudioTtsPlay.textContent = "⏳ Seslendiriliyor...";
+
+      const rate = rateSelect ? parseFloat(rateSelect.value || "1.0") : 1.0;
+      playNextTtsLine(generatedDialogs, rate, () => {
+        isTtsPlaying = false;
+        btnStudioTtsPlay.textContent = "🔊 Üretilen Senaryoyu Seslendir";
+      });
+    });
+  }
+
+  if (btnCopyPrompt) {
+    btnCopyPrompt.addEventListener("click", () => {
+      const promptText = `Lütfen aşağıdaki kooperatif hukuku diyalog metnini ve araştırma notlarını kullanarak, iki uzman sunucunun (Avukat Deniz Hanım ve SMMM Can Bey) derinlemesine tartıştığı, 1163 sayılı Kooperatifler Kanunu'na tam uyumlu bir Türkçe 'Audio Overview / Sesli Genel Bakış' oluştur:\n\n` + (scriptContent ? scriptContent.textContent : "");
+      navigator.clipboard.writeText(promptText).then(() => {
+        btnCopyPrompt.textContent = "✅ Kopyalandı (NotebookLM'e Yapıştırın)";
+        setTimeout(() => { btnCopyPrompt.textContent = "📋 NotebookLM Studio Promptunu Kopyala"; }, 2500);
+      });
+    });
+  }
+
+  if (btnDownloadTxt) {
+    btnDownloadTxt.addEventListener("click", () => {
+      const blob = new Blob([scriptContent ? scriptContent.textContent : ""], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "kooperatif_podcast_senaryosu.txt";
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  }
+}
+
+function parseScriptToDialogs(text) {
+  const lines = text.split("\n").filter(l => l.trim().length > 0);
+  const dialogs = [];
+  lines.forEach(l => {
+    if (l.toLowerCase().includes("deniz") || l.startsWith("Av.")) {
+      dialogs.push({ speaker: "Avukat Deniz Hanım", text: l.replace(/^[^:]+:\s*/, "") });
+    } else if (l.toLowerCase().includes("can") || l.startsWith("SMMM")) {
+      dialogs.push({ speaker: "Mali Müşavir Can Bey", text: l.replace(/^[^:]+:\s*/, "") });
+    } else if (l.trim().length > 10) {
+      dialogs.push({ speaker: "Uzman Yorumu", text: l });
+    }
+  });
+  return dialogs.length > 0 ? dialogs : [
+    { speaker: "Avukat Deniz Hanım", text: text.slice(0, 300) }
+  ];
+}
+
+function generateLocalPodcastScript(notes) {
+  return "Av. Deniz Hanım: Can Bey merhaba, bugün kooperatif camiasında çok merak edilen bu konuyu ele alıyoruz: " + notes.slice(0, 100) + "...\n\n" +
+    "SMMM Can Bey: Deniz Hanım gerçekten çok önemli bir başlık. 1163 sayılı Kooperatifler Kanunu ve güncel mevzuat hükümleri çerçevesinde yöneticilerin ve denetçilerin bu kurallara harfiyen uyması gerekiyor.\n\n" +
+    "Av. Deniz Hanım: Peki Can Bey, sahada yapılan en kritik hata nedir ve yasal yaptırımı nasıl işliyor?\n\n" +
+    "SMMM Can Bey: En büyük hata yasal hak düşürücü sürelerin kaçırılması ve kararların usulüne uygun tescil ettirilmemesidir. Bu durum hem genel kurul kararlarının hükümsüzlüğüne hem de yöneticilerin TCK m. 257 kapsamında cezai sorumluluğuna yol açabilir.\n\n" +
+    "Av. Deniz Hanım: Çok teşekkür ederiz Can Bey, bir sonraki yayınımızda yeni bir kooperatif reformunu incelemeye devam edeceğiz.";
+}
+
+// ================= ÜCRETSİZ & KEYLESS YAPAY ZEKA ASİSTANI (AI & RAG) =================
+function initAiAssistant() {
+  const fab = document.getElementById("wiki-ai-fab");
+  const modal = document.getElementById("wiki-ai-modal");
+  const closeBtn = document.getElementById("wiki-ai-modal-close");
+  const sendBtn = document.getElementById("wiki-ai-send-btn");
+  const input = document.getElementById("wiki-ai-input");
+  const messagesBox = document.getElementById("wiki-ai-messages");
+  const chips = document.querySelectorAll(".wiki-ai-prompt-chip");
+  const summarizeBtn = document.getElementById("btn-ai-summarize-article");
+
+  if (!fab || !modal) return;
+
+  fab.addEventListener("click", () => {
+    modal.style.display = modal.style.display === "none" ? "flex" : "none";
+    if (modal.style.display === "flex" && input) {
+      input.focus();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  }
+
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      const p = chip.getAttribute("data-prompt");
+      if (p && input) {
+        input.value = p;
+        handleSendMessage();
+      }
+    });
+  });
+
+  if (sendBtn) {
+    sendBtn.addEventListener("click", handleSendMessage);
+  }
+
+  if (input) {
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        handleSendMessage();
+      }
+    });
+  }
+
+  if (summarizeBtn) {
+    summarizeBtn.addEventListener("click", handleSummarizeArticle);
+  }
+
+  async function handleSendMessage() {
+    const query = input.value.trim();
+    if (!query) return;
+
+    appendMessage("user", query);
+    input.value = "";
+
+    const loadingId = "ai-msg-loading-" + Date.now();
+    appendMessage("bot", '<div style="display:flex; align-items:center; gap:8px;"><span>⚡</span> <em>Kooperatif mevzuatı taranıyor ve yapay zeka yanıtlıyor...</em></div>', loadingId);
+
+    try {
+      const answer = await askAiLegalAdvisor(query);
+      const loadingEl = document.getElementById(loadingId);
+      if (loadingEl) {
+        loadingEl.innerHTML = formatAiResponse(answer);
+      }
+    } catch (err) {
+      const loadingEl = document.getElementById(loadingId);
+      if (loadingEl) {
+        loadingEl.innerHTML = formatAiResponse(generateLocalRagAnswer(query));
+      }
+    }
+
+    if (messagesBox) messagesBox.scrollTop = messagesBox.scrollHeight;
+  }
+
+  function appendMessage(role, content, id = null) {
+    if (!messagesBox) return;
+    const msg = document.createElement("div");
+    msg.className = `wiki-ai-msg ${role}`;
+    if (id) msg.id = id;
+    msg.innerHTML = content;
+    messagesBox.appendChild(msg);
+    messagesBox.scrollTop = messagesBox.scrollHeight;
+  }
+}
+
+function formatAiResponse(text) {
+  if (window.marked && typeof window.marked.parse === "function") {
+    return window.marked.parse(text);
+  }
+  return String(text).replace(/\n/g, "<br>");
+}
+
+async function handleSummarizeArticle() {
+  const currentId = state.currentArticleId;
+  const currentArt = ARTICLES_REGISTRY.find(a => a.id === currentId) || { title: "Makale" };
+  const summaryArea = document.getElementById("article-ai-summary-area");
+  if (!summaryArea) return;
+
+  summaryArea.style.display = "block";
+  summaryArea.innerHTML = `
+    <div class="wiki-ai-summary-banner">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+        <strong style="color: #6d28d9; font-size: 14px;">✨ Yapay Zeka Yönetici Özeti: ${currentArt.title}</strong>
+        <span style="font-size: 11px; color: var(--wiki-text-muted);">Ücretsiz & Keyless AI</span>
+      </div>
+      <div id="ai-summary-text" style="font-size: 13px; line-height: 1.6;">
+        <em>⚡ Makale analiz ediliyor ve kilit hukuki noktalar çıkarılıyor...</em>
+      </div>
+    </div>
+  `;
+
+  const rawArticleContent = (window.WIKI_ARTICLES_BUNDLE && window.WIKI_ARTICLES_BUNDLE[currentId]) || "";
+  const prompt = `Aşağıdaki Türk kooperatifçilik ansiklopedi makalesini yöneticiler ve denetçiler için 3-4 kilit maddede, net, yasal süreleri ve cezai riskleri vurgulayarak özetle:\n\nBaşlık: ${currentArt.title}\n\nİçerik:\n${rawArticleContent.slice(0, 3000)}`;
+
+  try {
+    let summary = "";
+    if (window.puter && window.puter.ai && typeof window.puter.ai.chat === "function") {
+      const res = await window.puter.ai.chat(prompt, { model: "gpt-4o-mini" });
+      summary = (res && res.message && res.message.content) || (res && res.text) || String(res);
+    } else {
+      summary = generateLocalSummary(rawArticleContent, currentArt.title);
+    }
+    const textEl = document.getElementById("ai-summary-text");
+    if (textEl) {
+      textEl.innerHTML = formatAiResponse(summary);
+    }
+  } catch (err) {
+    const textEl = document.getElementById("ai-summary-text");
+    if (textEl) {
+      textEl.innerHTML = formatAiResponse(generateLocalSummary(rawArticleContent, currentArt.title));
+    }
+  }
+}
+
+async function askAiLegalAdvisor(query) {
+  const context = buildRagContext(query);
+  const systemPrompt = "Sen Türkiye Kooperatifler Ansiklopedisi'nin yapay zeka hukuk danışmanısın. " +
+    "Kullanıcının sorusuna Türk kooperatif mevzuatı (1163 sayılı Kooperatifler Kanunu, 7339 ve 7579 sayılı reformlar, 7511 sayılı intibak kanunu, KOOPBİS, dış denetim, vergi muafiyeti KVK 4/1-k, Yargıtay emsal kararları) ışığında net, güvenilir, maddeler halinde ve yasal süreleri belirterek Türkçe yanıt ver.\n\n" +
+    "Referans Mevzuat Bilgileri:\n" + context;
+
+  // 1. Puter.js
+  if (window.puter && window.puter.ai && typeof window.puter.ai.chat === "function") {
+    try {
+      const res = await window.puter.ai.chat(systemPrompt + "\n\nKullanıcı Sorusu: " + query, { model: "gpt-4o-mini" });
+      const txt = (res && res.message && res.message.content) || (res && res.text) || (typeof res === "string" ? res : "");
+      if (txt && txt.trim().length > 20) return txt;
+    } catch (e) {
+      console.warn("Puter AI çağrısı başarısız, alternatif deneniyor:", e);
+    }
+  }
+
+  // 2. Pollinations.ai
+  try {
+    const fetchRes = await fetch("https://text.pollinations.ai/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: query }
+        ],
+        model: "openai"
+      })
+    });
+    if (fetchRes.ok) {
+      const json = await fetchRes.json();
+      const txt = json.content || (typeof json === "string" ? json : "");
+      if (txt && txt.trim().length > 20) return txt;
+    }
+  } catch (e) {
+    console.warn("Pollinations AI çağrısı başarısız, yerel RAG motoruna geçiliyor:", e);
+  }
+
+  // 3. Yerel RAG Güvenlik Ağı
+  return generateLocalRagAnswer(query);
+}
+
+function buildRagContext(query) {
+  if (!window.WIKI_ARTICLES_BUNDLE) return "";
+  const qLower = query.toLowerCase();
+  const keys = ["intibak", "dış denetim", "dis denetim", "ihraç", "ihrac", "aidat", "7579", "iskan", "vergi", "risturn", "koopbis", "eğitim", "egitim", "tasfiye"];
+  let matchedSnippets = [];
+
+  for (const [id, content] of Object.entries(window.WIKI_ARTICLES_BUNDLE)) {
+    if (typeof content !== "string") continue;
+    const cLower = content.toLowerCase();
+    for (const k of keys) {
+      if (qLower.includes(k) && cLower.includes(k)) {
+        const paragraphs = content.split("\n\n");
+        for (const p of paragraphs) {
+          if (p.toLowerCase().includes(k) && p.length > 80 && p.length < 800) {
+            matchedSnippets.push(p);
+            if (matchedSnippets.length >= 3) break;
+          }
+        }
+      }
+      if (matchedSnippets.length >= 3) break;
+    }
+    if (matchedSnippets.length >= 3) break;
+  }
+  return matchedSnippets.join("\n\n---\n\n");
+}
+
+function generateLocalRagAnswer(query) {
+  const q = query.toLowerCase();
+
+  if (q.includes("intibak") || q.includes("son tarih")) {
+    return "### 🚨 Anasözleşme İntibakı Yasal Durumu (7511 Sayılı Kanun)\n\n" +
+      "1. **Yasal Son Tarih:** **26 Ekim 2026**. (7511 sayılı Kanun ile 5 yıla uzatılmıştır).\n" +
+      "2. **Yasal Yaptırım:** Bu tarihe kadar yürürlükteki tip anasözleşmeye intibak yaptırmayan kooperatifler ve üst kuruluşlar **kanun gereği kendiliğinden dağılmış (münfesih)** sayılır ve tasfiyeye girer (1163 SK Geçici m. 9).\n" +
+      "3. **Genel Kurul Nisabı:** İntibak kararı genel kurulda toplantıda mevcut oyların **2/3 çoğunluğu** ile alınır.\n" +
+      "4. **Prosedür:** MERSİS üzerinden anasözleşme değişiklik tasarısı oluşturulur, Bakanlık izni alınır ve tescil/ilan ettirilir.\n\n" +
+      "Detaylı bilgi için: [[24_kooperatif_kurulusu_ve_anasozlesme_intibak]] maddesini inceleyebilirsiniz.";
+  }
+
+  if (q.includes("dış denetim") || q.includes("dis denetim") || q.includes("bağımsız denetim")) {
+    return "### 🔍 Kooperatif Dış Denetim Kriterleri (Yönetmelik m. 15)\n\n" +
+      "Aşağıdaki şartlardan **herhangi birini** taşıyan kooperatifler dış denetime tabidir:\n" +
+      "1. **Satış Hasılatı:** Faaliyet konusuna bakılmaksızın yıllık net satış hasılatı **100 Milyon TL ve üzeri** olanlar.\n" +
+      "2. **Ortak Sayısı:** Faaliyet konusuna bakılmaksızın ortak sayısı **2.000 ve üzeri** olanlar.\n" +
+      "3. **Yapı Kooperatifleri:** Yapı ruhsatı alınmış ve ortak sayısı **100 veya üzeri** olan konut ve işyeri yapı kooperatifleri.\n" +
+      "4. **Özel Kuruluşlar:** Kredi/kefalet (ESKKK), tarım satış ve tarım kredi kooperatifleri doğrudan tabidir.\n\n" +
+      "**Standart & Yaptırım:** Denetim KGK'nın SBDS 2400 standardına göre yapılır. Dış denetim yaptırmayan yönetim kurulu üyeleri hakkında TCK m. 257 (görevi kötüye kullanma) kapsamında adli sorumluluk doğar ve bilanço genel kurulca ibra edilemez.\n\n" +
+      "Detaylı bilgi için: [[17_dis_denetim_ve_bagimsiz_denetim]] maddesini inceleyebilirsiniz.";
+  }
+
+  if (q.includes("ihraç") || q.includes("çıkar") || q.includes("aidat")) {
+    return "### ⚠️ Ortak İhracı ve Aidat Tahsili Usulü (1163 SK m. 16)\n\n" +
+      "Aidat borcunu ödemeyen ortağın kooperatiften çıkarılabilmesi için emredici yasal prosedür:\n" +
+      "1. **İki Ayrı Noter İhtarı:** Borcunu ödemeyen ortağa noter kanalıyla en az **1'er aylık süre** verilerek **2 ayrı ihtarname** gönderilmelidir.\n" +
+      "2. **Borç Dökümü Zorunluluğu:** İhtarnamede borcun dönemleri, anapara ve yasal faiz ayrımı açıkça gösterilmeli; ihtar masrafları eklenmelidir.\n" +
+      "3. **Yasal Faiz Tavanı:** TBK m. 120 uyarınca aidat gecikme faizi yasal temerrüt faizinin 2 katını aşamaz (Yargıtay HGK kararları).\n" +
+      "4. **Yönetim Kurulu Kararı:** İkinci ihtardan sonraki 1 aylık süre dolmadan ihraç kararı alınamaz.\n" +
+      "5. **Mahkeme İptal Davası:** İhraç edilen ortağın kararın tebliğinden itibaren **3 ay içinde** Asliye Ticaret Mahkemesinde iptal davası açma hakkı vardır. Dava süresince ortaklık hakları askıda kalır.\n\n" +
+      "Dilekçe ve ihtar şablonu için: [[30_interaktif_hesaplama_ve_karar_destek_araclari]] bölümünü kullanabilirsiniz.";
+  }
+
+  if (q.includes("7579") || q.includes("iskan") || q.includes("tapu devri") || q.includes("mülkiyet")) {
+    return "### 🏗️ 7579 Sayılı Kanun Reformu: İskansız Tapu Devri Yasağı\n\n" +
+      "1. **Mülkiyet Devri Kısıtı:** Yapı kooperatiflerinde **Yapı Kullanma İzin Belgesi (İskan)** alınmadan noter satış vaadi veya tapuda ferdi mülkiyet devri yapılması KESİNLİKLE YASAKTIR.\n" +
+      "2. **Mahalli İdareler Kısıtı:** Belediyelerin ve bağlı kuruluşlarının kooperatif kurması veya ortak olması **Cumhurbaşkanı iznine** bağlanmıştır (1163 SK Ek m. 6).\n" +
+      "3. **Hobi Bahçesi Satış Yasağı:** 5403 SK m. 23 ve 7584 SK gereği tarım arazilerinin kooperatif hissesi devriyle hobi bahçesi olarak bölünmesi mutlak butlanla geçersizdir; kaçak yapılar yıkılır ve TCK m. 184 uygulanır.\n\n" +
+      "Detaylı bilgi için: [[12_konut_yapi_kooperatifleri_ve_tapu_mevzuati]] maddesini inceleyebilirsiniz.";
+  }
+
+  if (q.includes("eğitim") || q.includes("egitim") || q.includes("40 saat")) {
+    return "### 🎓 Zorunlu Kooperatifçilik Eğitimi (40 Saat)\n\n" +
+      "1. **Kapsam:** Yıllık 20M TL ciro, 1.000 ortak eşiğini aşan kooperatifler ile 50+ ortaklı yapı ve motorlu taşıyıcı kooperatiflerinin Yönetim ve Denetim Kurulu asıl üyeleri.\n" +
+      "2. **Süre:** Seçildikleri tarihten itibaren en geç **9 ay içinde** 40 saatlik eğitimi tamamlamalıdırlar.\n" +
+      "3. **YALANLANAN EFSANE (Muafiyet Yoktur):** Üniversitelerin Hukuk veya İktisat fakültelerinden mezun olmak ya da Avukat/SMMM olmak **MUAFİYET SAĞLAMAZ**.\n" +
+      "4. **Yaptırım:** 9 ayda eğitimi tamamlamayanların yöneticilik sıfatı kanun gereği kendiliğinden düşer.\n\n" +
+      "Detaylı bilgi için: [[16_zorunlu_kooperatifcilik_egitimi_rehberi]] maddesini inceleyebilirsiniz.";
+  }
+
+  if (q.includes("vergi") || q.includes("muafiyet") || q.includes("risturn") || q.includes("kurumlar")) {
+    return "### 💰 Kooperatiflerde Kurumlar Vergisi Muafiyetinin 4 Altın Şartı (KVK m. 4/1-k)\n\n" +
+      "1. Sermaye üzerinden kazanç dağıtılmaması.\n" +
+      "2. Yönetim ve denetim kurulu üyelerine kazanç üzerinden pay verilmemesi.\n" +
+      "3. Yedek akçelerin ortaklara dağıtılmaması.\n" +
+      "4. Münhasıran ortaklarla iş yapılması (ortak içi işlem kuralı).\n\n" +
+      "**7061 Sayılı Kanun Reformu:** Kooperatif ortak dışı işlem yapsa dahi tüm muafiyetini kaybetmez; yalnızca ortak dışı işlemler dolayısıyla bağlı bir **İktisadi İşletme** nezdinde vergilendirilir.\n\n" +
+      "Detaylı bilgi için: [[18_kurumlar_vergisi_muafiyeti_ve_risturn]] maddesini inceleyebilirsiniz.";
+  }
+
+  return "Sorunuzla ilgili mevzuat taraması yapılmıştır. Türk kooperatifçilik hukukunda (1163 SK, 7339 SK ve ilgili yönetmelikler):\n" +
+    "- Yönetim ve denetim kurullarının aldığı kararların kanunun emredici hükümlerine ve tip anasözleşmeye uygun olması şarttır.\n" +
+    "- KOOPBİS sistemine kayıt ve bildirim yükümlülüklerinin ihmali TCK m. 257 kapsamında idari ve adli sorumluluk doğurur.\n" +
+    "- Konuyla ilgili detaylı rehberlerimize sol menüden veya üst arama kutusundan doğrudan ulaşabilirsiniz.";
+}
+
+function generateLocalSummary(content, title) {
+  return "### 📌 " + title + " - Yönetici Özeti\n\n" +
+    "- **Temel Yasal Kapsam:** 1163 sayılı Kooperatifler Kanunu ve ilgili Bakanlık yönetmelikleri çerçevesinde emredici kuralları içerir.\n" +
+    "- **Kritik Süreç ve Süreler:** İlgili organ kararları, bildirimler ve tescil işlemleri için yasal hak düşürücü sürelere dikkat edilmelidir.\n" +
+    "- **Cezai ve İdari Yaptırımlar:** Yükümlülüklerin yerine getirilmemesi durumunda görevi kötüye kullanma (TCK m. 257) ve kararların mutlak butlanla hükümsüzlüğü riski bulunmaktadır.";
+}
+
+

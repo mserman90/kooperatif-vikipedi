@@ -3,10 +3,10 @@
 <div class="wiki-infobox">
   <div class="wiki-infobox-title">Kooperatiflerde Yönetim, Denetim ve Dijitalleşme</div>
   <table>
-    <tr><th>Merkezi Veri Portalı</th><td>KOOPBİS (Kooperatif Bilgi Sistemi)</td></tr>
-    <tr><th>Zorunlu Eğitim</th><td>40 Ders Saati (Yönetmelik 39278)</td></tr>
-    <tr><th>Dış Denetim Standartları</th><td>Yönetmelik 39331 & 6434 Sayılı CBK</td></tr>
-    <tr><th>E-Genel Kurul</th><td>Yönetmelik 39279 (Güvenli E-İmza)</td></tr>
+    <tr><th>Merkezi Veri Portalı</th><td>KOOPBİS (14.01.2022 / 31719 RG - Mevzuat No: 39276)</td></tr>
+    <tr><th>Zorunlu Eğitim</th><td>40 Ders Saati (14.01.2022 / 31719 RG - Mevzuat No: 39278)</td></tr>
+    <tr><th>Dış Denetim Standartları</th><td>1 Şubat 2022 / 31737 RG (Mevzuat No: 39331) & CBK 6434</td></tr>
+    <tr><th>E-Genel Kurul</th><td>14.01.2022 / 31719 RG (Mevzuat No: 39279)</td></tr>
     <tr><th>Mal Bildirimi</th><td>3628 Sayılı Kanun & Tebliğ 2010/1</td></tr>
     <tr><th>Yetkili Makam</th><td>Ticaret Bakanlığı / Bilgi Teknolojileri Genel Müdürlüğü</td></tr>
   </table>
@@ -17,20 +17,20 @@
 ---
 
 ## İçindekiler
-1. [Kooperatif Bilgi Sistemi (KOOPBİS - Yönetmelik 39276)](#1-kooperatif-bilgi-sistemi-koopbis---yönetmelik-39276)
-2. [Yöneticiler İçin 40 Saatlik Zorunlu Eğitim (Yönetmelik 39278)](#2-yöneticiler-için-40-saatlik-zorunlu-eğitim-yönetmelik-39278)
+1. [Kooperatif Bilgi Sistemi (KOOPBİS - 31719 Sayılı RG)](#1-kooperatif-bilgi-sistemi-koopbis---31719-sayılı-rg)
+2. [Yöneticiler İçin 40 Saatlik Zorunlu Eğitim ve Muafiyet Sınırları](#2-yöneticiler-için-40-saatlik-zorunlu-eğitim-ve-muafiyet-sınırları)
 3. [Dış Denetim ve Bağımsız Denetim Sistemi](#3-dış-denetim-ve-bağımsız-denetim-sistemi)
 4. [Bağdaşmayan Görevler ve Çıkar Çatışması Yasakları](#4-bağdaşmayan-görevler-ve-çıkar-çatışması-yasakları)
-5. [Elektronik Genel Kurul (e-Genel Kurul - Yönetmelik 39279)](#5-elektronik-genel-kurul-e-genel-kurul---yönetmelik-39279)
+5. [Elektronik Genel Kurul (e-Genel Kurul - 31719 Sayılı RG)](#5-elektronik-genel-kurul-e-genel-kurul---31719-sayılı-rg)
 6. [Bakanlık Temsilcisi Bulundurma Zorunluluğu](#6-bakanlık-temsilcisi-bulundurma-zorunluluğu)
 7. [Mal Bildiriminde Bulunulması (3628 Sayılı Kanun)](#7-mal-bildiriminde-bulunulması-3628-sayılı-kanun)
 8. [Kaynakça ve Notlar](#8-kaynakça-ve-notlar)
 
 ---
 
-## 1. Kooperatif Bilgi Sistemi (KOOPBİS - Yönetmelik 39276)
+## 1. Kooperatif Bilgi Sistemi (KOOPBİS - 31719 Sayılı RG)
 
-KOOPBİS, Türkiye genelindeki tüm kooperatiflerin ve üst kuruluşlarının idari, mali ve hukuki verilerinin tek bir merkezi ağ üzerinden izlendiği ulusal veri tabanıdır.
+KOOPBİS, Türkiye genelindeki tüm kooperatiflerin ve üst kuruluşlarının idari, mali ve hukuki verilerinin tek bir merkezi ağ üzerinden izlendiği ulusal veri tabanıdır (14 Ocak 2022 tarihli ve 31719 sayılı R.G., Mevzuat No: 39276).
 
 ```mermaid
 sequenceDiagram
@@ -53,7 +53,7 @@ sequenceDiagram
 
 ---
 
-## 2. Yöneticiler İçin 40 Saatlik Zorunlu Eğitim (Yönetmelik 39278)
+## 2. Yöneticiler İçin 40 Saatlik Zorunlu Eğitim ve Muafiyet Sınırları
 
 <div class="wiki-thumb tright">
   <div class="wiki-thumbinner">
@@ -62,24 +62,25 @@ sequenceDiagram
   </div>
 </div>
 
-Yönetim ve denetim organlarında görev alan üyelerin kurumsal yönetim kabiliyetlerini artırmak amacıyla **en az 40 ders saatlik** eğitim mecburiyeti getirilmiştir.
+Yönetim ve denetim organlarında görev alan üyelerin kurumsal yönetim kabiliyetlerini artırmak amacıyla **en az 40 ders saatlik** (30 saat temel + 10 saat destekleyici) eğitim mecburiyeti getirilmiştir.
 
-* **Kapsam:** 1163, 1581 ve 4572 sayılı Kanunlara tabi kooperatiflerin yönetim ve denetim kurulu asıl ve yedek üyeleri.
-* **Müfredat:** Kooperatifler Hukuku, Genel Muhasebe, Finansal Tablolar Analizi, Vergi Hukuku, KOOPBİS Kullanımı ve İdari Sorumluluklar.
-* **Hukuki Sonuç (Görevin Kendiliğinden Düşmesi):** Seçimi takip eden yasal süre içerisinde eğitim belgesini temin edip KOOPBİS'e yüklemeyen üyelerin üyelik sıfatları **kanun gereği kendiliğinden sona erer**.
+* **Zorunlu Olduğu Kooperatifler:** Tüm kooperatifler değil; yıllık cirosu **20 Milyon TL ve üzeri** olanlar, **1.000 ve üzeri ortağı** bulunanlar, 50+ ortaklı ruhsatlı yapı ve taşıma kooperatifleri ile ESKKK, Tarım Kredi, Tarım Satış ve Pancar Ekicileri kooperatifleri.
+* **Muafiyet Yanılgısı:** Hukuk, iktisat, işletme mezuniyeti veya mali müşavirlik (SMMM/YMM) ruhsatı zorunlu eğitimden **muafiyet sağlamaz**. Kapsamdaki kooperatif yöneticileri seçilmelerinden itibaren **9 ay içinde** eğitimi tamamlamak zorundadır.
+* **Hukuki Sonuç (Görevin Düşmesi):** Eğitimi süresinde tamamlamayan üyelerin organ üyelikleri **kanun gereği kendiliğinden sona erer**.
 
 ---
 
 ## 3. Dış Denetim ve Bağımsız Denetim Sistemi
 
-Geleneksel olarak sadece ortaklar arasından seçilen amatör denetçiler eliyle yürütülen iç denetim, 7339 sayılı Kanun ve **39331 sayılı Yönetmelik** ile profesyonel bir dış denetim zeminine kavuşturulmuştur.
+Geleneksel iç denetimin yetersiz kalması sebebiyle 7339 sayılı Kanun ve 1 Şubat 2022 tarihli ve 31737 sayılı R.G.'de yayımlanan Yönetmelik (Mevzuat No: 39331) ile **profesyonel dış denetim** yasal zorunluluk haline getirilmiştir.
 
-* **Dış Denetim Eşikleri (Yönetmelik 39331):** Yıllık net satış hasılatı, aktif toplamı ve ortak sayısı kriterlerinden en az ikisini aşan kooperatifler dış denetime tabidir.
-* **Denetçilerin Nitelikleri:** Dış denetim;
-  1. Bağımsız denetçiler,
-  2. YMM veya SMMM unvanlı meslek mensupları,
-  3. Bakanlıkça denetim yetkisi verilen üst birlikler veya merkez birlikleri tarafından icra edilir.
-* **Bağımsız Denetim (CB Kararı 6434):** Kamu Gözetimi Kurumu (KGK) standartlarına göre belirlenen büyük ölçekli kooperatifler ise tam bağımsız denetime tabidir.
+* **Dış Denetim Şartları (Yön. m. 15):** Aşağıdaki şartlardan **herhangi birini** taşıyan kooperatifler dış denetime tabidir:
+  1. Faaliyet konusuna bakılmaksızın yıllık net satış hasılatı **100 Milyon TL ve üstü** olanlar,
+  2. Faaliyet konusuna bakılmaksızın **2.000 ve üzeri ortağı** bulunanlar,
+  3. Yapı ruhsatı alınmış ve ortak sayısı **100 veya daha fazla** olan yapı, turizm ve gayrimenkul işletme kooperatifleri,
+  4. Tarım satış, tarım kredi, ESKKK ve pancar ekicileri kooperatifleri.
+* **Denetçilerin Nitelikleri:** Bağımsız denetçiler, YMM veya SMMM unvanlı meslek mensupları ya da Bakanlıkça yetkilendirilmiş üst birlikler.
+* **Bağımsız Denetim (CB Kararı 6434):** KGK standartlarına göre belirlenen büyük ölçekli kooperatifler ise tam bağımsız denetime tabidir.
 
 ---
 
@@ -119,9 +120,9 @@ Kooperatiflerde şeffaflığı temin etmek amacıyla çıkarılan **3628 sayıl�
 ---
 
 ## 8. Kaynakça ve Notlar
-1. 39276 Sayılı Kooperatif Bilgi Sistemi Yönetmeliği, Resmî Gazete.
-2. 39278 Sayılı Kooperatifçilik Eğitimi Yönetmeliği.
-3. 39331 Sayılı Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik.
+1. Kooperatif Bilgi Sistemi Yönetmeliği (14 Ocak 2022 tarihli ve 31719 sayılı Resmî Gazete, Mevzuat No: 39276).
+2. Kooperatifçilik Eğitimi Yönetmeliği (14 Ocak 2022 tarihli ve 31719 sayılı Resmî Gazete, Mevzuat No: 39278).
+3. Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (1 Şubat 2022 tarihli ve 31737 sayılı Resmî Gazete, Mevzuat No: 39331).
 4. 3628 Sayılı Mal Bildiriminde Bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu.
 
 ---

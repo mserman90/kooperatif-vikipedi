@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,8 @@
       mermaid.initialize({ startOnLoad: false, theme: 'default' });
     }
   </script>
+  <!-- Ücretsiz & Keyless Yapay Zeka Kütüphanesi: Puter.js -->
+  <script src="https://js.puter.com/v2/"></script>
 </head>
 <body>
 
@@ -38,11 +40,13 @@
 
     <!-- Hızlı Araçlar -->
     <div class="wiki-header-actions">
+      <a href="#30_interaktif_hesaplama_ve_karar_destek_araclari" class="wiki-btn-icon" style="text-decoration:none; background:#ecfdf5; color:#065f46; font-weight:700;" title="Hesaplama ve Resmi Dilekçe Sihirbazları">🛠️ Araçlar & Sihirbazlar</a>
+      <a href="#24_kooperatif_kurulusu_ve_anasozlesme_intibak" class="wiki-btn-icon" style="text-decoration:none; background:#fef2f2; color:#b91c1c; border:1px solid #f87171; font-weight:700;" title="7511 SK İntibak Takvimi">🚨 İntibak: 26 Ekim 2026</a>
       <a href="#26_interaktif_mevzuat_atolyesi_ve_studio" class="wiki-btn-icon" style="text-decoration:none; background:#e0f2fe; color:#0369a1; font-weight:600;" title="Etkileşimli Test ve Atölye">🧠 Mevzuat Testi</a>
       <button id="random-article-btn" class="wiki-btn-icon" title="Rastgele Madde">🎲 Rastgele</button>
       <button id="font-decrease" class="wiki-btn-icon" title="Yazı Boyutunu Küçült">A-</button>
       <button id="font-increase" class="wiki-btn-icon" title="Yazı Boyutunu Büyüt">A+</button>
-      <button id="theme-toggle-btn" class="wiki-btn-icon" title="Gece/Gündüz Modu">🌙 Gece</button>
+      <button id="theme-toggle-btn" class="wiki-btn-icon" title="Gece/Gündüz Modu">☀️ Gündüz</button>
     </div>
   </header>
 
@@ -59,12 +63,26 @@
       </div>
 
       <div class="wiki-sidebar-section">
+        <div class="wiki-sidebar-title">Karar Destek & Araçlar</div>
+        <ul class="wiki-nav-list">
+          <li><a href="#30_interaktif_hesaplama_ve_karar_destek_araclari" class="wiki-nav-link">🛠️ Hesaplama & Sihirbazlar</a></li>
+          <li><a href="#30_interaktif_hesaplama_ve_karar_destek_araclari:1-dis-denetim-ve-zorunlu-egitim-uygunluk-sihirbazi" class="wiki-nav-link">🔍 Dış Denetim & Eğitim</a></li>
+          <li><a href="#30_interaktif_hesaplama_ve_karar_destek_araclari:2-genel-kurul-yasal-cagri-ve-sure-takvimi-hesaplayici" class="wiki-nav-link">📅 Genel Kurul Takvimi</a></li>
+          <li><a href="#30_interaktif_hesaplama_ve_karar_destek_araclari:3-yasal-gecikme-zammi-ve-aidat-faizi-hesaplayici" class="wiki-nav-link">⚖️ Yasal Aidat Faizi</a></li>
+          <li><a href="#30_interaktif_hesaplama_ve_karar_destek_araclari:4-bakanlik-temsilcisi-talep-dilekcesi-sihirbazi" class="wiki-nav-link">🏛️ Bakanlık Dilekçesi</a></li>
+          <li><a href="#31_koopdes_hibeler_ve_devlet_destekleri_rehberi" class="wiki-nav-link">🌱 KOOP-DES & Hibeler</a></li>
+          <li><a href="#32_kooperatif_tasfiyesi_ve_terkin_yol_haritasi" class="wiki-nav-link">📑 Tasfiye & Kapanış</a></li>
+          <li><a href="#33_kooperatifler_hukuk_ve_maliye_sozlugu" class="wiki-nav-link">📖 A-Z Terimler Sözlüğü</a></li>
+        </ul>
+      </div>
+
+      <div class="wiki-sidebar-section">
         <div class="wiki-sidebar-title">Studio & Atölye</div>
         <ul class="wiki-nav-list">
+          <li><a href="#34_gunluk_kooperatif_podcast_yayini" class="wiki-nav-link">🎙️ Günlük Podcast Yayını</a></li>
           <li><a href="#26_interaktif_mevzuat_atolyesi_ve_studio" class="wiki-nav-link">🧠 Mevzuat Sınavı (Quiz)</a></li>
           <li><a href="#26_interaktif_mevzuat_atolyesi_ve_studio:2-etkilesimli-bilgi-kartlari-flashcards" class="wiki-nav-link">🎴 Bilgi Kartları (Flashcards)</a></li>
           <li><a href="#26_interaktif_mevzuat_atolyesi_ve_studio:4-kooperatif-turleri-ve-mevzuati-ozet-slaytlari" class="wiki-nav-link">📊 Özet Sunum Slaytları</a></li>
-          <li><a href="#26_interaktif_mevzuat_atolyesi_ve_studio:5-sesli-genel-bakis-podcast-yonetici-ozeti" class="wiki-nav-link">🎙️ Sesli Genel Bakış (Podcast)</a></li>
         </ul>
       </div>
 
@@ -73,7 +91,9 @@
         <ul class="wiki-nav-list">
           <li><a href="#03_tarim_kooperatifleri_ve_birlikleri" class="wiki-nav-link">🌾 Tarımsal Kooperatifler</a></li>
           <li><a href="#04_tarim_disi_kooperatifler" class="wiki-nav-link">🏢 Konut ve ESKKK</a></li>
+          <li><a href="#28_kentsel_donusum_ve_sosyal_kooperatifler" class="wiki-nav-link">🏙️ Kentsel Dönüşüm & Sosyal</a></li>
           <li><a href="#05_kooperatif_mali_ve_vergi_hukuku" class="wiki-nav-link">💰 Vergi Muafiyetleri</a></li>
+          <li><a href="#29_kooperatif_muhasebesi_ve_belge_sablonlari" class="wiki-nav-link">📊 Muhasebe & Şablonlar</a></li>
           <li><a href="#06_yonetim_denetim_ve_dijitallesme_koopbis" class="wiki-nav-link">💻 KOOPBİS Portalı</a></li>
           <li><a href="#07_uluslararasi_kooperatifcilik_ilkeleri_ica" class="wiki-nav-link">🌍 ICA Prensipleri</a></li>
         </ul>
@@ -82,6 +102,8 @@
       <div class="wiki-sidebar-section">
         <div class="wiki-sidebar-title">Yasal Başvuru</div>
         <ul class="wiki-nav-list">
+          <li><a href="#24_kooperatif_kurulusu_ve_anasozlesme_intibak" class="wiki-nav-link">🚨 İntibak Rehberi (26 Ekim)</a></li>
+          <li><a href="#27_emsal_yargitay_ve_danistay_ictihatlari" class="wiki-nav-link">⚖️ Emsal Mahkeme İçtihatları</a></li>
           <li><a href="#25_ornek_anasozlesmeler_kutuphanesi" class="wiki-nav-link">📜 28+ Tip Anasözleşme</a></li>
           <li><a href="#08_mevzuat_kulliyati_ve_dizin" class="wiki-nav-link">📑 Resmî Gazete Fihristi</a></li>
           <li><a href="#02_1163_sayili_kooperatifler_kanunu" class="wiki-nav-link">⚖️ 1163 SK Tam Metin</a></li>
@@ -91,11 +113,19 @@
 
     <!-- Ana Makale Alanı -->
     <main class="wiki-main-container">
+      <!-- Acil İntibak Bilgilendirme Çubuğu -->
+      <div style="background: #fff1f2; border: 1px solid #fecdd3; border-left: 4px solid #e11d48; padding: 10px 14px; margin-bottom: 16px; border-radius: 4px; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <strong style="color: #9f1239;">🚨 Yasal İntibak Hatırlatması (7511 SK):</strong> Kooperatiflerin anasözleşme intibak süresi <strong>26 Ekim 2026</strong> tarihinde sona ermektedir. İntibak yaptırmayan kooperatifler münfesih sayılacaktır.
+        </div>
+        <a href="#24_kooperatif_kurulusu_ve_anasozlesme_intibak" style="color: #be123c; font-weight: 700; text-decoration: none; white-space: nowrap; margin-left: 10px;">Rehberi İncele ➔</a>
+      </div>
       <div class="wiki-article-header">
         <h1 id="page-title" class="wiki-article-title">Yükleniyor...</h1>
         <div class="wiki-article-tagline">Vikipedi, özgür kooperatif ansiklopedisi</div>
         <div class="wiki-article-tools">
           <a href="javascript:void(0)" style="font-weight: 600; color: var(--wiki-text);">Madde</a>
+          <button id="btn-ai-summarize-article" class="wiki-btn-icon" style="background: linear-gradient(135deg, #4f46e5, #7c3aed); color: #fff; border:none; font-weight:600; padding: 4px 10px; cursor:pointer;" title="Bu makaleyi yapay zeka ile özetle">✨ AI ile Özetle</button>
           <a href="javascript:void(0)" onclick="window.print()">🖨️ Yazdır / PDF</a>
           <a href="https://www.mevzuat.gov.tr" target="_blank" rel="noopener">🏛️ Resmî Mevzuat Portalı</a>
         </div>
@@ -105,6 +135,9 @@
       <div id="article-loading" style="display:none; padding: 20px; text-align: center; color: var(--wiki-text-muted);">
         Makale getiriliyor, lütfen bekleyiniz...
       </div>
+
+      <!-- AI Makale Özeti Alanı -->
+      <div id="article-ai-summary-area" style="display: none;"></div>
 
       <!-- Render Edilen Makale İçeriği -->
       <article id="article-render-area" class="wiki-content">
@@ -119,6 +152,49 @@
       </footer>
     </main>
 
+  </div>
+
+  <!-- ================= YÜZEN YAPAY ZEKA ASİSTANI (KEYLESS & FREE) ================= -->
+  <button id="wiki-ai-fab" class="wiki-ai-fab" title="Yapay Zeka Hukuk Danışmanına Sor">
+    <span class="wiki-ai-fab-icon">🤖</span>
+    <span class="wiki-ai-fab-text">Kooperatif AI</span>
+    <span class="wiki-ai-fab-badge">Ücretsiz</span>
+  </button>
+
+  <div id="wiki-ai-modal" class="wiki-ai-modal" style="display: none;">
+    <div class="wiki-ai-modal-header">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 20px;">🤖</span>
+        <div>
+          <div style="font-weight: 700; font-size: 15px;">Kooperatif AI Hukuk Danışmanı</div>
+          <div style="font-size: 11px; color: var(--wiki-text-muted);">Ücretsiz & Keyless Mevzuat Zekası (RAG + LLM)</div>
+        </div>
+      </div>
+      <button id="wiki-ai-modal-close" class="wiki-btn-icon" style="border:none; font-size:16px; cursor:pointer;">✕</button>
+    </div>
+
+    <!-- Hızlı Soru Önerileri -->
+    <div class="wiki-ai-quick-prompts">
+      <button class="wiki-ai-prompt-chip" data-prompt="7511 sayılı Kanun uyarınca anasözleşme intibakının son tarihi ve cezai yaptırımı nedir?">🚨 İntibak Son Tarihi?</button>
+      <button class="wiki-ai-prompt-chip" data-prompt="Kooperatifimiz dış denetime tabi mi? Ciro ve ortak sayısı eşikleri nelerdir?">🔍 Dış Denetim Eşikleri?</button>
+      <button class="wiki-ai-prompt-chip" data-prompt="Aidat borcunu ödemeyen ortağı ihraç etmek için 1163 SK m. 16 prosedürü ve yasal süreleri nedir?">⚠️ Ortak İhracı Usulü?</button>
+      <button class="wiki-ai-prompt-chip" data-prompt="7579 sayılı Kanun ile yapı kooperatiflerine getirilen iskan ve tapu kısıtı nedir?">🏗️ 7579 SK İskan Kısıtı?</button>
+      <button class="wiki-ai-prompt-chip" data-prompt="Kooperatiflerde 40 saatlik zorunlu kooperatifçilik eğitimi kimler için geçerli, kimler muaftır?">🎓 Zorunlu Eğitim?</button>
+    </div>
+
+    <!-- Mesaj Alanı -->
+    <div id="wiki-ai-messages" class="wiki-ai-messages">
+      <div class="wiki-ai-msg bot">
+        Merhaba! Ben <strong>Kooperatifler Ansiklopedisi AI Hukuk Danışmanı</strong>. 🇹🇷<br><br>
+        1163 sayılı Kooperatifler Kanunu, KOOPBİS, dış denetim, vergi muafiyeti (KVK 4/1-k), Yargıtay emsal kararları ve intibak kuralları hakkında dilediğinizi sorabilirsiniz. Tamamen <strong>ücretsizdir</strong> ve API anahtarı gerekmez.
+      </div>
+    </div>
+
+    <!-- Giriş Alanı -->
+    <div class="wiki-ai-input-area">
+      <textarea id="wiki-ai-input" class="wiki-ai-textarea" rows="2" placeholder="Kooperatifinizle ilgili bir soru veya uyuşmazlık yazınız..."></textarea>
+      <button id="wiki-ai-send-btn" class="wiki-ai-send-btn">Gönder ➔</button>
+    </div>
   </div>
 
   <!-- Dinamik Scriptler -->

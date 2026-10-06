@@ -6,7 +6,7 @@
     <tr><th>Temel Yasa</th><td>5520 Sayılı Kurumlar Vergisi Kanunu</td></tr>
     <tr><th>Muafiyet Maddesi</th><td>Madde 4, Fıkra 1, Bent (k)</td></tr>
     <tr><th>Gelir Vergisi Dayanağı</th><td>193 Sayılı GVK Madde 75/2 (Risturn)</td></tr>
-    <tr><th>Esnetme Yasası</th><td>6327 Sayılı Kanun (İktisadi İşletme Ayrımı)</td></tr>
+    <tr><th>Esnetme Yasası</th><td>7061 Sayılı Kanun (İktisadi İşletme Ayrımı)</td></tr>
     <tr><th>Ana İlke</th><td>Münhasıran Ortaklarla İş Görme</td></tr>
     <tr><th>Denetim Mercii</th><td>T.C. Hazine ve Maliye Bakanlığı / GİB</td></tr>
   </table>
@@ -20,7 +20,7 @@
 1. [Hukuki Dayanak ve Kurumlar Vergisi Genel Kuralı](#1-hukuki-dayanak-ve-kurumlar-vergisi-genel-kuralı)
 2. [Kurumlar Vergisi Muafiyetinin Dört Altın Şartı](#2-kurumlar-vergisi-muafiyetinin-dört-altın-şartı)
 3. [Risturn Kavramı ve Kâr Payından Hukuki Ayrımı](#3-risturn-kavramı-ve-kâr-payından-hukuki-ayrımı)
-4. [6327 Sayılı Kanun ve İktisadi İşletme Rejimi](#4-6327-sayılı-kanun-ve-iktisadi-işletme-rejimi)
+4. [7061 Sayılı Kanun ve İktisadi İşletme Rejimi](#4-7061-sayılı-kanun-ve-iktisadi-işletme-rejimi)
 5. [Danıştay ve Maliye Uygulamasında Emsal Kriterler](#5-danıştay-ve-maliye-uygulamasında-emsal-kriterler)
 6. [Kaynakça ve Notlar](#6-kaynakça-ve-notlar)
 
@@ -62,11 +62,11 @@ flowchart LR
 
 ---
 
-## 4. 6327 Sayılı Kanun ve İktisadi İşletme Rejimi
+## 4. 7061 Sayılı Kanun ve İktisadi İşletme Rejimi
 
-6327 sayılı Kanun ile yapılan tarihi reformdan önce, kooperatifin tek bir ortak dışı fatura kesmesi dahi tüm tüzel kişiliğin vergi muafiyetini tamamen kaybetmesine yol açmaktaydı.
-* **Güncel Rejim:** Ortak dışı işlemler gerçekleştiren kooperatifler, bu faaliyetleri için kooperatife bağlı bir **"İktisadi İşletme"** tescil ettirirler.
-* Yalnızca bu iktisadi işletme kurumlar vergisi mükellefi olur ve ortak dışı kârı üzerinden vergilendirilir; kooperatifin ortak içi ana faaliyetlerinin muafiyeti devam eder.
+7061 sayılı Kanun'un 88. maddesi ile 5520 sayılı KVK m. 4/1-k bendinde yapılan tarihi düzenleme (yürürlük: 01.01.2018) öncesinde, kooperatifin tek bir ortak dışı fatura kesmesi dahi tüm tüzel kişiliğin vergi muafiyetini tamamen kaybetmesine yol açmaktaydı.
+* **Güncel Rejim:** Ortak dışı işlemler gerçekleştiren kooperatiflerin muafiyeti toptan sona ermez. Kanun gereğince ortak dışı işlemler dolayısıyla kooperatife bağlı bir **"İktisadi İşletme"** oluşmuş kabul edilir.
+* Yalnızca bu iktisadi işletme kurumlar vergisi mükellefi olur ve ortak dışı kârı üzerinden vergilendirilir; kooperatifin ortak içi ana faaliyetlerinin muafiyeti eksiksiz devam eder.
 
 ---
 
