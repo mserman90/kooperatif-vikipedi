@@ -722,6 +722,11 @@ async function loadArticle(articleId, scrollToSectionId = null) {
       initBylawsLibraryEngine();
     }
 
+    // Muhasebe ve Resmi Belge Şablonları Kütüphanesi Sayfası
+    if (articleId === "29_kooperatif_muhasebesi_ve_belge_sablonlari") {
+      initLegalTemplatesEngine();
+    }
+
     // Terimler Sözlüğü Sayfası
     if (articleId === "33_kooperatifler_hukuk_ve_maliye_sozlugu") {
       initGlossaryEngine();
@@ -2047,6 +2052,302 @@ function initBylawsLibraryEngine() {
     searchInput.addEventListener("input", () => {
       const q = searchInput.value.trim().toLowerCase();
       const currentFullText = BYLAWS_TEXTS[selectEl.value] || "";
+      if (!q) {
+        container.textContent = currentFullText;
+        return;
+      }
+      const paragraphs = currentFullText.split("\n\n");
+      const matched = paragraphs.filter(p => p.toLowerCase().includes(q));
+      if (matched.length > 0) {
+        container.textContent = matched.join("\n\n----------------------------------------\n\n");
+      } else {
+        container.textContent = 'Arama sonucu: "' + q + '" ifadesi metinde bulunamadı.';
+      }
+    });
+  }
+}
+
+// ================= RESMİ BELGE VE DİLEKÇE ŞABLONLARI KÜTÜPHANESİ =================
+const LEGAL_TEMPLATES_TEXTS = {
+  intibak_gundem: `S.S. ................................................. KOOPERATİFİ
+OLAĞAN / OLAĞANÜSTÜ GENEL KURUL TOPLANTI GÜNDEMİ
+(1163 Sayılı Kooperatifler Kanunu Geçici 9. Madde ve 7511 Sayılı Kanun Uyumlu)
+
+Toplantı Tarihi : ... / ... / 2026 Saat: ...:...
+Toplantı Yeri   : ........................................................................
+Bakanlık İzni   : Ticaret / Tarım İl Müdürlüğü .../.../2026 Tarih ve ..... Sayılı Onayı
+
+GÜNDEM MADDELERİ:
+1. Açılış ve Toplantı Başkanlığı (Divan Heyeti) seçimi.
+2. Genel kurul toplantı tutanaklarının imzalanması hususunda Divan Başkanlığı'na yetki verilmesi.
+3. Yönetim Kurulu yıllık çalışma raporu ile Denetim Kurulu raporunun okunması ve müzakeresi.
+4. Bilanço ve Gelir-Gider farkı hesaplarının okunması, müzakeresi ve onaylanması.
+5. Yönetim Kurulu üyeleri ve Denetim Kurulu üyelerinin ayrı ayrı ibrası.
+6. 1163 sayılı Kooperatifler Kanunu'nun Geçici 9. maddesi ve 7511 sayılı Kanun reformu uyarınca; ilgili Bakanlık tarafından yürürlüğe konulan güncel Tip Anasözleşme metnine kooperatif anasözleşmesinin tüm maddeleriyle intibak ettirilmesi hususunun görüşülmesi ve karara bağlanması (Karar Nisabı: Toplantıda mevcut oyların 2/3 çoğunluğu).
+7. Kabul edilen anasözleşme intibak metninin Ticaret Sicili Müdürlüğü'ne tescil ve ilanı işlemleri için Yönetim Kurulu'na yetki verilmesi.
+8. Gelecek dönem tahmini bütçesinin görüşülmesi, aylık aidat miktarlarının ve gecikme faizi oranının belirlenmesi.
+9. Görev süresi sona eren Yönetim ve Denetim Kurulu asıl ve yedek üyelerinin seçimi.
+10. Dilek, temenniler ve kapanış.
+
+YÖNETİM KURULU (İmza / Kaşe)`,
+
+  ihrac_ihtari: `T.C. ................................. 1. NOTERLİĞİ'NE
+
+İHTARNAME
+(1163 Sayılı Kooperatifler Kanunu m. 16 Uyarınca Ödeme İhtarı ve İhraç Uyarısı)
+
+KEŞİDECİ (ALACAKLI) : S.S. ................................................. KOOPERATİFİ YÖNETİM KURULU
+MERKEZ ADRESİ       : ........................................................................
+VEKİLİ              : Av. ....................................................................
+
+MUHATAP (BORÇLU)    : ........................................................................
+T.C. KİMLİK NO      : ..................... (Kooperatif Ortak No: .....)
+TEBLİGAT ADRESİ     : ........................................................................
+
+KONU : Kooperatif aidat ve parasal yükümlülük borçlarının ödenmesi ihtarı ve 1163 sayılı Kanun m. 16 gereğince ortaklıktan ihraç uyarısıdır.
+
+AÇIKLAMALAR:
+1. Kooperatifimiz ortaklar defterinde kayıtlı bulunmaktasınız.
+2. Kooperatifimiz Genel Kurulu tarafından kararlaştırılan ve vadesi gelen parasal yükümlülükleriniz çerçevesinde yapılan defter tetkikinde:
+   a) ... Yılı ... Ayı Aidat Asıl Alacağı : ........... TL
+   b) ... Yılı ... Ayı Aidat Asıl Alacağı : ........... TL
+   c) Yasal Gecikme Zammı (TBK m. 120)    : ........... TL
+   TOPLAM BORÇ TUTARI                     : ........... TL olarak tahakkuk etmiştir.
+3. İşbu ihtarnamenin tarafınıza tebliğinden itibaren EN GEÇ 30 (OTUZ) GÜN İÇİNDE yukarıda dökümü yapılan toplam borcunuzu kooperatifimizin ..................... IBAN no'lu banka hesabına ödemeniz;
+4. Verilen 30 günlük yasal mehil içinde borcunuzu ödemediğiniz takdirde, kanun gereği tarafınıza ikinci bir ihtarname keşide edileceği, ikinci ihtar süresi sonunda da temerrüdün devamı halinde Yönetim Kurulu kararıyla ortaklıktan İHRAÇ EDİLECEĞİNİZ hususu 1163 sayılı Kanun m. 16 gereğince İHTAR OLUNUR.
+
+KEŞİDECİ KOOPERATİF YÖNETİM KURULU`,
+
+  temsilci_talep: `T.C.
+.................... VALİLİĞİ
+TİCARET İL MÜDÜRLÜĞÜ'NE / TARIM VE ORMAN İL MÜDÜRLÜĞÜ'NE
+....................
+
+KONU : Genel Kurul Toplantısına Bakanlık Temsilcisi Görevlendirilmesi Talebidir.
+DAYANAK : 1163 Sayılı Kooperatifler Kanunu Ek Madde 3 ve İlgili Yönetmelik (RG: 31719)
+
+KOOPERATİF UNVANI       : S.S. ................................................. KOOPERATİFİ
+TİCARET SİCİL NO / İL   : ..................... / .....................
+MERSİS NUMARASI         : .................................................
+İLETİŞİM / TELEFON      : .................................................
+
+Müdürlüğünüz görev alanı içerisinde faaliyet gösteren kooperatifimizin ... yılı Olağan / Olağanüstü Genel Kurul Toplantısı aşağıdaki gün, saat ve adreste yapılacaktır:
+
+Toplantı Tarihi ve Saati : ... / ... / 2026 Saat: ...:...
+Toplantı Adresi          : ........................................................................
+Toplantı Türü            : Fiziki Toplantı (Varsa: E-Genel Kurul Eşzamanlı)
+
+Toplantımızda hazır bulunmak üzere 1163 sayılı Kanun Ek 3. maddesi gereğince bir Bakanlık Temsilcisi görevlendirilmesini saygılarımızla arz ve talep ederiz.
+
+EKLER:
+1. Yönetim Kurulu Genel Kurul Çağrı Kararı Sureti
+2. Genel Kurul Toplantı Gündemi
+3. Bakanlık Temsilcisi Ücreti Yatırıldı Banka Dekontu
+4. KOOPBİS Sistem Çıktısı Hazirun Cetveli Taslağı
+5. İmza Sirküleri Sureti
+
+S.S. ................................................. KOOPERATİFİ YÖNETİM KURULU
+(Yetkili İmzalar ve Kaşe)`,
+
+  yk_faaliyet_raporu: `S.S. ................................................. KOOPERATİFİ
+... DÖNEMİ YÖNETİM KURULU ÇALIŞMA VE FAALİYET RAPORU
+(Genel Kurul Tetkikine ve Onayına Sunulan Resmi Rapor)
+
+1. GENEL BİLGİLER
+Kooperatif Ticaret Unvanı : S.S. ................................................. Kooperatifi
+Merkez Adresi             : ........................................................................
+Sicil / MERSİS No         : ..................... / .....................
+Hesap Dönemi              : 01.01.2025 - 31.12.2025
+
+2. YÖNETİM VE DENETİM ORGANI ÇALIŞMALARI
+Dönem içinde Yönetim Kurulu toplam ..... adet toplantı yapmış ve ..... adet karar almıştır. Alınan kararlar noter onaylı Karar Defteri'ne ve eşzamanlı olarak KOOPBİS sistemine işlenmiştir.
+Yönetim Kurulu asıl üyelerimizin Kooperatifçilik Eğitimi Yönetmeliği kapsamındaki 40 saatlik zorunlu eğitim sertifikaları alınmış ve sisteme yüklenmiştir.
+
+3. ORTAKLIK HAREKETLERİ
+Dönem Başı Ortak Sayısı  : .....
+Dönem İçi Yeni Ortaklar  : .....
+İstifa / İhraç Edenler   : .....
+Dönem Sonu Ortak Sayısı  : .....
+
+4. MALİ VE İKTİSADİ DURUM ÖZETİ
+Toplam Gelirler          : ..................... TL
+Toplam Giderler          : ..................... TL
+Banka Mevcutları         : ..................... TL
+Ortaklardan Alacaklar    : ..................... TL
+Üçüncü Kişilere Borçlar  : ..................... TL
+Dönem Net Farkı          : ..................... TL (Müspet / Menfi)
+
+5. İNTİBAK VE DİJİTALLEŞME FAALİYETLERİ
+7511 sayılı Kanun uyarınca anasözleşme intibak tasarısı hazırlanmış, ilgili Bakanlık İl Müdürlüğü'nden onay alınarak işbu genel kurul gündeminin 6. maddesine eklenmiştir.
+
+6. GELECEK DÖNEM HEDEFLERİ VE TAHMİNİ BÜTÇE
+Önümüzdeki hesap döneminde kooperatifimizin amaçlarının gerçekleştirilmesi için öngörülen tahmini bütçe ekte sunulmuştur.
+Faaliyetlerimizi takdirlerinize arz eder, yönetim kurulumuzun ibrasını saygıyla dileriz.
+
+YÖNETİM KURULU (İsim - İmza)`,
+
+  dk_denetim_raporu: `S.S. ................................................. KOOPERATİFİ
+... DÖNEMİ DENETİM KURULU RAPORU
+(1163 Sayılı Kooperatifler Kanunu m. 66-69 Uyarınca Genel Kurula Sunulur)
+
+Sayın Ortaklar;
+Kooperatifimizin ... yılı hesap dönemine ait defter, belge, kayıt ve işlemleri tarafımızdan mevzuat, anasözleşme ve genel kurul kararları çerçevesinde incelenmiş olup tespitlerimiz aşağıdadır:
+
+1. DEFTER VE BELGELERİN İNCELENMESİ
+Kooperatifin Yevmiye, Defteri Kebir, Envanter, Karar Defteri ve Ortaklar Pay Defteri tetkik edilmiş; açılış ve kapanış noter tasdiklerinin zamanında yapıldığı tespit edilmiştir.
+
+2. KASA VE BANKA MEVCUTLARININ TETKİKİ
+Hesap dönemi içinde periyodik olarak yapılan 4 denetimde kasa sayımı yapılmış, kasa limitlerine uyulduğu, banka ekstreleri ile muhasebe kayıtlarının tam mutabık olduğu görülmüştür. 31/12/2025 tarihi itibarıyla banka bakiyesi ........... TL'dir.
+
+3. GELİR-GİDER FARKI VE BİLANÇO İNCELEMESİ
+Düzenlenen 31/12/2025 tarihli Bilanço ve Gelir-Gider Cetveli muhasebe standartlarına uygundur. Yapılan harcamaların tamamının yönetim kurulu kararlarına ve fatura/belgelere dayandığı belirlenmiştir.
+
+4. DIŞ DENETİM DURUMU
+Kooperatifimiz Denetim Yönetmeliği m. 15 eşiklerini taşımadığından (veya: eşikleri taşıdığından bağımsız dış denetçi raporu alınmış ve olumlu görüş verilmiştir).
+
+5. SONUÇ VE KANAAT
+Yönetim Kurulu'nun yasalara, anasözleşmeye ve genel kurul talimatlarına uygun çalıştığı kanaatine varılmış olup; Bilanço ve Gelir Tablosunun onaylanmasını ve Yönetim Kurulu üyelerinin ibra edilmesini Genel Kurulun onayına saygıyla arz ederiz.
+
+DENETİM KURULU ÜYELERİ (İsim - İmza)`,
+
+  olaganustu_gk_cagri: `S.S. ................................................. KOOPERATİFİ YÖNETİM KURULU'NDAN
+ORTAKLARA OLAĞANÜSTÜ GENEL KURUL TOPLANTISI ÇAĞRI İLANI
+(1163 Sayılı Kanun m. 43-45 Uyarınca Taahhütlü Mektup ve İlan Metni)
+
+Sayın Ortağımız;
+Kooperatifimiz ortaklarının 1/10'unun noter kanalıyla yazılı talebi üzerine (veya: Yönetim Kurulumuzun .../.../2026 tarih ve ..... sayılı kararı gereğince), aşağıdaki gündem maddelerini görüşmek üzere Olağanüstü Genel Kurul Toplantısı icra edilecektir.
+
+Toplantı Tarihi : ... / ... / 2026 Günü Saat: ...:...
+Toplantı Yeri   : ........................................................................
+(Çoğunluk sağlanamadığı takdirde 2. Toplantı: .../.../2026 aynı yer ve saatte yapılacaktır.)
+
+GÜNDEM:
+1. Açılış ve Divan Heyeti Seçimi.
+2. Divan Başkanlığı'na toplantı tutanaklarını imzalama yetkisi verilmesi.
+3. 7511 sayılı Kanun Geçici 9. maddesi gereğince Anasözleşme İntibakının görüşülmesi ve karara bağlanması.
+4. Yönetim Kurulu ve Denetim Kurulu üyelerinin azli ve yeni üyelerin seçimi.
+5. Kapanış.
+
+ÖNEMLİ HATIRLATMALAR:
+- Toplantıya katılacak ortaklar cetveli doğrudan KOOPBİS sistemi üzerinden alınmıştır.
+- Genel kurula asaleten katılacak ortaklarımızın T.C. Kimlik Kartlarını yanlarında bulundurmaları şarttır.
+- Ortaklığı temsil yetkisi anasözleşme uyarınca ancak eş veya birinci derece kan hısımlarına noter vekaletnamesiyle verilebilir.
+
+S.S. ................................................. KOOPERATİFİ YÖNETİM KURULU`,
+
+  pay_devir_sozlesmesi: `KOOPERATİF ORTAKLIK PAYI DEVİR SÖZLEŞMESİ
+(1163 Sayılı Kooperatifler Kanunu m. 14 Uyarınca Ortaklık ve Hak Devir Protokolü)
+
+DEVREDEN (ESKİ ORTAK) :
+Adı Soyadı / Unvanı   : .................................................
+T.C. Kimlik Numarası  : .....................
+Kooperatif Ortak No   : .....
+
+DEVRALAN (YENİ ORTAK) :
+Adı Soyadı / Unvanı   : .................................................
+T.C. Kimlik Numarası  : .....................
+İkametgah Adresi      : .................................................
+
+DEVRE KONU KOOPERATİF : S.S. ................................................. Kooperatifi
+DEVREDİLEN PAY MİKTARI: ..... Adet Ortaklık Payı (Tahsisli Bağımsız Bölüm No: .....)
+DEVİR BEDELİ          : ........... TL (Türk Lirası)
+
+SÖZLEŞME ŞARTLARI:
+1. Devreden, kooperatif nezdindeki tüm ortaklık paylarını, haklarını ve konut/işyeri tahsis hakkını hiçbir kısıtlama olmaksızın devralana devretmiştir.
+2. Devralan, kooperatif anasözleşmesindeki tüm hüküm ve yükümlülükleri, birikmiş veya doğacak tüm aidat borçlarını aynen kabul ettiğini beyan eder.
+3. İşbu devir sözleşmesi 1163 sayılı Kanun m. 14 gereğince Kooperatif Yönetim Kurulu'nun onaylaması ve Ortaklar Pay Defteri'ne işlenmesi ile hukuki geçerlilik kazanır.
+4. Harçlar Kanunu m. 59/c uyarınca kooperatif pay devirleri tapu harcından muaftır.
+
+DEVREDEN (İmza)                                 DEVRALAN (İmza)
+
+--------------------------------------------------------------------------------
+KOOPERATİF YÖNETİM KURULU ONAY ŞERHİ:
+Yönetim Kurulumuzun .../.../2026 tarih ve ..... sayılı kararı ile yukarıdaki pay devri onaylanmış ve devralan ..... ortak numarası ile kooperatif ortaklığına kabul edilmiştir.
+YÖNETİM KURULU (İmza - Kaşe)`,
+
+  istifa_protokolu: `S.S. ................................................. KOOPERATİFİ YÖNETİM KURULU BAŞKANLIĞI'NA
+
+ORTAKLIKTAN ÇIKMA (İSTİFA) DİLEKÇESİ VE SERMAYE İADE PROTOKOLÜ
+(1163 Sayılı Kooperatifler Kanunu m. 10, 11, 17 Uyarınca Düzenlenmiştir)
+
+TALEP EDEN ORTAK :
+Adı Soyadı       : .................................................
+T.C. Kimlik No   : .....................
+Ortak No         : .....
+İletişim Tel     : .....................
+Adres            : .................................................
+
+AÇIKLAMALAR:
+1. Kooperatifiniz ortaklar defterinin ..... numarasında kayıtlı ortağınız bulunmaktayım.
+2. 1163 sayılı Kooperatifler Kanunu'nun 10. ve 11. maddeleri ile kooperatif anasözleşmesi hükümleri çerçevesinde, kendi serbest irademle kooperatif ortaklığından ÇIKMAK (İSTİFA ETMEK) istiyorum.
+3. Ortaklıktan çıkışımın kabul edilerek Ortaklar Pay Defteri'ne ve KOOPBİS sistemine işlenmesini arz ederim.
+
+PARASAL HAKLARIN İADESİ ŞARTLARI (1163 SK m. 17):
+- Ortaklıktan çıkan ortağın kooperatif malvarlığından talep edebileceği tutar, ayrıldığı yılın bilançosuna göre hesaplanan ödemiş olduğu sermaye payıdır. Kooperatif yedek akçeleri üzerinde hak iddia edilemez.
+- Genel kurul kararı uyarınca kooperatifin mevcudiyetini tehlikeye düşürmemek amacıyla iade ödemesi azami 3 yıl süreyle geciktirilebilir.
+- Varsa birikmiş aidat borçlarım iade tutarından takas ve mahsup edilecektir.
+- Kalan net alacağımın tarafıma ait TR..... IBAN no'lu banka hesabına ödenmesini talep ederim.
+
+TARİH : ... / ... / 2026
+ORTAKLIKTAN ÇIKAN ORTAK (İsim - İmza)
+
+--------------------------------------------------------------------------------
+YÖNETİM KURULU KABUL VE TESCİL BİLGİSİ:
+İstifa dilekçesi .../.../2026 tarihinde tebellüğ edilmiş, Yönetim Kurulu'nun .../.../2026 tarih ve ..... sayılı kararı ile çıkış işlemi onaylanarak KOOPBİS'e işlenmiştir.
+YÖNETİM KURULU (İmza - Kaşe)`
+};
+
+function initLegalTemplatesEngine() {
+  const selectEl = document.getElementById("template-select");
+  const container = document.getElementById("template-content-view");
+  const copyBtn = document.getElementById("btn-copy-template");
+  const printBtn = document.getElementById("btn-print-template");
+  const downloadBtn = document.getElementById("btn-download-template");
+  const searchInput = document.getElementById("template-filter-input");
+
+  if (!selectEl || !container) return;
+
+  function loadTemplate(key) {
+    const text = LEGAL_TEMPLATES_TEXTS[key] || "Şablon metni bulunamadı.";
+    container.textContent = text;
+    if (searchInput) searchInput.value = "";
+  }
+
+  loadTemplate(selectEl.value);
+
+  selectEl.addEventListener("change", () => {
+    loadTemplate(selectEl.value);
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener("click", () => {
+      const text = container.textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        copyBtn.textContent = "✅ Şablon Kopyalandı!";
+        setTimeout(() => { copyBtn.textContent = "📋 Şablonu Kopyala"; }, 2000);
+      });
+    });
+  }
+
+  if (printBtn) {
+    printBtn.addEventListener("click", () => {
+      const title = selectEl.options[selectEl.selectedIndex].text;
+      printFormattedDoc(container.textContent, title);
+    });
+  }
+
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", () => {
+      const type = selectEl.value;
+      const content = container.textContent;
+      downloadDocTxt(content, type + "_sablonu.txt");
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.trim().toLowerCase();
+      const currentFullText = LEGAL_TEMPLATES_TEXTS[selectEl.value] || "";
       if (!q) {
         container.textContent = currentFullText;
         return;

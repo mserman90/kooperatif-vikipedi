@@ -67,85 +67,48 @@ Kooperatifin ortak dışı işlemleri (örneğin dükkan kira geliri veya üçü
 
 ---
 
-## 4. Hazır Resmi Belge ve Dilekçe Şablonları
+## 4. İnteraktif Resmi Belge ve Dilekçe Şablonları Konsolu
 
-### Şablon 1: 1163 SK Geçici 9. Madde İntibak Genel Kurul Gündem Taslağı
+Aşağıdaki konsoldan ihtiyacınız olan resmi evrak veya genel kurul şablonunu seçebilir, canlı arama yapabilir, panoya kopyalayabilir, doğrudan yazdırabilir veya `.txt` olarak indirebilirsiniz:
 
-> **... S.S. ................................. KOOPERATİFİ**  
-> **OLAĞAN / OLAĞANÜSTÜ GENEL KURUL TOPLANTI GÜNDEMİ**  
-> **Toplantı Tarihi:** .../.../2026  
-> **Toplantı Yeri:** ......................................................  
->  
-> 1. Açılış ve Toplantı Başkanlığı (Divan Heyeti) seçimi.  
-> 2. Toplantı tutanaklarının imzalanması hususunda Divan Heyetine yetki verilmesi.  
-> 3. Yönetim Kurulu ve Denetim Kurulu yıllık faaliyet raporlarının okunması ve müzakeresi.  
-> 4. Bilanço ve Gelir-Gider farkı hesaplarının okunması, müzakeresi ve onaylanması.  
-> 5. Yönetim ve Denetim Kurulu üyelerinin ayrı ayrı ibrası.  
-> 6. **1163 sayılı Kooperatifler Kanunu'nun Geçici 9. maddesi ve 7511 sayılı Kanun uyarınca, ilgili Bakanlık tarafından yürürlüğe konulan güncel Örnek Anasözleşmeye kooperatif anasözleşmesinin tüm maddeleriyle intibak ettirilmesinin görüşülmesi ve karara bağlanması.**  
-> 7. Anasözleşme intibak işlemlerinin tescil ve ilanı hususunda Yönetim Kuruluna yetki verilmesi.  
-> 8. Tahmini bütçenin görüşülmesi ve karara bağlanması.  
-> 9. Dilek, temenniler ve kapanış.
+<div class="wiki-tool-card" id="legal-templates-card">
+  <div class="wiki-tool-header">
+    <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">📑 Resmi Kooperatif Belgeleri ve Dilekçe Masası</div>
+    <div style="font-size: 13px; color: var(--wiki-text-muted);">Bakanlık ve Ticaret Sicil onaylı 8 adet hazır resmi belge şablonu.</div>
+  </div>
 
----
+  <div class="wiki-form-grid" style="margin-top: 14px;">
+    <div class="wiki-form-group">
+      <label for="template-select">Resmi Belge / Dilekçe Seçiniz:</label>
+      <select id="template-select" class="wiki-input" style="font-weight: 600;">
+        <option value="intibak_gundem">📜 Şablon 1: 1163 SK Geçici 9. Madde İntibak Genel Kurul Gündem Taslağı</option>
+        <option value="ihrac_ihtari">⚠️ Şablon 2: 1163 SK Madde 16 Noter Onaylı Ortak İhraç İhtarnamesi</option>
+        <option value="temsilci_talep">🏛️ Şablon 3: Genel Kurul Bakanlık Temsilcisi Talep Dilekçesi</option>
+        <option value="yk_faaliyet_raporu">📊 Şablon 4: Yönetim Kurulu Yıllık Faaliyet Raporu Taslağı</option>
+        <option value="dk_denetim_raporu">🔍 Şablon 5: Denetim Kurulu Yıllık Denetim Raporu Taslağı</option>
+        <option value="olaganustu_gk_cagri">📢 Şablon 6: 1/10 Ortak Talebiyle Olağanüstü Genel Kurul Çağrı Kararı</option>
+        <option value="pay_devir_sozlesmesi">🤝 Şablon 7: Ortaklık Pay Devir Sözleşmesi ve YK Kabul Kararı</option>
+        <option value="istifa_protokolu">🚪 Şablon 8: Ortaklıktan Çıkma (İstifa) ve Sermaye İade Protokolü</option>
+      </select>
+    </div>
 
-### Şablon 2: 1163 SK Madde 16 Noter Onaylı Ortak İhraç İhtarnamesi
+    <div class="wiki-form-group">
+      <label for="template-filter-input">Metin İçi Hızlı Arama:</label>
+      <input type="text" id="template-filter-input" class="wiki-input" placeholder="Madde, IBAN, gündem veya kelime ara...">
+    </div>
+  </div>
 
-> **İHTARNAME**  
-> **KEŞİDECİ:** S.S. ................................. Kooperatifi Yönetim Kurulu  
-> **VEKİLİ:** Av. .................................  
-> **MUHATAP:** ................................. (T.C. No: ..................... / Ortak No: .....)  
-> **ADRES:** ..........................................................................  
->  
-> **KONU:** 1163 sayılı Kooperatifler Kanunu'nun 16. maddesi ve anasözleşmemizin ... maddesi uyarınca ödenmeyen parasal borçların ihtarı ve ihraç uyarısıdır.  
->  
-> **AÇIKLAMALAR:**  
-> Sayın Ortak; kooperatifimiz ortaklığı kapsamındaki parasal yükümlülükleriniz çerçevesinde;  
-> 1. ... Yılı ... Ayı Aidat Borcu: ........... TL  
-> 2. ... Yılı ... Ayı Aidat Borcu: ........... TL  
-> 3. Yasal / Akdi Gecikme Zammı: ........... TL  
-> **TOPLAM BORÇ TUTARI:** ........... TL olarak tahakkuk etmiştir.  
->  
-> İşbu ihtarnamenin tarafınıza tebliğinden itibaren **EN GEÇ 30 (OTUZ) GÜN İÇİNDE** yukarıda dökümü yapılan toplam borcunuzu kooperatifimizin ..................... IBAN no'lu banka hesabına defaten ödemenizi, aksi takdirde anasözleşme ve 1163 sayılı Kanun m. 16 gereğince kooperatif ortaklığından **çıkarılacağınızı (ihraç edileceğinizi)** ihtaren bildiririz.  
->  
-> **Keşideci: S.S. ................................. Kooperatifi Yönetim Kurulu**
+  <div style="margin-top: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px;">
+    <div style="display: flex; gap: 8px;">
+      <button id="btn-copy-template" class="wiki-btn-primary">📋 Şablonu Kopyala</button>
+      <button id="btn-print-template" class="wiki-btn-icon" style="padding: 8px 14px; font-weight: 600;">🖨️ Yazdır / PDF Kaydet</button>
+      <button id="btn-download-template" class="wiki-btn-icon" style="padding: 8px 14px; font-weight: 600;">📥 .TXT İndir</button>
+    </div>
+    <span id="template-badge-info" class="wiki-badge wiki-badge-success">8 Şablon Hazır</span>
+  </div>
 
----
-
-### Şablon 3: Genel Kurul Bakanlık Temsilcisi Talep Dilekçesi
-
-> **T.C. ..................... TİCARET / TARIM VE ORMAN İL MÜDÜRLÜĞÜNE**  
->  
-> **TALEP EDEN:** S.S. ................................. Kooperatifi Yönetim Kurulu  
-> **MERSİS NO:** .................................  
->  
-> Kooperatifimizin ... yılı Olağan / Olağanüstü Genel Kurul Toplantısı, .../.../2026 günü saat ...:... adresinde ekli gündem maddeleri doğrultusunda icra edilecektir.  
->  
-> 1163 sayılı Kooperatifler Kanunu'nun 87. maddesi ve ilgili Genel Kurul Toplantı Usulleri Yönetmeliği gereğince, bahse konu toplantımızda hazır bulunmak üzere **Bakanlık Temsilcisi görevlendirilmesini** ve temsilci ücretinin yatırılacağı hesap bilgilerinin bildirilmesini saygılarımızla arz ve talep ederiz.  
->  
-> **Ekler:**  
-> 1. Genel Kurul Çağrı Kararı (Yönetim Kurulu Karar Fotokopisi)  
-> 2. Toplantı Gündemi  
-> 3. Hazirun Cetveli Taslağı  
->  
-> **S.S. ................................. Kooperatifi Yönetim Kurulu Adına**  
-> *(İmza - Kaşe)*
-
----
-
-### Şablon 4: Yönetim Kurulu Yıllık Faaliyet Raporu Taslağı
-
-> **S.S. ................................. KOOPERATİFİ**  
-> **... DÖNEMİ YÖNETİM KURULU FAALİYET RAPORU**  
->  
-> **1. Genel Bilgiler:** Kooperatif unvanı, merkez adresi, ticaret sicil no, MERSİS no, hesap dönemi.  
-> **2. Ortaklık Durumu:** Dönem başı ortak sayısı, dönem içinde kabul edilen ortaklar, istifa veya ihraçla ayrılan ortaklar, dönem sonu ortak sayısı.  
-> **3. Yönetim ve Denetim Organları:** Görev süreleri, alınan yönetim kurulu karar adedi, toplantı tarihleri.  
-> **4. Yasal Uyum ve KOOPBİS Faaliyetleri:** KOOPBİS sistemine ortak ve finansal veri girişlerinin durumu, 40 saatlik zorunlu eğitim sertifikalarının sisteme işlenme durumu.  
-> **5. Mali ve İktisadi Durum:** Gelirler toplamı, yapılan harcamalar, banka mevcutları, alacak ve borç durumu, gayrimenkul ve makine varlıkları.  
-> **6. Gelecek Dönem Hedefleri ve Tahmini Bütçe:** Planlanan yatırımlar ve öngörülen aidat miktarları.  
->  
-> Genel Kurulun takdir ve onayına saygıyla sunulur.  
-> **Yönetim Kurulu Üyeleri (İsim - İmza)**
+  <div class="wiki-doc-preview" id="template-content-view" style="margin-top: 16px; max-height: 480px; overflow-y: auto;"></div>
+</div>
 
 ---
 
