@@ -27,7 +27,6 @@ Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (m. 15) ve Koop
     <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">🔍 Yasal Uyum ve Denetim Teşhis Aracı</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">Parametreleri giriniz; sistem yasal sonuçları anında üretecektir.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 16px;">
     <div class="wiki-form-group">
       <label for="w-coop-type">Kooperatif Türü:</label>
@@ -41,17 +40,14 @@ Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (m. 15) ve Koop
         <option value="diger">Tüketim / İşletme / Hizmet / Diğer</option>
       </select>
     </div>
-
     <div class="wiki-form-group">
       <label for="w-member-count">Aktif Ortak Sayısı:</label>
       <input type="number" id="w-member-count" class="wiki-input" placeholder="Örn: 120" value="120" min="1">
     </div>
-
     <div class="wiki-form-group">
       <label for="w-revenue">Son Hesap Dönemi Net Satış Hasılatı (TL):</label>
       <input type="number" id="w-revenue" class="wiki-input" placeholder="Örn: 25000000" value="25000000" min="0">
     </div>
-
     <div class="wiki-form-group" id="w-building-permit-group">
       <label for="w-building-permit">İnşaat / Yapı Ruhsatı Durumu (Yapı Kooperatifleri için):</label>
       <select id="w-building-permit" class="wiki-input">
@@ -60,11 +56,9 @@ Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (m. 15) ve Koop
       </select>
     </div>
   </div>
-
   <div style="margin-top: 16px;">
     <button id="btn-run-audit-wizard" class="wiki-btn-primary">📊 Uygunluk Durumunu Analiz Et</button>
   </div>
-
   <div id="audit-wizard-result" style="display: none; margin-top: 20px;" class="wiki-result-panel">
     <!-- Sonuç Dinamik Yüklenir -->
   </div>
@@ -81,7 +75,6 @@ Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (m. 15) ve Koop
     <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">📅 Genel Kurul Yasal Süreç ve Geri Sayım Planlayıcı</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">Toplantı gününü belirleyiniz; geriye ve ileriye dönük yasal zorunlu takvim üretilsin.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 16px;">
     <div class="wiki-form-group">
       <label for="gk-date">Planlanan Genel Kurul Tarihi:</label>
@@ -96,11 +89,9 @@ Kooperatif ve Üst Kuruluşlarının Denetimine Dair Yönetmelik (m. 15) ve Koop
       </select>
     </div>
   </div>
-
   <div style="margin-top: 16px;">
     <button id="btn-calc-gk-timeline" class="wiki-btn-primary">🗓️ Yasal Takvimi Çıkar</button>
   </div>
-
   <div id="gk-timeline-result" style="display: none; margin-top: 20px;" class="wiki-result-panel">
     <!-- Takvim Dinamik Yüklenir -->
   </div>
@@ -117,7 +108,6 @@ Kooperatif anasözleşmelerinde veya genel kurul kararlarında %5, %10 gibi fahi
     <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">⚖️ Yasal Aidat Gecikme Faizi ve Tavan Denetimi</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">TBK m. 88 ve m. 120 (Yasal temerrüt faizinin azami 2 katı) kriterine göre hesaplar.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 16px;">
     <div class="wiki-form-group">
       <label for="i-principal">Geciken Aidat / Asıl Alacak Tutarı (TL):</label>
@@ -136,11 +126,9 @@ Kooperatif anasözleşmelerinde veya genel kurul kararlarında %5, %10 gibi fahi
       <input type="number" id="i-claimed-rate" class="wiki-input" placeholder="Örn: 5" value="5" step="0.1" min="0">
     </div>
   </div>
-
   <div style="margin-top: 16px;">
     <button id="btn-calc-interest" class="wiki-btn-primary">🧮 Yasal Faizi ve Tavan Aşımını Hesapla</button>
   </div>
-
   <div id="interest-calc-result" style="display: none; margin-top: 20px;" class="wiki-result-panel">
     <!-- Faiz Sonucu Dinamik Yüklenir -->
   </div>
@@ -157,7 +145,6 @@ Kooperatif anasözleşmelerinde veya genel kurul kararlarında %5, %10 gibi fahi
     <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">🏛️ Bakanlık Temsilcisi İsteme Dilekçesi Üretici</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">Bilgileri doldurunuz; resmi dilekçe anında A4 formatında oluşturulacaktır.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 16px;">
     <div class="wiki-form-group">
       <label for="p-ministry">İlgili Bakanlık İl Müdürlüğü:</label>
@@ -188,11 +175,9 @@ Kooperatif anasözleşmelerinde veya genel kurul kararlarında %5, %10 gibi fahi
       <input type="text" id="p-meeting-place" class="wiki-input" placeholder="Örn: Kooperatif Merkezi Toplantı Salonu (Adres No: 15 Çankaya/Ankara)" value="Kooperatif Merkezi Toplantı Salonu (Adres No: 15 Çankaya/Ankara)">
     </div>
   </div>
-
   <div style="margin-top: 16px;">
     <button id="btn-generate-rep-petition" class="wiki-btn-primary">📝 Resmi Dilekçeyi Oluştur</button>
   </div>
-
   <div id="petition-rep-output" style="display: none; margin-top: 20px;" class="wiki-result-panel">
     <!-- Dilekçe Metni Dinamik Yüklenir -->
   </div>
@@ -209,7 +194,6 @@ Kooperatiften ortak ihracında en çok yapılan usul hatası, borcun dökümlü 
     <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">⚠️ Noter İhraç İhtarnamesi Sihirbazı (1163 SK m. 16)</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">Yasal süreler, faiz sınırları ve ihraç uyarılarını eksiksiz içeren resmi ihtar metni.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 16px;">
     <div class="wiki-form-group">
       <label for="exp-stage">İhtar Aşaması:</label>
@@ -231,11 +215,9 @@ Kooperatiften ortak ihracında en çok yapılan usul hatası, borcun dökümlü 
       <input type="text" id="exp-iban" class="wiki-input" placeholder="Örn: TR12 0001 0000 0000 0000 0000 00 (Ziraat Bankası)" value="TR12 0001 0000 0000 0000 0000 00 (Ziraat Bankası)">
     </div>
   </div>
-
   <div style="margin-top: 16px;">
     <button id="btn-generate-exp-notice" class="wiki-btn-primary">📜 Noter İhtarnamesini Oluştur</button>
   </div>
-
   <div id="exp-notice-output" style="display: none; margin-top: 20px;" class="wiki-result-panel">
     <!-- İhtar Metni Dinamik Yüklenir -->
   </div>

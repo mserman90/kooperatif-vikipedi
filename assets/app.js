@@ -799,7 +799,17 @@ function renderMarkdown(md) {
   });
 
   if (window.marked) {
-    return window.marked.parse(processed);
+    let html = window.marked.parse(processed);
+    // Güvenlik & Dayanıklılık: Eğer herhangi bir wiki bileşeni kaza ile pre/code içine düşerse HTML'e geri çevir
+    html = html.replace(/<pre><code[^>]*>(&lt;(?:div|audio)[^>]*class=&quot;wiki-[\s\S]*?)<\/code><\/pre>/gi, (m, code) => {
+      return code
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&amp;/g, "&");
+    });
+    return html;
   }
 
   return processed

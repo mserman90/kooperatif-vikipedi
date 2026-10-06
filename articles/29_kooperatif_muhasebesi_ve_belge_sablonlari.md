@@ -76,7 +76,6 @@ Aşağıdaki konsoldan ihtiyacınız olan resmi evrak veya genel kurul şablonun
     <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">📑 Resmi Kooperatif Belgeleri ve Dilekçe Masası</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">Bakanlık ve Ticaret Sicil onaylı 8 adet hazır resmi belge şablonu.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 14px;">
     <div class="wiki-form-group">
       <label for="template-select">Resmi Belge / Dilekçe Seçiniz:</label>
@@ -91,13 +90,11 @@ Aşağıdaki konsoldan ihtiyacınız olan resmi evrak veya genel kurul şablonun
         <option value="istifa_protokolu">🚪 Şablon 8: Ortaklıktan Çıkma (İstifa) ve Sermaye İade Protokolü</option>
       </select>
     </div>
-
     <div class="wiki-form-group">
       <label for="template-filter-input">Metin İçi Hızlı Arama:</label>
       <input type="text" id="template-filter-input" class="wiki-input" placeholder="Madde, IBAN, gündem veya kelime ara...">
     </div>
   </div>
-
   <div style="margin-top: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px;">
     <div style="display: flex; gap: 8px;">
       <button id="btn-copy-template" class="wiki-btn-primary">📋 Şablonu Kopyala</button>
@@ -106,7 +103,6 @@ Aşağıdaki konsoldan ihtiyacınız olan resmi evrak veya genel kurul şablonun
     </div>
     <span id="template-badge-info" class="wiki-badge wiki-badge-success">8 Şablon Hazır</span>
   </div>
-
   <div class="wiki-doc-preview" id="template-content-view" style="margin-top: 16px; max-height: 480px; overflow-y: auto;"></div>
 </div>
 

@@ -31,7 +31,6 @@ Aşağıdaki oynatıcıdan dinlemek istediğiniz podcast bölümünü seçiniz. 
     <div style="font-size: 17px; font-weight: 700; color: var(--wiki-text);">🎙️ Kooperatif Hukuku & Mevzuatı Podcast Stüdyosu</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">NotebookLM Studio destekli sesli incelemeler ve uzman diyalogları.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 16px;">
     <div class="wiki-form-group" style="grid-column: 1 / -1;">
       <label for="podcast-episode-select">Yayınlanan Podcast Bölümleri:</label>
@@ -46,7 +45,6 @@ Aşağıdaki oynatıcıdan dinlemek istediğiniz podcast bölümünü seçiniz. 
       </select>
     </div>
   </div>
-
   <!-- HTML5 Ses Oynatıcı ve Kontroller -->
   <div style="margin-top: 16px; padding: 16px; background: var(--wiki-bg); border-radius: 8px; border: 1px solid var(--wiki-border-light);">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
@@ -55,12 +53,10 @@ Aşağıdaki oynatıcıdan dinlemek istediğiniz podcast bölümünü seçiniz. 
       </div>
       <span class="wiki-badge wiki-badge-success">Yayında</span>
     </div>
-
     <audio id="podcast-audio-element" controls style="width: 100%; margin-bottom: 10px;">
       <source id="podcast-audio-source" src="assets/audio/bolum_1.mp3" type="audio/mpeg">
       Tarayıcınız HTML5 ses oynatıcısını desteklemiyor.
     </audio>
-
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px;">
       <div style="display: flex; gap: 8px; align-items: center;">
         <button id="btn-tts-play" class="wiki-btn-primary" style="background: linear-gradient(135deg, #4f46e5, #7c3aed);">
@@ -94,7 +90,6 @@ Google NotebookLM not defterinizden kopyaladığınız araştırma notlarını v
     <div style="font-size: 16px; font-weight: 700; color: var(--wiki-text);">✨ Otomatik Podcast Diyalog & Senaryo Üretici</div>
     <div style="font-size: 13px; color: var(--wiki-text-muted);">NotebookLM notlarını veya mevzuat konularını canlı seslendirilebilir senaryoya dönüştürün.</div>
   </div>
-
   <div class="wiki-form-grid" style="margin-top: 14px;">
     <div class="wiki-form-group">
       <label for="ai-podcast-preset">Hazır Konu Şablonları:</label>
@@ -106,13 +101,11 @@ Google NotebookLM not defterinizden kopyaladığınız araştırma notlarını v
         <option value="egk_genkop">🗳️ Kooperatiflerde Elektronik Genel Kurul (GENKOP) Uygulaması</option>
       </select>
     </div>
-
     <div class="wiki-form-group" style="grid-column: 1 / -1;">
       <label for="ai-podcast-notes">Kaynak Metin / NotebookLM Notları:</label>
       <textarea id="ai-podcast-notes" class="wiki-input" rows="4" placeholder="Google NotebookLM not defterinizdeki metni veya ele alınmasını istediğiniz konuyu buraya yapıştırınız..."></textarea>
     </div>
   </div>
-
   <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;">
     <button id="btn-generate-podcast-script" class="wiki-btn-primary" style="background: linear-gradient(135deg, #10b981, #059669);">
       🪄 Podcast Senaryosu Oluştur
@@ -127,7 +120,6 @@ Google NotebookLM not defterinizden kopyaladığınız araştırma notlarını v
       📥 TXT İndir
     </button>
   </div>
-
   <div id="ai-podcast-result-box" style="display: none; margin-top: 16px; padding: 14px; background: var(--wiki-bg); border-radius: 8px; border: 1px solid var(--wiki-border-light);">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
       <strong style="color: var(--wiki-link); font-size: 14px;">📝 Üretilen Podcast Diyaloğu Transkripti:</strong>
