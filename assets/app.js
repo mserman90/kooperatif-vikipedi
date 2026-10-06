@@ -1203,6 +1203,8 @@ function initInteractiveToolsEngine() {
   const buildingPermitGroup = document.getElementById("w-building-permit-group");
 
   if (coopTypeSelect && buildingPermitGroup) {
+    // Sayfa açılışında geçerli seçime göre durum ayarla
+    buildingPermitGroup.style.display = coopTypeSelect.value === "yapi" ? "block" : "none";
     coopTypeSelect.addEventListener("change", () => {
       buildingPermitGroup.style.display = coopTypeSelect.value === "yapi" ? "block" : "none";
     });
@@ -1210,10 +1212,10 @@ function initInteractiveToolsEngine() {
 
   if (btnAudit) {
     btnAudit.addEventListener("click", () => {
-      const coopType = document.getElementById("w-coop-type").value;
-      const memberCount = parseInt(document.getElementById("w-member-count").value || "0", 10);
-      const revenue = parseFloat(document.getElementById("w-revenue").value || "0");
-      const buildingPermit = document.getElementById("w-building-permit").value;
+      const coopType = (document.getElementById("w-coop-type") || {}).value || "yapi";
+      const memberCount = parseInt((document.getElementById("w-member-count") || {}).value || "0", 10);
+      const revenue = parseFloat((document.getElementById("w-revenue") || {}).value || "0");
+      const buildingPermit = (document.getElementById("w-building-permit") || {}).value || "no";
       const resultPanel = document.getElementById("audit-wizard-result");
 
       // Dış Denetim Değerlendirmesi
@@ -1263,35 +1265,36 @@ function initInteractiveToolsEngine() {
 
       resultPanel.style.display = "block";
       resultPanel.innerHTML = `
-        <div style="border-bottom: 2px solid var(--wiki-border-light); padding-bottom: 12px; margin-bottom: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--wiki-border-light); padding-bottom: 12px; margin-bottom: 16px;">
           <h3 style="margin: 0; color: var(--wiki-text);">📊 Teşhis ve Yasal Uyum Raporu</h3>
+          <button id="btn-copy-audit-report" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Raporu Kopyala</button>
         </div>
 
-        <div style="margin-bottom: 16px; padding: 12px; border-radius: 6px; background: ${auditRequired ? 'rgba(239, 68, 68, 0.08)' : 'rgba(34, 197, 94, 0.08)'}; border-left: 4px solid ${auditRequired ? '#ef4444' : '#22c55e'};">
+        <div style="margin-bottom: 16px; padding: 12px; border-radius: 6px; background: ${auditRequired ? 'rgba(239, 68, 68, 0.12)' : 'rgba(34, 197, 94, 0.12)'}; border-left: 4px solid ${auditRequired ? '#ef4444' : '#22c55e'};">
           <div style="display: flex; align-items: center; justify-content: space-between;">
             <strong style="font-size: 15px;">1. Dış Denetim Durumu:</strong>
             <span class="wiki-badge ${auditRequired ? 'wiki-badge-danger' : 'wiki-badge-success'}">${auditRequired ? 'DIŞ DENETİME TABİ' : 'DIŞ DENETİMDEN MUAF'}</span>
           </div>
           <div style="margin-top: 8px; font-size: 13px; line-height: 1.5;">
             ${auditRequired 
-              ? `<ul style="margin-left: 20px; color: #b91c1c;">${auditReasons.map(r => `<li>${r}</li>`).join('')}</ul>
+              ? `<ul style="margin-left: 20px; color: ${document.documentElement.getAttribute('data-theme') === 'dark' ? '#fca5a5' : '#b91c1c'};">${auditReasons.map(r => `<li>${r}</li>`).join('')}</ul>
                  <p style="margin-top: 6px; font-weight: 600;">⚖️ Yaptırım: Dış denetim yaptırılmadan genel kurula sunulan bilanço hükümsüzdür. Yöneticiler TCK m. 257 kapsamında görevi kötüye kullanma suçundan yargılanır.</p>
                  <p style="margin-top: 4px; font-size: 12px; color: var(--wiki-text-muted);">Standart: KGK SBDS 2400 kıyasen uygulanır. Yetkili: SMMM/YMM Bağımsız Denetçi veya Üst Birlik Dış Denetçisi.</p>`
-              : `<p style="color: #15803d;">Mevcut kriterlerinize göre dış denetim zorunluluğu bulunmamaktadır. Kooperatif içi denetim kurulu raporu yeterlidir.</p>`
+              : `<p style="color: ${document.documentElement.getAttribute('data-theme') === 'dark' ? '#86efac' : '#15803d'};">Mevcut kriterlerinize göre dış denetim zorunluluğu bulunmamaktadır. Kooperatif içi denetim kurulu raporu yeterlidir.</p>`
             }
           </div>
         </div>
 
-        <div style="margin-bottom: 16px; padding: 12px; border-radius: 6px; background: ${trainingRequired ? 'rgba(245, 158, 11, 0.08)' : 'rgba(34, 197, 94, 0.08)'}; border-left: 4px solid ${trainingRequired ? '#f59e0b' : '#22c55e'};">
+        <div style="margin-bottom: 16px; padding: 12px; border-radius: 6px; background: ${trainingRequired ? 'rgba(245, 158, 11, 0.12)' : 'rgba(34, 197, 94, 0.12)'}; border-left: 4px solid ${trainingRequired ? '#f59e0b' : '#22c55e'};">
           <div style="display: flex; align-items: center; justify-content: space-between;">
             <strong style="font-size: 15px;">2. Zorunlu Kooperatifçilik Eğitimi:</strong>
             <span class="wiki-badge ${trainingRequired ? 'wiki-badge-warning' : 'wiki-badge-success'}">${trainingRequired ? '40 SAAT EĞİTİM ZORUNLU' : 'EĞİTİMDEN MUAF'}</span>
           </div>
           <div style="margin-top: 8px; font-size: 13px; line-height: 1.5;">
             ${trainingRequired
-              ? `<ul style="margin-left: 20px; color: #b45309;">${trainingReasons.map(r => `<li>${r}</li>`).join('')}</ul>
+              ? `<ul style="margin-left: 20px; color: ${document.documentElement.getAttribute('data-theme') === 'dark' ? '#fde68a' : '#b45309'};">${trainingReasons.map(r => `<li>${r}</li>`).join('')}</ul>
                  <p style="margin-top: 6px; font-weight: 600;">⚠️ Önemli Kural: Yönetim ve Denetim Kurulu asıl üyeleri seçildikten itibaren 9 ay içinde eğitimi tamamlamalıdır. Hukuk/İktisat fakültesi diploması veya SMMM unvanı MUAFİYET SAĞLAMAZ. Tamamlamayanların üyeliği kendiliğinden düşer.</p>`
-              : `<p style="color: #15803d;">Mevcut ciro ve ortak sayınıza göre yöneticileriniz için 40 saatlik eğitim şartı aranmamaktadır.</p>`
+              : `<p style="color: ${document.documentElement.getAttribute('data-theme') === 'dark' ? '#86efac' : '#15803d'};">Mevcut ciro ve ortak sayınıza göre yöneticileriniz için 40 saatlik eğitim şartı aranmamaktadır.</p>`
             }
           </div>
         </div>
@@ -1306,6 +1309,23 @@ function initInteractiveToolsEngine() {
           </p>
         </div>
       `;
+
+      const copyAuditBtn = document.getElementById("btn-copy-audit-report");
+      if (copyAuditBtn) {
+        copyAuditBtn.addEventListener("click", () => {
+          const text = `KOOPERATİF YASAL UYUM VE DENETİM TEŞHİS RAPORU\n` +
+            `- Dış Denetim Durumu: ${auditRequired ? 'TABİ (ZORUNLU)' : 'MUAF'}\n` +
+            (auditReasons.length ? `  Gerekçeler: ${auditReasons.join('; ')}\n` : '') +
+            `- 40 Saatlik Zorunlu Eğitim: ${trainingRequired ? 'ZORUNLU (9 Ay Süre)' : 'MUAF'}\n` +
+            (trainingReasons.length ? `  Gerekçeler: ${trainingReasons.join('; ')}\n` : '') +
+            `- KOOPBİS Seviyesi: ${koopbisLevel}\n` +
+            `- İntibak Son Tarihi: 26 Ekim 2026 (7511 SK)`;
+          navigator.clipboard.writeText(text).then(() => {
+            copyAuditBtn.textContent = "✅ Kopyalandı!";
+            setTimeout(() => { copyAuditBtn.textContent = "📋 Raporu Kopyala"; }, 2000);
+          });
+        });
+      }
     });
   }
 
@@ -1320,7 +1340,7 @@ function initInteractiveToolsEngine() {
 
   if (btnGk) {
     btnGk.addEventListener("click", () => {
-      const val = document.getElementById("gk-date").value;
+      const val = (document.getElementById("gk-date") || {}).value;
       if (!val) return;
       const targetDate = new Date(val);
       const resultPanel = document.getElementById("gk-timeline-result");
@@ -1340,9 +1360,12 @@ function initInteractiveToolsEngine() {
 
       resultPanel.style.display = "block";
       resultPanel.innerHTML = `
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 14px;">
           <h3 style="margin: 0;">🗓️ Genel Kurul Yasal Çağrı ve Süreç Takvimi</h3>
-          <button id="btn-copy-timeline" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Takvimi Kopyala</button>
+          <div style="display: flex; gap: 8px;">
+            <button id="btn-copy-timeline" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Kopyala</button>
+            <button id="btn-download-ics" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📅 Takvimi .ICS (iCal) Olarak İndir</button>
+          </div>
         </div>
 
         <div class="wiki-timeline">
@@ -1378,10 +1401,10 @@ function initInteractiveToolsEngine() {
             </div>
           </div>
 
-          <div class="wiki-timeline-step" style="border-left-color: #10b981; background: var(--wiki-highlight);">
-            <div class="wiki-timeline-date" style="color: #047857; font-size: 15px;">🎯 ${formatDate(targetDate)}</div>
+          <div class="wiki-timeline-step" style="border-left-color: #10b981; background: var(--wiki-surface);">
+            <div class="wiki-timeline-date" style="color: #10b981; font-size: 15px;">🎯 ${formatDate(targetDate)}</div>
             <div class="wiki-timeline-content">
-              <strong style="color: #047857; font-size: 15px;">🏁 GENEL KURUL TOPLANTI GÜNÜ</strong><br>
+              <strong style="color: #10b981; font-size: 15px;">🏁 GENEL KURUL TOPLANTI GÜNÜ</strong><br>
               Yoklama, divan seçimi, raporların okunması, ibra oylaması ve yeni organ seçimleri icra edilir.
             </div>
           </div>
@@ -1408,8 +1431,43 @@ function initInteractiveToolsEngine() {
             `- Tescil ve İlan Son Gün: ${formatDate(dateRegistration)}`;
           navigator.clipboard.writeText(text).then(() => {
             copyBtn.textContent = "✅ Kopyalandı!";
-            setTimeout(() => { copyBtn.textContent = "📋 Takvimi Kopyala"; }, 2000);
+            setTimeout(() => { copyBtn.textContent = "📋 Kopyala"; }, 2000);
           });
+        });
+      }
+
+      const icsBtn = document.getElementById("btn-download-ics");
+      if (icsBtn) {
+        icsBtn.addEventListener("click", () => {
+          const formatIcsDate = (d) => {
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, "0");
+            const day = String(d.getDate()).padStart(2, "0");
+            return `${y}${m}${day}`;
+          };
+          const events = [
+            { title: "PTT Cagrı Mektuplari Son Gun", date: datePttCall, desc: "Ortaklara taahhutlu mektuplarin postaya verilecegi son gun (1163 SK m. 45)" },
+            { title: "Bakanlik Temsilcisi Dilekce Son Gun", date: dateRepPetition, desc: "Ticaret/Tarim Il Mudurlugune basvuru son gun (1163 SK Ek m. 3)" },
+            { title: "Mali Tablolarin Tetkike Acilmasi", date: dateFinancialAudit, desc: "Rapor ve bilancolarin ortaklarin incelemesine acilmasi" },
+            { title: "KOOPBIS Hazirun Cetveli Cekimi", date: dateKoopbisLock, desc: "Toplanti hazirun listesinin KOOPBIS uzerinden alinmasi" },
+            { title: "GENEL KURUL TOPLANTI GUNU", date: targetDate, desc: "Kooperatif Genel Kurul Toplantisi ve Secimler" },
+            { title: "Ticaret Siciline Tescil Son Gun", date: dateRegistration, desc: "Kararlarin tescil ve ilani son gunu (1163 SK m. 52)" }
+          ];
+
+          let ics = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Kooperatif Vikipedi//GK Takvimi//TR\r\nCALSCALE:GREGORIAN\r\n";
+          events.forEach((ev, idx) => {
+            const dt = formatIcsDate(ev.date);
+            ics += `BEGIN:VEVENT\r\nUID:gk-${dt}-${idx}@kooperatifvikipedi\r\nDTSTAMP:${dt}T090000Z\r\nDTSTART;VALUE=DATE:${dt}\r\nDTEND;VALUE=DATE:${dt}\r\nSUMMARY:${ev.title}\r\nDESCRIPTION:${ev.desc}\r\nEND:VEVENT\r\n`;
+          });
+          ics += "END:VCALENDAR\r\n";
+
+          const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = "kooperatif_genel_kurul_takvimi.ics";
+          a.click();
+          URL.revokeObjectURL(url);
         });
       }
     });
@@ -1431,10 +1489,10 @@ function initInteractiveToolsEngine() {
 
   if (btnInterest) {
     btnInterest.addEventListener("click", () => {
-      const principal = parseFloat(document.getElementById("i-principal").value || "0");
-      const d1 = new Date(document.getElementById("i-due-date").value);
-      const d2 = new Date(document.getElementById("i-pay-date").value);
-      const claimedMonthlyRate = parseFloat(document.getElementById("i-claimed-rate").value || "0");
+      const principal = parseFloat((document.getElementById("i-principal") || {}).value || "0");
+      const d1 = new Date((document.getElementById("i-due-date") || {}).value);
+      const d2 = new Date((document.getElementById("i-pay-date") || {}).value);
+      const claimedMonthlyRate = parseFloat((document.getElementById("i-claimed-rate") || {}).value || "0");
       const resultPanel = document.getElementById("interest-calc-result");
 
       if (isNaN(d1.getTime()) || isNaN(d2.getTime()) || d2 <= d1) {
@@ -1457,22 +1515,23 @@ function initInteractiveToolsEngine() {
 
       resultPanel.style.display = "block";
       resultPanel.innerHTML = `
-        <div style="border-bottom: 2px solid var(--wiki-border-light); padding-bottom: 10px; margin-bottom: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--wiki-border-light); padding-bottom: 10px; margin-bottom: 14px;">
           <h3 style="margin: 0;">🧮 Faiz ve Yasal Tavan İnceleme Raporu</h3>
+          <button id="btn-copy-interest-calc" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Raporu Kopyala</button>
         </div>
 
         ${isRateExcessive ? `
-          <div style="padding: 12px; background: #fef2f2; border-left: 4px solid #ef4444; border-radius: 4px; margin-bottom: 16px;">
-            <strong style="color: #991b1b;">⚠️ FAHİŞ FAİZ UYARISI (TBK m. 120 İhlali):</strong><br>
-            <span style="font-size: 13px; color: #7f1d1d;">
+          <div style="padding: 12px; background: rgba(239, 68, 68, 0.12); border-left: 4px solid #ef4444; border-radius: 4px; margin-bottom: 16px;">
+            <strong style="color: ${document.documentElement.getAttribute('data-theme') === 'dark' ? '#fca5a5' : '#991b1b'};">⚠️ FAHİŞ FAİZ UYARISI (TBK m. 120 İhlali):</strong><br>
+            <span style="font-size: 13px; color: var(--wiki-text);">
               Talep edilen aylık %${claimedMonthlyRate} faiz oranı, Türk Borçlar Kanunu m. 120'de öngörülen yasal tavanı (yıllık yasal faizin azami 2 katı = aylık %${LEGAL_MONTHLY_MAX}) aşmaktadır. 
               <strong>Yargıtay Hukuk Genel Kurulu kararlarına göre aşan kısım mutlak butlanla geçersizdir.</strong> Hesaplama yasal azami tavan olan %${LEGAL_MONTHLY_MAX} üzerinden yapılmıştır.
             </span>
           </div>
         ` : `
-          <div style="padding: 12px; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 4px; margin-bottom: 16px;">
-            <strong style="color: #166534;">✅ YASAL SINIRLAR DAHİLİNDE:</strong><br>
-            <span style="font-size: 13px; color: #14532d;">
+          <div style="padding: 12px; background: rgba(34, 197, 94, 0.12); border-left: 4px solid #22c55e; border-radius: 4px; margin-bottom: 16px;">
+            <strong style="color: ${document.documentElement.getAttribute('data-theme') === 'dark' ? '#86efac' : '#166534'};">✅ YASAL SINIRLAR DAHİLİNDE:</strong><br>
+            <span style="font-size: 13px; color: var(--wiki-text);">
               Talep edilen aylık %${claimedMonthlyRate} faiz oranı TBK m. 120'deki yasal tavanı aşmamaktadır.
             </span>
           </div>
@@ -1482,11 +1541,29 @@ function initInteractiveToolsEngine() {
           <tr><td><strong>Asıl Alacak Tutarı (Aidat):</strong></td><td style="font-weight: 700;">${principal.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>
           <tr><td><strong>Gecikme Süresi:</strong></td><td>${diffDays} Gün (~${diffMonths.toFixed(1)} Ay)</td></tr>
           <tr><td><strong>Uygulanan Aylık Yasal Faiz Oranı:</strong></td><td>%${appliedMonthlyRate.toFixed(2)}</td></tr>
-          <tr><td><strong>Hesaplanan Yasal Faiz Tutarı:</strong></td><td style="color: #b91c1c; font-weight: 700;">${legalInterest.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>
+          <tr><td><strong>Hesaplanan Yasal Faiz Tutarı:</strong></td><td style="color: #ef4444; font-weight: 700;">${legalInterest.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>
           ${isRateExcessive ? `<tr><td><strong>Geçersiz (İptal Edilen) Fazla Faiz:</strong></td><td style="color: #9ca3af; text-decoration: line-through;">${(claimedInterest - legalInterest).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>` : ''}
           <tr style="background: var(--wiki-surface); font-size: 15px;"><td><strong>TOPLAM TAHSİL EDİLEBİLİR ALACAK:</strong></td><td style="color: var(--wiki-link); font-weight: 800;">${totalAmount.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL</td></tr>
         </table>
       `;
+
+      const copyInterestBtn = document.getElementById("btn-copy-interest-calc");
+      if (copyInterestBtn) {
+        copyInterestBtn.addEventListener("click", () => {
+          const report = `AİDAT GECİKME FAİZİ HESAPLAMA RAPORU (TBK m. 120)\n` +
+            `- Asıl Alacak: ${principal.toLocaleString('tr-TR')} TL\n` +
+            `- Gecikme: ${diffDays} Gün (~${diffMonths.toFixed(1)} Ay)\n` +
+            `- Talep Edilen Oran: Aylık %${claimedMonthlyRate}\n` +
+            `- Yasal Azami Oran: Aylık %${appliedMonthlyRate.toFixed(2)}\n` +
+            `- Hesaplanan Yasal Faiz: ${legalInterest.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL\n` +
+            (isRateExcessive ? `- İptal Edilen Fahiş Faiz: ${(claimedInterest - legalInterest).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL\n` : '') +
+            `- TOPLAM ALACAK: ${totalAmount.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} TL`;
+          navigator.clipboard.writeText(report).then(() => {
+            copyInterestBtn.textContent = "✅ Kopyalandı!";
+            setTimeout(() => { copyInterestBtn.textContent = "📋 Raporu Kopyala"; }, 2000);
+          });
+        });
+      }
     });
   }
 
@@ -1494,12 +1571,12 @@ function initInteractiveToolsEngine() {
   const btnRepPetition = document.getElementById("btn-generate-rep-petition");
   if (btnRepPetition) {
     btnRepPetition.addEventListener("click", () => {
-      const ministry = document.getElementById("p-ministry").value;
-      const city = document.getElementById("p-city").value.toUpperCase();
-      const coopName = document.getElementById("p-coop-name").value.toUpperCase();
-      const regNo = document.getElementById("p-reg-no").value;
-      const mDate = document.getElementById("p-meeting-date").value;
-      const mPlace = document.getElementById("p-meeting-place").value;
+      const ministry = (document.getElementById("p-ministry") || {}).value || "ticaret";
+      const city = ((document.getElementById("p-city") || {}).value || "ANKARA").toUpperCase();
+      const coopName = ((document.getElementById("p-coop-name") || {}).value || "S.S. KOOPERATİFİ").toUpperCase();
+      const regNo = (document.getElementById("p-reg-no") || {}).value || "";
+      const mDate = (document.getElementById("p-meeting-date") || {}).value || "";
+      const mPlace = (document.getElementById("p-meeting-place") || {}).value || "";
       const output = document.getElementById("petition-rep-output");
 
       let dirName = "TİCARET İL MÜDÜRLÜĞÜ'NE";
@@ -1522,11 +1599,15 @@ function initInteractiveToolsEngine() {
 
       output.style.display = "block";
       output.innerHTML = `
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px;">
           <strong>📄 Resmi Dilekçe Metni (A4 Formatı):</strong>
-          <button id="btn-copy-rep-pet" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Dilekçeyi Kopyala</button>
+          <div style="display: flex; gap: 6px;">
+            <button id="btn-copy-rep-pet" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Kopyala</button>
+            <button id="btn-print-rep-pet" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">🖨️ Yazdır / PDF</button>
+            <button id="btn-download-rep-pet" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📥 .TXT İndir</button>
+          </div>
         </div>
-        <div class="wiki-doc-preview">${text}</div>
+        <div class="wiki-doc-preview" id="preview-rep-pet">${text}</div>
       `;
 
       const copyBtn = document.getElementById("btn-copy-rep-pet");
@@ -1534,8 +1615,22 @@ function initInteractiveToolsEngine() {
         copyBtn.addEventListener("click", () => {
           navigator.clipboard.writeText(text).then(() => {
             copyBtn.textContent = "✅ Panoya Kopyalandı!";
-            setTimeout(() => { copyBtn.textContent = "📋 Dilekçeyi Kopyala"; }, 2000);
+            setTimeout(() => { copyBtn.textContent = "📋 Kopyala"; }, 2000);
           });
+        });
+      }
+
+      const printBtn = document.getElementById("btn-print-rep-pet");
+      if (printBtn) {
+        printBtn.addEventListener("click", () => {
+          printFormattedDoc(text, "Bakanlik_Temsilcisi_Talep_Dilekcesi");
+        });
+      }
+
+      const dlBtn = document.getElementById("btn-download-rep-pet");
+      if (dlBtn) {
+        dlBtn.addEventListener("click", () => {
+          downloadDocTxt(text, "bakanlik_temsilcisi_talep_dilekcesi.txt");
         });
       }
     });
@@ -1545,10 +1640,10 @@ function initInteractiveToolsEngine() {
   const btnExpNotice = document.getElementById("btn-generate-exp-notice");
   if (btnExpNotice) {
     btnExpNotice.addEventListener("click", () => {
-      const stage = document.getElementById("exp-stage").value;
-      const memberName = document.getElementById("exp-member-name").value;
-      const debtDetail = document.getElementById("exp-debt-detail").value;
-      const iban = document.getElementById("exp-iban").value;
+      const stage = (document.getElementById("exp-stage") || {}).value || "first";
+      const memberName = (document.getElementById("exp-member-name") || {}).value || "";
+      const debtDetail = (document.getElementById("exp-debt-detail") || {}).value || "";
+      const iban = (document.getElementById("exp-iban") || {}).value || "";
       const output = document.getElementById("exp-notice-output");
 
       const title = stage === "first" ? "BİRİNCİ İHTARNAME" : "İKİNCİ (SON) İHTARNAME VE İHRAÇ İHTARI";
@@ -1570,11 +1665,15 @@ function initInteractiveToolsEngine() {
 
       output.style.display = "block";
       output.innerHTML = `
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px;">
           <strong>📜 Noter İhtarnamesi Metni (1163 SK m. 16 Tam Uyumlu):</strong>
-          <button id="btn-copy-exp-notice" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 İhtarı Kopyala</button>
+          <div style="display: flex; gap: 6px;">
+            <button id="btn-copy-exp-notice" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📋 Kopyala</button>
+            <button id="btn-print-exp-notice" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">🖨️ Yazdır / PDF</button>
+            <button id="btn-download-exp-notice" class="wiki-btn-icon" style="font-size: 12px; padding: 4px 10px;">📥 .TXT İndir</button>
+          </div>
         </div>
-        <div class="wiki-doc-preview">${text}</div>
+        <div class="wiki-doc-preview" id="preview-exp-notice">${text}</div>
       `;
 
       const copyBtn = document.getElementById("btn-copy-exp-notice");
@@ -1582,12 +1681,80 @@ function initInteractiveToolsEngine() {
         copyBtn.addEventListener("click", () => {
           navigator.clipboard.writeText(text).then(() => {
             copyBtn.textContent = "✅ Panoya Kopyalandı!";
-            setTimeout(() => { copyBtn.textContent = "📋 İhtarı Kopyala"; }, 2000);
+            setTimeout(() => { copyBtn.textContent = "📋 Kopyala"; }, 2000);
           });
+        });
+      }
+
+      const printBtn = document.getElementById("btn-print-exp-notice");
+      if (printBtn) {
+        printBtn.addEventListener("click", () => {
+          printFormattedDoc(text, "Noter_Ihrac_Ihtarnamesi");
+        });
+      }
+
+      const dlBtn = document.getElementById("btn-download-exp-notice");
+      if (dlBtn) {
+        dlBtn.addEventListener("click", () => {
+          downloadDocTxt(text, "noter_ihrac_ihtarnamesi.txt");
         });
       }
     });
   }
+}
+
+function printFormattedDoc(text, title) {
+  const printWin = window.open("", "_blank");
+  if (!printWin) {
+    alert("Yazdırma penceresi açılamadı. Lütfen açılır pencerelere izin veriniz.");
+    return;
+  }
+  printWin.document.write(`
+    <!DOCTYPE html>
+    <html lang="tr">
+    <head>
+      <meta charset="UTF-8">
+      <title>${title}</title>
+      <style>
+        body {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 12pt;
+          line-height: 1.6;
+          margin: 30mm 25mm 25mm 25mm;
+          color: #000;
+          background: #fff;
+        }
+        pre {
+          white-space: pre-wrap;
+          font-family: inherit;
+          margin: 0;
+        }
+        @media print {
+          @page { margin: 25mm; }
+        }
+      </style>
+    </head>
+    <body>
+      <pre>${text.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</pre>
+      <script>
+        window.onload = function() {
+          window.print();
+        };
+      <\/script>
+    </body>
+    </html>
+  `);
+  printWin.document.close();
+}
+
+function downloadDocTxt(text, filename) {
+  const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 // ================= TERİMLER SÖZLÜĞÜ ARAMA MOTORU =================
