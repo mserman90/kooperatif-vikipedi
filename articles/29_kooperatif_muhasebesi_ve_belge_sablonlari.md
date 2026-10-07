@@ -19,12 +19,8 @@
 1. [Kooperatiflerde Tekdüzen Hesap Planı ve Özel Hesap Kodları](#1-kooperatiflerde-tekdüzen-hesap-planı-ve-özel-hesap-kodları)
 2. [Risturn ve Müsbet Fark Muhasebeleştirilmesi](#2-risturn-ve-müsbet-fark-muhasebeleştirilmesi)
 3. [İktisadi İşletme ve Ortak Dışı İşlem Muhasebe Ayrımı (7061 SK)](#3-iktisadi-işletme-ve-ortak-dışı-işlem-muhasebe-ayrımı-7061-sk)
-4. [Hazır Resmi Belge ve Dilekçe Şablonları](#4-hazır-resmi-belge-ve-dilekçe-şablonları)
-   - [Şablon 1: 1163 SK Geçici 9. Madde İntibak Genel Kurul Gündem Taslağı](#şablon-1-1163-sk-geçici-9-madde-intibak-genel-kurul-gündem-taslağı)
-   - [Şablon 2: 1163 SK Madde 16 Noter Onaylı Ortak İhraç İhtarnamesi](#şablon-2-1163-sk-madde-16-noter-onaylı-ortak-ihraç-ihtarnamesi)
-   - [Şablon 3: Genel Kurul Bakanlık Temsilcisi Talep Dilekçesi](#şablon-3-genel-kurul-bakanlık-temsilcisi-talep-dilekçesi)
-   - [Şablon 4: Yönetim Kurulu Yıllık Faaliyet Raporu Taslağı](#şablon-4-yönetim-kurulu-yıllık-faaliyet-raporu-taslağı)
-5. [Kaynakça ve Notlar](#5-kaynakça-ve-notlar)
+4. [İnteraktif Resmi Belge ve Dilekçe Şablonları Konsolu](#4-interaktif-resmi-belge-ve-dilekce-sablonlari-konsolu)
+5. [Kaynakça ve Notlar](#5-kaynakca-ve-notlar)
 
 ---
 

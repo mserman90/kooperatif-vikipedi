@@ -7,11 +7,11 @@
 <div class="wiki-toc">
   <div class="wiki-toc-title">İçindekiler</div>
   <ol>
-    <li><a href="#1-dis-denetim-ve-zorunlu-egitim-uygunluk-sihirbazi">Dış Denetim & Zorunlu Eğitim Uygunluk Sihirbazı</a></li>
-    <li><a href="#2-genel-kurul-yasal-cagri-ve-sure-takvimi-hesaplayici">Genel Kurul Yasal Çağrı ve Süre Takvimi Hesaplayıcı</a></li>
-    <li><a href="#3-yasal-gecikme-zammi-ve-aidat-faizi-hesaplayici">Yasal Gecikme Zammı ve Aidat Faizi Hesaplayıcı (TBK m. 88 & 120)</a></li>
-    <li><a href="#4-bakanlik-temsilcisi-talep-dilekcesi-sihirbazi">Bakanlık Temsilcisi (Hükümet Komiseri) Talep Dilekçesi Sihirbazı</a></li>
-    <li><a href="#5-ihrac-ihtarnamesi-1-ve-2-ihtar-sihirbazi">1163 SK m. 16 İhraç İhtarnamesi Oluşturucu</a></li>
+    <li><a href="#audit-wizard-card">Dış Denetim & Zorunlu Eğitim Uygunluk Sihirbazı</a></li>
+    <li><a href="#gk-timeline-card">Genel Kurul Yasal Çağrı ve Süre Takvimi Hesaplayıcı</a></li>
+    <li><a href="#interest-calculator-card">Yasal Gecikme Zammı ve Aidat Faizi Hesaplayıcı (TBK m. 88 & 120)</a></li>
+    <li><a href="#petition-rep-card">Bakanlık Temsilcisi (Hükümet Komiseri) Talep Dilekçesi Sihirbazı</a></li>
+    <li><a href="#expulsion-wizard-card">1163 SK m. 16 İhraç İhtarnamesi Oluşturucu</a></li>
     <li><a href="#6-yasal-dayanaklar-ve-onemli-hatirlatmalar">Yasal Dayanaklar ve Önemli Hatırlatmalar</a></li>
   </ol>
 </div>

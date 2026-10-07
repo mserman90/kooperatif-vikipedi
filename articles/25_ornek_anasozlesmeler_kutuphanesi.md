@@ -13,9 +13,9 @@ Türkiye'de kooperatif anasözleşmeleri; **Ticaret Bakanlığı** (Esnaf, Sanat
     <li><a href="#2-yasal-cerceve-ve-ornek-anasozlesme-zorunlulugu">Yasal Çerçeve ve Örnek Anasözleşme Zorunluluğu</a></li>
     <li><a href="#3-ticaret-bakanligi-gorev-alanindaki-tarim-disi-ornek-anasozlesmeler">Ticaret Bakanlığı Görev Alanındaki (Tarım Dışı) Örnek Anasözleşmeler</a></li>
     <li><a href="#4-tarim-ve-orman-bakanligi-gorev-alanindaki-ornek-anasozlesmeler">Tarım ve Orman Bakanlığı Görev Alanındaki Örnek Anasözleşmeler</a></li>
-    <li><a href="#5-resmi-bakanlik-indirme-fihristi-28-tip-sozlesme">Resmi Bakanlık İndirme Fihristi (28+ Tip Sözleşme Bağlantıları)</a></li>
+    <li><a href="#5-resmi-bakanlik-indirme-fihristi-28-tip-sozlesme-baglantilari">Resmi Bakanlık İndirme Fihristi (28+ Tip Sözleşme Bağlantıları)</a></li>
     <li><a href="#6-mersis-uzerinden-kurulus-ve-duzeltme-beyani-proseduru">MERSİS Üzerinden Kuruluş ve Düzeltme Beyanı Prosedürü</a></li>
-    <li><a href="#7-kaynakca-ve-resmi-baglantilar">Kaynakça ve Resmî Bağlantılar</a></li>
+    <li><a href="#7-kaynakca-ve-resmi-baglantilar">Kaynakça ve Resmi Bağlantılar</a></li>
   </ol>
 </div>
 
@@ -185,7 +185,7 @@ Modern Türk kooperatifçilik uygulamasında tüm örnek anasözleşme işlemler
 
 ---
 
-## 7. Kaynakça ve Resmî Bağlantılar
+## 7. Kaynakça ve Resmi Bağlantılar
 
 * 1163 Sayılı Kooperatifler Kanunu (Resmî Gazete: 13195)
 * 1581 Sayılı Tarım Kredi Kooperatifleri ve Birlikleri Kanunu

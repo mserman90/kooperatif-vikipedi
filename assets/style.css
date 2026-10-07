@@ -54,6 +54,11 @@ body {
   min-height: 100vh;
 }
 
+/* Çapa ve Başlık Kaydırma Boşluğu (Sticky Header Altında Kalmayı Önler) */
+h1, h2, h3, h4, h5, h6, .wiki-tool-card, .wiki-quiz-box, .wiki-infobox, [id] {
+  scroll-margin-top: 72px;
+}
+
 /* ================= Top Bar / Header ================= */
 .wiki-header {
   position: sticky;

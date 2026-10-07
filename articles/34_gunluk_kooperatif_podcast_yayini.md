@@ -9,14 +9,14 @@
   <ol>
     <li><a href="#1-canli-podcast-oynatici-ve-bolum-secici">Canlı Podcast Oynatıcı ve Bölüm Seçici</a></li>
     <li><a href="#2-ai-podcast-senaryo-atolyesi-notebooklm-entegratoru">AI Podcast Senaryo Atölyesi (NotebookLM Entegratörü)</a></li>
-    <li><a href="#3-bolum-1-7511-sk-intibak-reformu-ve-26-ekim-2026">Bölüm 1: 7511 SK İntibak Reformu ve 26 Ekim 2026 Geri Sayımı</a></li>
-    <li><a href="#4-bolum-2-dis-denetim-ve-zorunlu-egitim-tuzaklari">Bölüm 2: Dış Denetim ve Zorunlu Eğitim Eşikleri (100M TL & 2000 Ortak)</a></li>
-    <li><a href="#5-bolum-3-7579-sk-iskansiz-tapu-devri-yasagi">Bölüm 3: 7579 SK İskansız Tapu Devri Yasağı ve Mahalli İdareler</a></li>
-    <li><a href="#6-bolum-4-vergi-muafiyetinin-4-altin-sarti-ve-risturn">Bölüm 4: Vergi Muafiyetinin 4 Altın Şartı ve 7061 SK İktisadi İşletme</a></li>
-    <li><a href="#7-bolum-5-yap-kooperatiflerinde-ferdi-mulkiyet-ve-serefiye">Bölüm 5: Yapı Kooperatiflerinde Ferdi Mülkiyet, Şerefiye ve Tapu Harcı</a></li>
-    <li><a href="#8-bolum-6-kirsal-kalkinma-ve-kadin-kooperatiflerinde-koop-des">Bölüm 6: Kırsal Kalkınma ve Kadın Kooperatiflerinde KOOP-DES & Hibeler</a></li>
-    <li><a href="#9-bolum-7-kooperatif-tasfiyesi-ve-sicilden-terkin">Bölüm 7: Kooperatif Tasfiyesi, Alacaklılara 3 TTSG Çağrısı ve Kapanış</a></li>
-    <li><a href="#10-notebooklm-ve-yeni-bolum-yayinlama-rehberi">Google NotebookLM ile Yeni Bölüm Yayınlama Rehberi</a></li>
+    <li><a href="#3-bolum-1-7511-sk-intibak-reformu-ve-26-ekim-2026-geri-sayimi">Bölüm 1: 7511 SK İntibak Reformu ve 26 Ekim 2026 Geri Sayımı</a></li>
+    <li><a href="#4-bolum-2-dis-denetim-ve-zorunlu-egitim-esikleri-100m-tl-2000-ortak">Bölüm 2: Dış Denetim ve Zorunlu Eğitim Eşikleri (100M TL & 2000 Ortak)</a></li>
+    <li><a href="#5-bolum-3-7579-sk-iskansiz-tapu-devri-yasagi-ve-mahalli-idareler">Bölüm 3: 7579 SK İskansız Tapu Devri Yasağı ve Mahalli İdareler</a></li>
+    <li><a href="#6-bolum-4-vergi-muafiyetinin-4-altin-sarti-ve-7061-sk-iktisadi-isletme">Bölüm 4: Vergi Muafiyetinin 4 Altın Şartı ve 7061 SK İktisadi İşletme</a></li>
+    <li><a href="#7-bolum-5-yapi-kooperatiflerinde-ferdi-mulkiyet-serefiye-ve-tapu-harci">Bölüm 5: Yapı Kooperatiflerinde Ferdi Mülkiyet, Şerefiye ve Tapu Harcı</a></li>
+    <li><a href="#8-bolum-6-kirsal-kalkinma-ve-kadin-kooperatiflerinde-koop-des-hibeler">Bölüm 6: Kırsal Kalkınma ve Kadın Kooperatiflerinde KOOP-DES & Hibeler</a></li>
+    <li><a href="#9-bolum-7-kooperatif-tasfiyesi-alacaklilara-3-ttsg-cagrisi-ve-kapanis">Bölüm 7: Kooperatif Tasfiyesi, Alacaklılara 3 TTSG Çağrısı ve Kapanış</a></li>
+    <li><a href="#10-google-notebooklm-ile-yeni-bolum-yayinlama-rehberi">Google NotebookLM ile Yeni Bölüm Yayınlama Rehberi</a></li>
   </ol>
 </div>
 

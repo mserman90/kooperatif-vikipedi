@@ -7,13 +7,13 @@
 <div class="wiki-toc">
   <div class="wiki-toc-title">İçindekiler</div>
   <ol>
-    <li><a href="#1-dagilma-ve-tasfiye-sebepleri">Dağılma (İnfitah) ve Tasfiye Sebepleri</a></li>
+    <li><a href="#1-dagilma-infitah-ve-tasfiye-sebepleri">Dağılma (İnfitah) ve Tasfiye Sebepleri</a></li>
     <li><a href="#2-adim-adim-tasfiye-sureci-yol-haritasi">Adım Adım Tasfiye Süreci Yol Haritası</a></li>
     <li><a href="#3-alacaklilara-cagri-ve-6-aylik-yasal-bekleme-suresi">Alacaklılara Çağrı ve 6 Aylık Yasal Bekleme Süresi</a></li>
-    <li><a href="#4-tasfiye-memurlarinin-yetki-ve-sorumluluklari">Tasfiye Memurlarının Yetki ve Hukuki Sorumlulukları</a></li>
+    <li><a href="#4-tasfiye-memurlarinin-yetki-ve-hukuki-sorumluluklari">Tasfiye Memurlarının Yetki ve Hukuki Sorumlulukları</a></li>
     <li><a href="#5-tasfiye-artiginin-dagitimi-ve-vergilendirme">Tasfiye Artığının Dağıtımı ve Vergilendirme</a></li>
     <li><a href="#6-sicilden-terkin-ve-defterlerin-10-yil-saklanmasi">Sicilden Terkin ve Defterlerin 10 Yıl Saklanması</a></li>
-    <li><a href="#7-tasfiyeden-donus-ihya-davasi">Tasfiyeden Dönüş ve Ek Tasfiye (İhya Davası)</a></li>
+    <li><a href="#7-tasfiyeden-donus-ve-ek-tasfiye-ihya-davasi">Tasfiyeden Dönüş ve Ek Tasfiye (İhya Davası)</a></li>
   </ol>
 </div>
 

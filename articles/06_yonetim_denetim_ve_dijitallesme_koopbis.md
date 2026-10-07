@@ -21,7 +21,7 @@
 2. [Yöneticiler İçin 40 Saatlik Zorunlu Eğitim ve Muafiyet Sınırları](#2-yöneticiler-için-40-saatlik-zorunlu-eğitim-ve-muafiyet-sınırları)
 3. [Dış Denetim ve Bağımsız Denetim Sistemi](#3-dış-denetim-ve-bağımsız-denetim-sistemi)
 4. [Bağdaşmayan Görevler ve Çıkar Çatışması Yasakları](#4-bağdaşmayan-görevler-ve-çıkar-çatışması-yasakları)
-5. [Elektronik Genel Kurul (e-Genel Kurul - 31719 Sayılı RG)](#5-elektronik-genel-kurul-e-genel-kurul---31719-sayılı-rg)
+5. [Elektronik Genel Kurul (e-Genel Kurul - Yönetmelik 39279)](#5-elektronik-genel-kurul-e-genel-kurul---yonetmelik-39279)
 6. [Bakanlık Temsilcisi Bulundurma Zorunluluğu](#6-bakanlık-temsilcisi-bulundurma-zorunluluğu)
 7. [Mal Bildiriminde Bulunulması (3628 Sayılı Kanun)](#7-mal-bildiriminde-bulunulması-3628-sayılı-kanun)
 8. [Kaynakça ve Notlar](#8-kaynakça-ve-notlar)

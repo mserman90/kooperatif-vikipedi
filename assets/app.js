@@ -530,13 +530,21 @@ const FLASHCARDS_DATA = [
 // Yardımcı: Türkçe Metinleri ASCII Slug'a Dönüştür
 function slugify(text) {
   if (!text) return "";
-  return text.toLowerCase()
-    .replace(/ğ/g, "g")
-    .replace(/ü/g, "u")
-    .replace(/ş/g, "s")
+  return text
+    .replace(/İ/g, "i")
+    .replace(/I/g, "i")
     .replace(/ı/g, "i")
+    .replace(/Ğ/g, "g")
+    .replace(/ğ/g, "g")
+    .replace(/Ü/g, "u")
+    .replace(/ü/g, "u")
+    .replace(/Ş/g, "s")
+    .replace(/ş/g, "s")
+    .replace(/Ö/g, "o")
     .replace(/ö/g, "o")
+    .replace(/Ç/g, "c")
     .replace(/ç/g, "c")
+    .toLowerCase()
     .replace(/[^a-z0-9\s-]/g, "")
     .trim()
     .replace(/\s+/g, "-");
@@ -595,6 +603,94 @@ function initSidebar() {
   listEl.innerHTML = html;
 }
 
+// Akıllı Başlık ve Bölüm Bulucu (DOM İçinde Esnek Eşleştirme)
+function findTargetElement(target) {
+  if (!target) return null;
+  const cleanTarget = decodeURIComponent(target).replace(/^#/, "").trim();
+  if (!cleanTarget) return null;
+
+  // 1. Doğrudan ID eşleşmesi
+  let el = document.getElementById(cleanTarget);
+  if (el) return el;
+
+  // 2. data-slug veya data-unicode-slug eşleşmesi
+  try {
+    const escaped = CSS.escape(cleanTarget);
+    el = document.querySelector(`[data-slug="${escaped}"]`) ||
+         document.querySelector(`[data-unicode-slug="${escaped}"]`) ||
+         document.querySelector(`[name="${escaped}"]`);
+    if (el) return el;
+  } catch (e) {}
+
+  // 3. Slugify edilmiş hedef eşleşmesi
+  const targetAscii = slugify(cleanTarget);
+  const targetUnicode = cleanTarget
+    .replace(/İ/g, "i")
+    .replace(/I/g, "i")
+    .toLowerCase()
+    .replace(/[^a-z0-9ğüşıöç\s-]/gi, "")
+    .trim()
+    .replace(/\s+/g, "-");
+
+  try {
+    el = document.getElementById(targetAscii) ||
+         document.querySelector(`[data-slug="${CSS.escape(targetAscii)}"]`) ||
+         document.querySelector(`[data-unicode-slug="${CSS.escape(targetUnicode)}"]`);
+    if (el) return el;
+  } catch (e) {}
+
+  // 4. Sayısal Bölüm Öneki Eşleşmesi (Örn: #1-..., #41-genel-kurul -> 4.1. veya 1.)
+  const numMatch = cleanTarget.match(/^([0-9]+(?:[-.][0-9]+)?)/);
+  if (numMatch) {
+    const rawNum = numMatch[1];
+    const dotNum = rawNum.replace("-", ".");
+    const flatNum = rawNum.replace(/[-.]/g, "");
+    const headings = document.querySelectorAll("h1, h2, h3, h4, h5");
+    for (const h of headings) {
+      const text = h.textContent.trim();
+      if (text.startsWith(dotNum + ".") || text.startsWith(dotNum + " ") || 
+          text.startsWith(rawNum + ".") || text.startsWith(rawNum + " ") ||
+          text.startsWith(flatNum + ".")) {
+        return h;
+      }
+    }
+  }
+
+  // 5. Normalleştirilmiş Alfanümerik Karşılaştırma (Noktalama ve boşluk duyarsız)
+  const normTarget = cleanTarget.toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (normTarget && normTarget.length > 2) {
+    const candidates = document.querySelectorAll("h1, h2, h3, h4, h5, h6, .wiki-tool-card, [id]");
+    for (const c of candidates) {
+      const cIdNorm = (c.id || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const cTextNorm = (c.textContent || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const cSlugNorm = (c.getAttribute("data-slug") || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const cUniNorm = (c.getAttribute("data-unicode-slug") || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+
+      if (cIdNorm === normTarget || cSlugNorm === normTarget || cUniNorm === normTarget) {
+        return c;
+      }
+      if (cTextNorm.startsWith(normTarget) || normTarget.startsWith(cTextNorm) || (cIdNorm && cIdNorm.includes(normTarget))) {
+        return c;
+      }
+    }
+  }
+
+  return null;
+}
+
+// Sticky Header Yüksekliğini Dikkate Alan Akıcı Kaydırma
+function scrollToElement(targetEl) {
+  if (!targetEl) return;
+  const header = document.querySelector(".wiki-header");
+  const headerHeight = header ? header.offsetHeight : 56;
+  const rect = targetEl.getBoundingClientRect();
+  const targetTop = window.pageYOffset + rect.top - headerHeight - 16;
+  window.scrollTo({
+    top: Math.max(0, targetTop),
+    behavior: "smooth"
+  });
+}
+
 // Router & Hash Değişimi
 function initRouter() {
   window.addEventListener("hashchange", handleRouting);
@@ -607,7 +703,7 @@ function handleRouting() {
     return;
   }
 
-  const rawHash = window.location.hash.replace(/^#/, "").trim();
+  const rawHash = decodeURIComponent(window.location.hash.replace(/^#/, "")).trim();
   
   if (!rawHash) {
     loadArticle("00_ana_sayfa");
@@ -621,28 +717,38 @@ function handleRouting() {
     return;
   }
 
-  // 2. Durum: Makale + Bölüm Birleşik Hash
-  const splitMatch = rawHash.match(/^([0-9]{2}_[a-z0-9_]+)([:/])(.+)$/i);
+  // 2. Durum: Makale + Bölüm Birleşik Hash (örn: #02_xxx:bolum veya #02_xxx#bolum veya #02_xxx/bolum)
+  const splitMatch = rawHash.match(/^([0-9]{2}_[a-z0-9_]+)([:#/])(.+)$/i);
   if (splitMatch) {
     const targetArtId = splitMatch[1];
     const targetSection = splitMatch[3];
     const art = ARTICLES_REGISTRY.find(a => a.id === targetArtId);
     if (art) {
-      loadArticle(art.id, targetSection);
+      if (state.currentArticleId === art.id) {
+        const targetElement = findTargetElement(targetSection);
+        if (targetElement) {
+          scrollToElement(targetElement);
+        }
+      } else {
+        loadArticle(art.id, targetSection);
+      }
       return;
     }
   }
 
   // 3. Durum: Sayfa İçi Bölüm Başlığı (TOC veya Anchor)
-  const targetElement = document.getElementById(rawHash) || 
-                        document.querySelector(`[data-slug="${rawHash}"]`) ||
-                        document.querySelector(`[data-slug="${slugify(rawHash)}"]`);
+  const targetElement = findTargetElement(rawHash);
   if (targetElement) {
-    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    scrollToElement(targetElement);
     return;
   }
 
-  // 4. Durum: Eşleşmeyen hash
+  // 4. Durum: Eğer geçerli makale zaten yüklüyse, ana sayfaya atma!
+  if (state.currentArticleId) {
+    return;
+  }
+
+  // 5. Durum: Eşleşmeyen hash (Sadece ilk açılışta)
   const fuzzyArt = ARTICLES_REGISTRY.find(a => rawHash.startsWith(a.id));
   if (fuzzyArt) {
     loadArticle(fuzzyArt.id);
@@ -747,15 +853,13 @@ async function loadArticle(articleId, scrollToSectionId = null) {
     // Bölüme kaydırma veya sayfa başına gitme
     if (scrollToSectionId) {
       setTimeout(() => {
-        const target = document.getElementById(scrollToSectionId) ||
-                       document.querySelector(`[data-slug="${scrollToSectionId}"]`) ||
-                       document.querySelector(`[data-slug="${slugify(scrollToSectionId)}"]`);
+        const target = findTargetElement(scrollToSectionId);
         if (target) {
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          scrollToElement(target);
         } else {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }
-      }, 50);
+      }, 80);
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -787,12 +891,21 @@ function renderMarkdown(md) {
       target = parts[1].trim();
     } else {
       const clean = inner.trim().toLowerCase();
-      const found = ARTICLES_REGISTRY.find(a => 
+      let found = ARTICLES_REGISTRY.find(a => 
         a.id.toLowerCase() === clean ||
         a.title.toLowerCase() === clean || 
         a.shortTitle.toLowerCase() === clean ||
-        a.title.toLowerCase().includes(clean)
+        a.title.toLowerCase().includes(clean) ||
+        a.id.toLowerCase().includes(clean)
       );
+      if (!found) {
+        // Sayısal eşleşme (örn: "24" -> "24_kooperatif_...")
+        const numOnly = clean.replace(/[^0-9]/g, "");
+        if (numOnly) {
+          const padded = numOnly.padStart(2, "0");
+          found = ARTICLES_REGISTRY.find(a => a.id.startsWith(padded + "_"));
+        }
+      }
       target = found ? found.id : "00_ana_sayfa";
     }
     return `<a href="#${target}" class="wiki-internal-link">${text}</a>`;
@@ -825,7 +938,7 @@ function renderMarkdown(md) {
 
 // Başlık ID'leri ve Bağlantı Davranışları
 function postProcessContent(container) {
-  const headings = container.querySelectorAll("h1, h2, h3, h4");
+  const headings = container.querySelectorAll("h1, h2, h3, h4, h5");
   headings.forEach(h => {
     const rawText = h.textContent.trim();
     const asciiSlug = slugify(rawText);
@@ -850,20 +963,47 @@ function postProcessContent(container) {
     }
 
     if (href.startsWith("#")) {
-      const targetHash = href.substring(1).trim();
-      const isArticle = ARTICLES_REGISTRY.some(a => a.id === targetHash);
-      if (isArticle) return;
+      const targetHash = decodeURIComponent(href.substring(1)).trim();
 
-      l.addEventListener("click", (e) => {
-        const targetEl = document.getElementById(targetHash) ||
-                         document.querySelector(`[data-slug="${targetHash}"]`) ||
-                         document.querySelector(`[data-slug="${slugify(targetHash)}"]`) ||
-                         document.querySelector(`[data-unicode-slug="${targetHash}"]`);
-        if (targetEl) {
+      // A) Doğrudan Başka Bir Makaleye Bağlantı (#24_kooperatif_kurulusu_ve_anasozlesme_intibak)
+      const directArt = ARTICLES_REGISTRY.find(a => a.id === targetHash);
+      if (directArt) {
+        l.addEventListener("click", (e) => {
           e.preventDefault();
+          window.location.hash = `#${directArt.id}`;
+        });
+        return;
+      }
+
+      // B) Makaleler Arası Bölüm Bağlantısı (#02_xxx:section veya #02_xxx#section veya #02_xxx/section)
+      const crossMatch = targetHash.match(/^([0-9]{2}_[a-z0-9_]+)[:#/](.+)$/i);
+      if (crossMatch && ARTICLES_REGISTRY.some(a => a.id === crossMatch[1])) {
+        l.addEventListener("click", (e) => {
+          e.preventDefault();
+          const artId = crossMatch[1];
+          const secId = crossMatch[2];
+          if (state.currentArticleId === artId) {
+            const el = findTargetElement(secId);
+            if (el) scrollToElement(el);
+          } else {
+            loadArticle(artId, secId);
+          }
+          history.replaceState(null, null, `#${artId}:${secId}`);
+        });
+        return;
+      }
+
+      // C) Sayfa İçi Bölüm / Çapa Bağlantısı (TOC / Anchor)
+      l.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetEl = findTargetElement(targetHash);
+        if (targetEl) {
           state.isNavigatingSection = true;
-          window.location.hash = `#${targetHash}`;
-          targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.replaceState(null, null, `#${state.currentArticleId}:${targetHash}`);
+          scrollToElement(targetEl);
+        } else {
+          console.warn("Hedef başlık bulunamadı:", targetHash);
+          // Ana sayfaya atmayı kesinlikle engelle, mevcut makalede kal!
         }
       });
     }

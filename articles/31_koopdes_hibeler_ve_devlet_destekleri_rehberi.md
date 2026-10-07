@@ -9,10 +9,10 @@
   <ol>
     <li><a href="#1-ticaret-bakanligi-koop-des-programi">Ticaret Bakanlığı KOOP-DES Programı</a></li>
     <li><a href="#2-koop-des-destek-kalemleri-ve-hibe-oranlari">KOOP-DES Destek Kalemleri ve Hibe Oranları</a></li>
-    <li><a href="#3-tarim-ve-orman-bakanligi-kkydp-hibeleri">Tarım ve Orman Bakanlığı KKYDP Hibeleri (%50 Karşılıksız)</a></li>
-    <li><a href="#4-ab-ipard-iii-programi-tkdk-hibeleri">AB IPARD III Programı (TKDK) Hibeleri (%65 - %75)</a></li>
+    <li><a href="#3-tarim-ve-orman-bakanligi-kkydp-hibeleri-50-karsiliksiz">Tarım ve Orman Bakanlığı KKYDP Hibeleri (%50 Karşılıksız)</a></li>
+    <li><a href="#4-ab-ipard-iii-programi-tkdk-hibeleri-65---75">AB IPARD III Programı (TKDK) Hibeleri (%65 - %75)</a></li>
     <li><a href="#5-teskomb-ve-halkbank-hazine-faiz-destekli-kredileri">TESKOMB ve Halkbank Hazine Faiz Destekli Kredileri</a></li>
-    <li><a href="#6-basvuru-sureci-ve-sik-yapilan-hatalar">Başvuru Süreci, Gerekli Belgeler ve Sık Yapılan Hatalar</a></li>
+    <li><a href="#6-basvuru-sureci-gerekli-belgeler-ve-sik-yapilan-hatalar">Başvuru Süreci, Gerekli Belgeler ve Sık Yapılan Hatalar</a></li>
   </ol>
 </div>
 
