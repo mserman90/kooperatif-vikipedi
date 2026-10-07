@@ -1,0 +1,17 @@
+{
+  "name": "Kooperatifler Ansiklopedisi",
+  "short_name": "KoopAnsiklopedi",
+  "description": "Türkiye ve Uluslararası Kooperatifçilik Bilgi Bankası ve Mevzuat Rehberi",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

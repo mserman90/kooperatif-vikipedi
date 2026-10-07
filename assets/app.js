@@ -798,6 +798,33 @@ async function loadArticle(articleId, scrollToSectionId = null) {
     titleEl.textContent = artMeta.title;
     document.title = `${artMeta.title} - Kooperatifler Ansiklopedisi`;
 
+    // Dinamik SPA SEO ve Sosyal Paylaşım Meta Etiketleri Güncellemesi
+    const pageDesc = artMeta.shortTitle 
+      ? `${artMeta.title} (${artMeta.shortTitle}) — 1163 SK, intibak, denetim ve mevzuat rehberi.`
+      : `${artMeta.title} — Kooperatifler Ansiklopedisi ve Mevzuat Bilgi Bankası.`;
+    const fullArticleUrl = `${window.location.origin}${window.location.pathname}#${articleId}`;
+
+    const descMeta = document.querySelector('meta[name="description"]');
+    if (descMeta) descMeta.setAttribute("content", pageDesc);
+
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) canonicalLink.setAttribute("href", fullArticleUrl);
+
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute("content", `${artMeta.title} - Kooperatifler Ansiklopedisi`);
+
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute("content", pageDesc);
+
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute("content", fullArticleUrl);
+
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.setAttribute("content", `${artMeta.title} - Kooperatifler Ansiklopedisi`);
+
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) twDesc.setAttribute("content", pageDesc);
+
     // AI Özet Alanını Sıfırla
     const summaryArea = document.getElementById("article-ai-summary-area");
     if (summaryArea) {
@@ -1346,6 +1373,38 @@ function initControls() {
       const nonHome = ARTICLES_REGISTRY.filter(a => a.id !== "00_ana_sayfa");
       const idx = Math.floor(Math.random() * nonHome.length);
       window.location.hash = `#${nonHome[idx].id}`;
+    });
+  }
+
+  // Sosyal Paylaşım & Bağlantı Kopyalama Butonu
+  const shareBtn = document.getElementById("share-site-btn");
+  if (shareBtn) {
+    shareBtn.addEventListener("click", async () => {
+      const currentArt = ARTICLES_REGISTRY.find(a => a.id === state.currentArticleId);
+      const shareTitle = currentArt ? `${currentArt.title} - Kooperatifler Ansiklopedisi` : document.title;
+      const shareUrl = window.location.href;
+      const shareData = {
+        title: shareTitle,
+        text: "Kooperatifler Ansiklopedisi — Türkiye'nin Açık Kaynaklı Özgür Kooperatifçilik Bilgi Bankası",
+        url: shareUrl
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (e) {
+          // Kullanıcı paylaşım penceresini kapattıysa sessizce geç
+        }
+      } else {
+        try {
+          await navigator.clipboard.writeText(shareUrl);
+          const origText = shareBtn.textContent;
+          shareBtn.textContent = "✔️ Kopyalandı!";
+          setTimeout(() => { shareBtn.textContent = origText; }, 2200);
+        } catch (err) {
+          prompt("Sayfa bağlantısını kopyalayabilirsiniz:", shareUrl);
+        }
+      }
     });
   }
 }
